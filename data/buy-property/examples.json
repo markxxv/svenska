@@ -1,0 +1,43 @@
+[
+  {
+    "sv": "Jag letar efter en bostad att köpa.",
+    "ru": "Я ищу жильё для покупки.",
+    "note": "En bostad — жильё, att köpa — для покупки."
+  },
+  {
+    "sv": "Kan vi boka en visning?",
+    "ru": "Можем записаться на просмотр?"
+  },
+  {
+    "sv": "Hur många kvadratmeter är lägenheten?",
+    "ru": "Сколько квадратных метров в квартире?"
+  },
+  {
+    "sv": "Vad är utgångspriset?",
+    "ru": "Какая стартовая цена?"
+  },
+  {
+    "sv": "Har budgivningen börjat?",
+    "ru": "Торги уже начались?"
+  },
+  {
+    "sv": "Hur stor är månadsavgiften?",
+    "ru": "Каков ежемесячный взнос?"
+  },
+  {
+    "sv": "Vad ingår i avgiften?",
+    "ru": "Что входит во взнос?"
+  },
+  {
+    "sv": "Finns det en energideklaration?",
+    "ru": "Есть энергетический сертификат?"
+  },
+  {
+    "sv": "Har bostaden besiktigats?",
+    "ru": "Была ли проведена техническая инспекция жилья?"
+  },
+  {
+    "sv": "När är tillträdet?",
+    "ru": "Когда передача жилья?"
+  }
+]

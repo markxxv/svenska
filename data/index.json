@@ -356,6 +356,24 @@
         "dictionary": "dictionary.json",
         "quiz": "quiz.json"
       }
+    },
+    {
+      "slug": "buy-property",
+      "title": "Купить недвижимость",
+      "group": "housing",
+      "groupTitle": "Жильё и недвижимость",
+      "emoji": "🔑",
+      "order": 2,
+      "minutes": 8,
+      "description": "Просмотр жилья, цена, торги, документы и дата передачи ключей.",
+      "outcome": "Обсудить покупку жилья и задать агенту основные вопросы",
+      "files": {
+        "theory": "theory.json",
+        "examples": "examples.json",
+        "cards": "cards.json",
+        "dictionary": "dictionary.json",
+        "quiz": "quiz.json"
+      }
     }
   ]
 }
