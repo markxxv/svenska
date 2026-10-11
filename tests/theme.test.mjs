@@ -15,6 +15,10 @@ test('dark mode applies before CDN styles and supports saved preference',async()
   assert.match(html,/html\.dark #bottomNav/);
   assert.match(html,/html\.dark \.bg-emerald-50/);
   assert.match(html,/html\.dark \.bg-rose-50/);
+  assert.ok(html.includes('[class*="!bg-emerald-50"]'));
+  assert.ok(html.includes('[class*="!bg-rose-50"]'));
+  assert.ok(html.includes('[class*="!text-emerald-900"]'));
+  assert.ok(html.includes('[class*="!text-rose-900"]'));
   assert.match(html,/html\.dark \.flip-back/);
 });
 test('settings dropdown supports both themes and accessibility',async()=>{
