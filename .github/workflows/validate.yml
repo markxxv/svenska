@@ -1,0 +1,25 @@
+name: Validate lessons
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [feature/modular-learning]
+permissions:
+  contents: read
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Verify content index
+        run: npm run content:check
+      - name: Test content
+        run: npm test
+      - name: Check JavaScript syntax
+        run: |
+          for file in js/*.js js/modules/*.js scripts/*.mjs tests/*.mjs; do
+            node --check "$file"
+          done
