@@ -1,0 +1,17 @@
+{
+  "slug": "experience",
+  "title": "Опыт и впечатления",
+  "group": "grammar",
+  "groupTitle": "Строим предложения",
+  "emoji": "✨",
+  "order": 6,
+  "outcome": "Сказать, что были где-то впервые или никогда не были",
+  "theory": [
+    "Har varit — был / бывал",
+    "Для жизненного опыта часто используют har + supinum: har varit, har gjort. Aldrig — «никогда».",
+    "Jag har aldrig varit där förut.",
+    "Я никогда раньше там не был."
+  ],
+  "description": "Исходные разговорные фразы, разобранные по теме.",
+  "minutes": 5
+}

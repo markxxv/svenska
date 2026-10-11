@@ -1,0 +1,54 @@
+[
+  {
+    "type": "choice",
+    "question": "Как перевести: Det beror på hur mycket tid vi har.",
+    "options": [
+      "Это зависит от того, сколько у нас времени.",
+      "Пожалуйста.",
+      "Извините.",
+      "Ничего страшного."
+    ],
+    "answer": "Это зависит от того, сколько у нас времени.",
+    "explanation": "Повторите вслух: Det beror på hur mycket tid vi har."
+  },
+  {
+    "type": "choice",
+    "question": "Как перевести: Jag måste gå nu, annars blir jag sen.",
+    "options": [
+      "Где туалет?",
+      "Сколько это стоит?",
+      "Можно оплатить картой?",
+      "Мне нужно идти, иначе я опоздаю."
+    ],
+    "answer": "Мне нужно идти, иначе я опоздаю.",
+    "explanation": "Повторите вслух: Jag måste gå nu, annars blir jag sen."
+  },
+  {
+    "type": "choice",
+    "question": "Как перевести: Jag har redan gjort det.",
+    "options": [
+      "Я не знаю.",
+      "Увидимся позже.",
+      "Я уже это сделал.",
+      "Когда следующий поезд?"
+    ],
+    "answer": "Я уже это сделал.",
+    "explanation": "Повторите вслух: Jag har redan gjort det."
+  },
+  {
+    "type": "order",
+    "prompt": "Соберите по-шведски: Это зависит от того, сколько у нас времени.",
+    "words": [
+      "har.",
+      "vi",
+      "tid",
+      "mycket",
+      "hur",
+      "på",
+      "beror",
+      "Det"
+    ],
+    "answer": "Det beror på hur mycket tid vi har.",
+    "explanation": "Начните с главной конструкции и обратите внимание на порядок слов."
+  }
+]

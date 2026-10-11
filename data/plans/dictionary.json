@@ -1,0 +1,188 @@
+[
+  {
+    "sv": "jag",
+    "ru": "я",
+    "example": "Jag tänkte gå och handla efter jobbet.",
+    "category": "Планы"
+  },
+  {
+    "sv": "tänkte",
+    "ru": "думал / собирался",
+    "example": "jag tänkte…",
+    "category": "Планы"
+  },
+  {
+    "sv": "gå",
+    "ru": "идти",
+    "example": "Jag tänkte gå och handla efter jobbet.",
+    "category": "Планы"
+  },
+  {
+    "sv": "och",
+    "ru": "и",
+    "example": "Jag tänkte gå och handla efter jobbet.",
+    "category": "Планы"
+  },
+  {
+    "sv": "handla",
+    "ru": "делать покупки",
+    "example": "Jag tänkte gå och handla efter jobbet.",
+    "category": "Планы"
+  },
+  {
+    "sv": "efter",
+    "ru": "после",
+    "example": "Jag tänkte gå och handla efter jobbet.",
+    "category": "Планы"
+  },
+  {
+    "sv": "jobbet",
+    "ru": "работы",
+    "example": "Jag tänkte gå och handla efter jobbet.",
+    "category": "Планы"
+  },
+  {
+    "sv": "om",
+    "ru": "если",
+    "example": "Om du vill kan vi ses senare.",
+    "category": "Планы"
+  },
+  {
+    "sv": "du",
+    "ru": "ты",
+    "example": "Om du vill kan vi ses senare.",
+    "category": "Планы"
+  },
+  {
+    "sv": "vill",
+    "ru": "хочешь",
+    "example": "Om du vill kan vi ses senare.",
+    "category": "Планы"
+  },
+  {
+    "sv": "kan",
+    "ru": "можем",
+    "example": "Om du vill kan vi ses senare.",
+    "category": "Планы"
+  },
+  {
+    "sv": "vi",
+    "ru": "мы",
+    "example": "Om du vill kan vi ses senare.",
+    "category": "Планы"
+  },
+  {
+    "sv": "ses",
+    "ru": "встретиться / увидеться",
+    "example": "Om du vill kan vi ses senare.",
+    "category": "Планы"
+  },
+  {
+    "sv": "senare",
+    "ru": "позже",
+    "example": "Om du vill kan vi ses senare.",
+    "category": "Планы"
+  },
+  {
+    "sv": "vet",
+    "ru": "знаю",
+    "example": "Jag vet inte om jag hinner idag.",
+    "category": "Планы"
+  },
+  {
+    "sv": "inte",
+    "ru": "не",
+    "example": "Jag vet inte om jag hinner idag.",
+    "category": "Планы"
+  },
+  {
+    "sv": "hinner",
+    "ru": "успею",
+    "example": "Jag vet inte om jag hinner idag.",
+    "category": "Планы"
+  },
+  {
+    "sv": "idag",
+    "ru": "сегодня",
+    "example": "Jag vet inte om jag hinner idag.",
+    "category": "Планы"
+  },
+  {
+    "sv": "skulle",
+    "ru": "бы",
+    "example": "Jag skulle gärna följa med.",
+    "category": "Планы"
+  },
+  {
+    "sv": "gärna",
+    "ru": "с удовольствием",
+    "example": "skulle gärna",
+    "category": "Планы"
+  },
+  {
+    "sv": "följa",
+    "ru": "следовать / пойти",
+    "example": "Jag skulle gärna följa med.",
+    "category": "Планы"
+  },
+  {
+    "sv": "med",
+    "ru": "с",
+    "example": "följa med",
+    "category": "Планы"
+  },
+  {
+    "sv": "även",
+    "ru": "даже",
+    "example": "Även om det regnar tänker jag gå ut.",
+    "category": "Планы"
+  },
+  {
+    "sv": "det",
+    "ru": "это / формальное подлежащее",
+    "example": "Även om det regnar tänker jag gå ut.",
+    "category": "Планы"
+  },
+  {
+    "sv": "regnar",
+    "ru": "идёт дождь",
+    "example": "Även om det regnar tänker jag gå ut.",
+    "category": "Планы"
+  },
+  {
+    "sv": "ut",
+    "ru": "наружу / выйти",
+    "example": "gå ut",
+    "category": "Планы"
+  },
+  {
+    "sv": "så",
+    "ru": "так / как",
+    "example": "så fort",
+    "category": "Планы"
+  },
+  {
+    "sv": "fort",
+    "ru": "быстро / только",
+    "example": "så fort",
+    "category": "Планы"
+  },
+  {
+    "sv": "är",
+    "ru": "буду / есть",
+    "example": "Så fort jag är klar ringer jag dig.",
+    "category": "Планы"
+  },
+  {
+    "sv": "klar",
+    "ru": "готов / закончил",
+    "example": "är klar",
+    "category": "Планы"
+  },
+  {
+    "sv": "ringer",
+    "ru": "звоню / позвоню",
+    "example": "Så fort jag är klar ringer jag dig.",
+    "category": "Планы"
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "type": "choice",
+    "question": "Как перевести: När jag kommer hem ska jag laga middag.",
+    "options": [
+      "Когда я приду домой, я приготовлю ужин.",
+      "Пожалуйста.",
+      "Извините.",
+      "Ничего страшного."
+    ],
+    "answer": "Когда я приду домой, я приготовлю ужин.",
+    "explanation": "Повторите вслух: När jag kommer hem ska jag laga middag."
+  },
+  {
+    "type": "order",
+    "prompt": "Соберите по-шведски: Когда я приду домой, я приготовлю ужин.",
+    "words": [
+      "middag.",
+      "laga",
+      "jag",
+      "ska",
+      "hem",
+      "kommer",
+      "jag",
+      "När"
+    ],
+    "answer": "När jag kommer hem ska jag laga middag.",
+    "explanation": "Начните с главной конструкции и обратите внимание на порядок слов."
+  }
+]

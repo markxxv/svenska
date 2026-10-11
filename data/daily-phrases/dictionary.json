@@ -1,0 +1,104 @@
+[
+  {
+    "sv": "det",
+    "ru": "это",
+    "example": "Det beror på hur mycket tid vi har.",
+    "category": "Повседневная речь"
+  },
+  {
+    "sv": "beror",
+    "ru": "зависит",
+    "example": "beror på",
+    "category": "Повседневная речь"
+  },
+  {
+    "sv": "på",
+    "ru": "от",
+    "example": "beror på",
+    "category": "Повседневная речь"
+  },
+  {
+    "sv": "hur",
+    "ru": "как",
+    "example": "Det beror på hur mycket tid vi har.",
+    "category": "Повседневная речь"
+  },
+  {
+    "sv": "mycket",
+    "ru": "много / сколько",
+    "example": "hur mycket",
+    "category": "Повседневная речь"
+  },
+  {
+    "sv": "tid",
+    "ru": "времени",
+    "example": "Det beror på hur mycket tid vi har.",
+    "category": "Повседневная речь"
+  },
+  {
+    "sv": "vi",
+    "ru": "мы",
+    "example": "Det beror på hur mycket tid vi har.",
+    "category": "Повседневная речь"
+  },
+  {
+    "sv": "har",
+    "ru": "имеем / у нас есть",
+    "example": "Det beror på hur mycket tid vi har.",
+    "category": "Повседневная речь"
+  },
+  {
+    "sv": "jag",
+    "ru": "я",
+    "example": "Jag måste gå nu, annars blir jag sen.",
+    "category": "Повседневная речь"
+  },
+  {
+    "sv": "måste",
+    "ru": "должен / нужно",
+    "example": "Jag måste gå nu, annars blir jag sen.",
+    "category": "Повседневная речь"
+  },
+  {
+    "sv": "gå",
+    "ru": "идти",
+    "example": "Jag måste gå nu, annars blir jag sen.",
+    "category": "Повседневная речь"
+  },
+  {
+    "sv": "nu",
+    "ru": "сейчас",
+    "example": "Jag måste gå nu, annars blir jag sen.",
+    "category": "Повседневная речь"
+  },
+  {
+    "sv": "annars",
+    "ru": "иначе",
+    "example": "Jag måste gå nu, annars blir jag sen.",
+    "category": "Повседневная речь"
+  },
+  {
+    "sv": "blir",
+    "ru": "стану / окажусь",
+    "example": "Jag måste gå nu, annars blir jag sen.",
+    "category": "Повседневная речь"
+  },
+  {
+    "sv": "sen",
+    "ru": "поздно / опоздавший",
+    "example": "bli sen",
+    "category": "Повседневная речь"
+  },
+  {
+    "sv": "redan",
+    "ru": "уже",
+    "example": "Jag har redan gjort det.",
+    "category": "Повседневная речь"
+  },
+  {
+    "sv": "gjort",
+    "ru": "сделал",
+    "example": "har gjort",
+    "category": "Повседневная речь"
+  }
+]

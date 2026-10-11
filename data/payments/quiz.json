@@ -1,0 +1,38 @@
+[
+  {
+    "type": "choice",
+    "question": "Как перевести: Hur mycket kostar det?",
+    "options": [
+      "Сколько это стоит?",
+      "Пожалуйста.",
+      "Извините.",
+      "Ничего страшного."
+    ],
+    "answer": "Сколько это стоит?",
+    "explanation": "Повторите вслух: Hur mycket kostar det?"
+  },
+  {
+    "type": "choice",
+    "question": "Как перевести: Kan jag betala med kort?",
+    "options": [
+      "Где туалет?",
+      "Сколько это стоит?",
+      "Я бы хотел кофе, пожалуйста.",
+      "Можно оплатить картой?"
+    ],
+    "answer": "Можно оплатить картой?",
+    "explanation": "Повторите вслух: Kan jag betala med kort?"
+  },
+  {
+    "type": "order",
+    "prompt": "Соберите по-шведски: Сколько это стоит?",
+    "words": [
+      "det?",
+      "kostar",
+      "mycket",
+      "Hur"
+    ],
+    "answer": "Hur mycket kostar det?",
+    "explanation": "Начните с главной конструкции и обратите внимание на порядок слов."
+  }
+]

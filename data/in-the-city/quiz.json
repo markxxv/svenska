@@ -1,0 +1,64 @@
+[
+  {
+    "type": "choice",
+    "question": "Как перевести: Var ligger toaletten?",
+    "options": [
+      "Где туалет?",
+      "Пожалуйста.",
+      "Извините.",
+      "Ничего страшного."
+    ],
+    "answer": "Где туалет?",
+    "explanation": "Повторите вслух: Var ligger toaletten?"
+  },
+  {
+    "type": "choice",
+    "question": "Как перевести: Jag letar efter den här adressen.",
+    "options": [
+      "Где туалет?",
+      "Сколько это стоит?",
+      "Можно оплатить картой?",
+      "Я ищу этот адрес."
+    ],
+    "answer": "Я ищу этот адрес.",
+    "explanation": "Повторите вслух: Jag letar efter den här adressen."
+  },
+  {
+    "type": "choice",
+    "question": "Как перевести: Kan du hjälpa mig att hitta rätt?",
+    "options": [
+      "Я не знаю.",
+      "Увидимся позже.",
+      "Можешь помочь мне найти нужное место?",
+      "Когда следующий поезд?"
+    ],
+    "answer": "Можешь помочь мне найти нужное место?",
+    "explanation": "Повторите вслух: Kan du hjälpa mig att hitta rätt?"
+  },
+  {
+    "type": "choice",
+    "question": "Как перевести: Det tar ungefär tjugo minuter att gå dit.",
+    "options": [
+      "Когда я приду домой, я приготовлю ужин.",
+      "Туда идти примерно двадцать минут.",
+      "Это зависит от того, сколько у нас времени.",
+      "Мне нужно идти, иначе я опоздаю."
+    ],
+    "answer": "Туда идти примерно двадцать минут.",
+    "explanation": "Повторите вслух: Det tar ungefär tjugo minuter att gå dit."
+  },
+  {
+    "type": "order",
+    "prompt": "Соберите по-шведски: Я ищу этот адрес.",
+    "words": [
+      "adressen.",
+      "här",
+      "den",
+      "efter",
+      "letar",
+      "Jag"
+    ],
+    "answer": "Jag letar efter den här adressen.",
+    "explanation": "Начните с главной конструкции и обратите внимание на порядок слов."
+  }
+]

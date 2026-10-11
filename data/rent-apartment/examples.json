@@ -1,0 +1,39 @@
+[
+  {
+    "sv": "Jag söker en lägenhet att hyra.",
+    "ru": "Я ищу квартиру в аренду."
+  },
+  {
+    "sv": "Finns lägenheten fortfarande kvar?",
+    "ru": "Квартира ещё доступна?",
+    "note": "Естественный вопрос, актуально ли объявление."
+  },
+  {
+    "sv": "Kan jag boka en visning?",
+    "ru": "Можно записаться на просмотр?"
+  },
+  {
+    "sv": "Hur stor är lägenheten?",
+    "ru": "Какова площадь квартиры?"
+  },
+  {
+    "sv": "Hur mycket är månadshyran?",
+    "ru": "Сколько составляет аренда в месяц?"
+  },
+  {
+    "sv": "Ingår el och vatten i hyran?",
+    "ru": "Электричество и вода включены в аренду?"
+  },
+  {
+    "sv": "Är lägenheten möblerad?",
+    "ru": "Квартира меблированная?"
+  },
+  {
+    "sv": "När kan jag flytta in?",
+    "ru": "Когда можно въехать?"
+  },
+  {
+    "sv": "Kan jag läsa hyreskontraktet?",
+    "ru": "Можно прочитать договор аренды?"
+  }
+]

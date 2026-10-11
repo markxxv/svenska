@@ -1,0 +1,32 @@
+[
+  {
+    "sv": "Jag bor i Sverige.",
+    "ru": "Я живу в Швеции.",
+    "note": "Подлежащее + глагол + место."
+  },
+  {
+    "sv": "Vi jobbar idag.",
+    "ru": "Мы сегодня работаем.",
+    "note": "Одинаковое jobbar для всех лиц."
+  },
+  {
+    "sv": "Idag jobbar jag hemma.",
+    "ru": "Сегодня я работаю дома.",
+    "note": "После idag глагол на втором месте."
+  },
+  {
+    "sv": "Jag vill köpa en bil.",
+    "ru": "Я хочу купить машину.",
+    "note": "После vill — köpa, не köper."
+  },
+  {
+    "sv": "Kan du hjälpa mig?",
+    "ru": "Можешь мне помочь?",
+    "note": "Вопрос начинается с kan."
+  },
+  {
+    "sv": "Jag förstår inte.",
+    "ru": "Я не понимаю.",
+    "note": "Inte после förstår."
+  }
+]

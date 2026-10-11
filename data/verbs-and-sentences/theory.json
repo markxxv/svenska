@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Главное предложение",
+    "body": "Базовый порядок: кто + глагол + остальное. Jag bor i Sverige. Vi jobbar idag. Глагол в настоящем времени часто заканчивается на -r.",
+    "pattern": "Jag jobbar idag.",
+    "translation": "Я сегодня работаю."
+  },
+  {
+    "title": "Правило V2",
+    "body": "В главном утвердительном предложении спрягаемый глагол занимает вторую позицию. Если начать с idag, говорите: Idag jobbar jag hemma, а не Idag jag jobbar hemma.",
+    "pattern": "Idag jobbar jag hemma.",
+    "translation": "Сегодня я работаю дома."
+  },
+  {
+    "title": "Вопрос и отрицание",
+    "body": "В вопросе без вопросительного слова глагол идёт первым: Kan du hjälpa mig? В простом главном предложении inte обычно стоит после спрягаемого глагола: Jag förstår inte.",
+    "pattern": "Jag förstår inte.",
+    "translation": "Я не понимаю."
+  },
+  {
+    "title": "Два глагола рядом",
+    "body": "После kan, vill, ska, måste следующий глагол употребляется в начальной форме без att: Jag vill köpa, vi ska gå, du kan prata.",
+    "pattern": "Jag vill köpa en bil.",
+    "translation": "Я хочу купить машину."
+  }
+]

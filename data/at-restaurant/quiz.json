@@ -1,0 +1,45 @@
+[
+  {
+    "type": "choice",
+    "question": "Как попросить столик на двоих?",
+    "options": [
+      "Har ni ett bord för två?",
+      "Jag köper ett bord.",
+      "Var går bordet?"
+    ],
+    "answer": "Har ni ett bord för två?"
+  },
+  {
+    "type": "order",
+    "prompt": "Соберите «Можно нам счёт, пожалуйста?»",
+    "words": [
+      "notan,",
+      "Kan",
+      "tack?",
+      "få",
+      "vi"
+    ],
+    "answer": "Kan vi få notan, tack?"
+  },
+  {
+    "type": "choice",
+    "question": "Что значит «dagens rätt»?",
+    "options": [
+      "Столик",
+      "Блюдо дня",
+      "Меню напитков",
+      "Счёт"
+    ],
+    "answer": "Блюдо дня"
+  },
+  {
+    "type": "choice",
+    "question": "Как уточнить наличие орехов?",
+    "options": [
+      "Har du notan?",
+      "Innehåller den nötter?",
+      "Var ligger bordet?"
+    ],
+    "answer": "Innehåller den nötter?"
+  }
+]

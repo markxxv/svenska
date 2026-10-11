@@ -1,0 +1,47 @@
+[
+  {
+    "sv": "vilken",
+    "ru": "какой",
+    "example": "Vilken buss ska jag ta?"
+  },
+  {
+    "sv": "buss",
+    "ru": "автобус",
+    "example": "Vilken buss ska jag ta?"
+  },
+  {
+    "sv": "ska",
+    "ru": "нужно / следует",
+    "example": "Vilken buss ska jag ta?"
+  },
+  {
+    "sv": "jag",
+    "ru": "я",
+    "example": "Vilken buss ska jag ta?"
+  },
+  {
+    "sv": "ta",
+    "ru": "взять / сесть на",
+    "example": "Vilken buss ska jag ta?"
+  },
+  {
+    "sv": "när",
+    "ru": "когда",
+    "example": "När går nästa tåg?"
+  },
+  {
+    "sv": "går",
+    "ru": "идёт / отправляется",
+    "example": "När går nästa tåg?"
+  },
+  {
+    "sv": "nästa",
+    "ru": "следующий",
+    "example": "När går nästa tåg?"
+  },
+  {
+    "sv": "tåg",
+    "ru": "поезд",
+    "example": "När går nästa tåg?"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "sv": "jag",
+    "ru": "я",
+    "example": "Jag skulle vilja ha en kaffe, tack.",
+    "category": "Кафе"
+  },
+  {
+    "sv": "skulle",
+    "ru": "бы",
+    "example": "skulle vilja",
+    "category": "Кафе"
+  },
+  {
+    "sv": "vilja",
+    "ru": "хотеть",
+    "example": "skulle vilja",
+    "category": "Кафе"
+  },
+  {
+    "sv": "ha",
+    "ru": "иметь / получить",
+    "example": "Jag skulle vilja ha en kaffe, tack.",
+    "category": "Кафе"
+  },
+  {
+    "sv": "en",
+    "ru": "неопределённый артикль",
+    "example": "Jag skulle vilja ha en kaffe, tack.",
+    "category": "Кафе"
+  },
+  {
+    "sv": "kaffe",
+    "ru": "кофе",
+    "example": "Jag skulle vilja ha en kaffe, tack.",
+    "category": "Кафе"
+  },
+  {
+    "sv": "tack",
+    "ru": "пожалуйста",
+    "example": "Jag skulle vilja ha en kaffe, tack.",
+    "category": "Кафе"
+  },
+  {
+    "sv": "kan",
+    "ru": "можно / могу",
+    "example": "Kan jag få notan, tack?",
+    "category": "Кафе"
+  },
+  {
+    "sv": "få",
+    "ru": "получить",
+    "example": "Kan jag få…?",
+    "category": "Кафе"
+  },
+  {
+    "sv": "notan",
+    "ru": "счёт",
+    "example": "Kan jag få notan, tack?",
+    "category": "Кафе"
+  }
+]

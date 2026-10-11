@@ -1,0 +1,65 @@
+[
+  {
+    "type": "choice",
+    "question": "Как перевести: Jag tänkte gå och handla efter jobbet.",
+    "options": [
+      "Я собирался зайти за покупками после работы.",
+      "Пожалуйста.",
+      "Извините.",
+      "Ничего страшного."
+    ],
+    "answer": "Я собирался зайти за покупками после работы.",
+    "explanation": "Повторите вслух: Jag tänkte gå och handla efter jobbet."
+  },
+  {
+    "type": "choice",
+    "question": "Как перевести: Om du vill kan vi ses senare.",
+    "options": [
+      "Где туалет?",
+      "Сколько это стоит?",
+      "Можно оплатить картой?",
+      "Если хочешь, можем встретиться позже."
+    ],
+    "answer": "Если хочешь, можем встретиться позже.",
+    "explanation": "Повторите вслух: Om du vill kan vi ses senare."
+  },
+  {
+    "type": "choice",
+    "question": "Как перевести: Jag vet inte om jag hinner idag.",
+    "options": [
+      "Я не знаю.",
+      "Увидимся позже.",
+      "Я не знаю, успею ли я сегодня.",
+      "Когда следующий поезд?"
+    ],
+    "answer": "Я не знаю, успею ли я сегодня.",
+    "explanation": "Повторите вслух: Jag vet inte om jag hinner idag."
+  },
+  {
+    "type": "choice",
+    "question": "Как перевести: Jag skulle gärna följa med.",
+    "options": [
+      "Когда я приду домой, я приготовлю ужин.",
+      "Я бы с удовольствием пошёл с вами.",
+      "Это зависит от того, сколько у нас времени.",
+      "Мне нужно идти, иначе я опоздаю."
+    ],
+    "answer": "Я бы с удовольствием пошёл с вами.",
+    "explanation": "Повторите вслух: Jag skulle gärna följa med."
+  },
+  {
+    "type": "order",
+    "prompt": "Соберите по-шведски: Я собирался зайти за покупками после работы.",
+    "words": [
+      "jobbet.",
+      "efter",
+      "handla",
+      "och",
+      "gå",
+      "tänkte",
+      "Jag"
+    ],
+    "answer": "Jag tänkte gå och handla efter jobbet.",
+    "explanation": "Начните с главной конструкции и обратите внимание на порядок слов."
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "sv": "jag",
+    "ru": "я",
+    "example": "Jag förstår inte."
+  },
+  {
+    "sv": "förstår",
+    "ru": "понимаю",
+    "example": "Jag förstår inte."
+  },
+  {
+    "sv": "inte",
+    "ru": "не",
+    "example": "Jag förstår inte."
+  },
+  {
+    "sv": "kan",
+    "ru": "можешь",
+    "example": "Kan du säga det igen?"
+  },
+  {
+    "sv": "du",
+    "ru": "ты",
+    "example": "Kan du säga det igen?"
+  },
+  {
+    "sv": "säga",
+    "ru": "сказать",
+    "example": "Kan du säga det igen?"
+  },
+  {
+    "sv": "det",
+    "ru": "это",
+    "example": "Kan du säga det igen?"
+  },
+  {
+    "sv": "igen",
+    "ru": "снова / ещё раз",
+    "example": "säga det igen"
+  },
+  {
+    "sv": "prata",
+    "ru": "говорить",
+    "example": "Kan du prata lite långsammare?"
+  },
+  {
+    "sv": "lite",
+    "ru": "немного",
+    "example": "Kan du prata lite långsammare?"
+  },
+  {
+    "sv": "långsammare",
+    "ru": "медленнее",
+    "example": "Kan du prata lite långsammare?"
+  },
+  {
+    "sv": "vad",
+    "ru": "что",
+    "example": "Vad betyder det?"
+  }
+]

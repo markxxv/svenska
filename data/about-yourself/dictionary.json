@@ -1,0 +1,44 @@
+[
+  {
+    "sv": "jag",
+    "ru": "я",
+    "example": "Jag har bott här i tre år.",
+    "category": "О себе"
+  },
+  {
+    "sv": "har",
+    "ru": "имею / вспомогательный глагол",
+    "example": "Jag har bott här i tre år.",
+    "category": "О себе"
+  },
+  {
+    "sv": "bott",
+    "ru": "жил / живу",
+    "example": "har bott",
+    "category": "О себе"
+  },
+  {
+    "sv": "här",
+    "ru": "здесь",
+    "example": "Jag har bott här i tre år.",
+    "category": "О себе"
+  },
+  {
+    "sv": "i",
+    "ru": "в / на протяжении",
+    "example": "Jag har bott här i tre år.",
+    "category": "О себе"
+  },
+  {
+    "sv": "tre",
+    "ru": "три",
+    "example": "Jag har bott här i tre år.",
+    "category": "О себе"
+  },
+  {
+    "sv": "år",
+    "ru": "года",
+    "example": "Jag har bott här i tre år.",
+    "category": "О себе"
+  }
+]

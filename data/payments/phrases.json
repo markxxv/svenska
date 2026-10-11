@@ -1,0 +1,69 @@
+[
+  {
+    "id": 12,
+    "text": "Hur mycket kostar det?",
+    "translation": "Сколько это стоит?",
+    "topic": "Покупки",
+    "words": [
+      [
+        "Hur",
+        "hur",
+        "как"
+      ],
+      [
+        "mycket",
+        "mycket",
+        "много / сколько",
+        "\"hur mycket\" — «сколько».",
+        "hur mycket",
+        "сколько"
+      ],
+      [
+        "kostar",
+        "kosta",
+        "стоит"
+      ],
+      [
+        "det",
+        "det",
+        "это"
+      ]
+    ]
+  },
+  {
+    "id": 13,
+    "text": "Kan jag betala med kort?",
+    "translation": "Можно оплатить картой?",
+    "topic": "Покупки",
+    "words": [
+      [
+        "Kan",
+        "kunna",
+        "могу / можно"
+      ],
+      [
+        "jag",
+        "jag",
+        "я"
+      ],
+      [
+        "betala",
+        "betala",
+        "платить / оплатить"
+      ],
+      [
+        "med",
+        "med",
+        "с / при помощи"
+      ],
+      [
+        "kort",
+        "kort",
+        "карта",
+        "\"med kort\" — картой.",
+        "betala med kort",
+        "платить картой"
+      ]
+    ]
+  }
+]

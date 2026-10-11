@@ -1,0 +1,77 @@
+[
+  {
+    "sv": "en lägenhet",
+    "ru": "квартира",
+    "category": "Объект"
+  },
+  {
+    "sv": "ett hus",
+    "ru": "дом",
+    "category": "Объект"
+  },
+  {
+    "sv": "ett rum",
+    "ru": "комната",
+    "category": "Объект"
+  },
+  {
+    "sv": "en balkong",
+    "ru": "балкон",
+    "category": "Объект"
+  },
+  {
+    "sv": "möblerad",
+    "ru": "меблированная",
+    "category": "Объект"
+  },
+  {
+    "sv": "omöblerad",
+    "ru": "без мебели",
+    "category": "Объект"
+  },
+  {
+    "sv": "hyra",
+    "ru": "арендовать / аренда",
+    "category": "Аренда"
+  },
+  {
+    "sv": "månadshyra",
+    "ru": "плата за месяц",
+    "category": "Аренда"
+  },
+  {
+    "sv": "deposition",
+    "ru": "залог",
+    "category": "Аренда"
+  },
+  {
+    "sv": "uppsägningstid",
+    "ru": "срок уведомления о расторжении",
+    "category": "Аренда"
+  },
+  {
+    "sv": "ett hyreskontrakt",
+    "ru": "договор аренды",
+    "category": "Договор"
+  },
+  {
+    "sv": "en visning",
+    "ru": "просмотр",
+    "category": "Договор"
+  },
+  {
+    "sv": "el",
+    "ru": "электричество",
+    "category": "Расходы"
+  },
+  {
+    "sv": "vatten",
+    "ru": "вода",
+    "category": "Расходы"
+  },
+  {
+    "sv": "värme",
+    "ru": "отопление",
+    "category": "Расходы"
+  }
+]

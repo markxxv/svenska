@@ -1,0 +1,439 @@
+{
+  "version": 1,
+  "topics": [
+    {
+      "slug": "basic-phrases",
+      "title": "Приветствия и вежливость",
+      "group": "start",
+      "groupTitle": "Начинаем говорить",
+      "emoji": "👋",
+      "order": 1,
+      "outcome": "Поздороваться, поблагодарить и попрощаться",
+      "theory": [
+        "Приветствия в Швеции",
+        "Hej — универсальное «привет»: подойдёт и незнакомому человеку, и другу.",
+        "Hej!",
+        "Привет!"
+      ],
+      "description": "Исходные разговорные фразы, разобранные по теме.",
+      "minutes": 5,
+      "files": {
+        "theory": "theory.json",
+        "examples": "examples.json",
+        "cards": "cards.json",
+        "phrases": "phrases.json",
+        "dictionary": "dictionary.json",
+        "quiz": "quiz.json"
+      }
+    },
+    {
+      "slug": "communication",
+      "title": "Когда не понимаете собеседника",
+      "group": "start",
+      "groupTitle": "Начинаем говорить",
+      "emoji": "💬",
+      "order": 2,
+      "outcome": "Попросить повторить и говорить медленнее",
+      "theory": [
+        "Не бойтесь переспросить",
+        "Kan du…? — удобный способ вежливо попросить другого человека что-то сделать. После kan и du используйте начальную форму глагола.",
+        "Kan du säga det igen?",
+        "Можешь повторить?"
+      ],
+      "description": "Исходные разговорные фразы, разобранные по теме.",
+      "minutes": 5,
+      "files": {
+        "theory": "theory.json",
+        "examples": "examples.json",
+        "cards": "cards.json",
+        "phrases": "phrases.json",
+        "dictionary": "dictionary.json",
+        "quiz": "quiz.json"
+      }
+    },
+    {
+      "slug": "about-yourself",
+      "title": "Рассказать о себе",
+      "group": "start",
+      "groupTitle": "Начинаем говорить",
+      "emoji": "🙋",
+      "order": 3,
+      "outcome": "Сказать, как давно вы где-то живёте",
+      "theory": [
+        "Говорим о своём опыте",
+        "Har + форма причастия прошедшего времени показывает, что действие началось раньше и связано с настоящим: jag har bott здесь означает «я жил / живу уже некоторое время».",
+        "Jag har bott här i tre år.",
+        "Я живу здесь уже три года."
+      ],
+      "description": "Исходные разговорные фразы, разобранные по теме.",
+      "minutes": 5,
+      "files": {
+        "theory": "theory.json",
+        "examples": "examples.json",
+        "cards": "cards.json",
+        "phrases": "phrases.json",
+        "dictionary": "dictionary.json",
+        "quiz": "quiz.json"
+      }
+    },
+    {
+      "slug": "learning-swedish",
+      "title": "Говорить об изучении языка",
+      "group": "start",
+      "groupTitle": "Начинаем говорить",
+      "emoji": "📚",
+      "order": 4,
+      "outcome": "Рассказать о том, что вы учите шведский",
+      "theory": [
+        "Процесс обучения",
+        "Jag försöker… — «я стараюсь…». Lära mig означает «учиться самому / выучить». Не обязательно понимать каждое слово: используйте целую конструкцию.",
+        "Jag försöker lära mig svenska.",
+        "Я пытаюсь выучить шведский."
+      ],
+      "description": "Исходные разговорные фразы, разобранные по теме.",
+      "minutes": 5,
+      "files": {
+        "theory": "theory.json",
+        "examples": "examples.json",
+        "cards": "cards.json",
+        "phrases": "phrases.json",
+        "dictionary": "dictionary.json",
+        "quiz": "quiz.json"
+      }
+    },
+    {
+      "slug": "order-food",
+      "title": "Заказать пиццу или кебаб",
+      "group": "food",
+      "groupTitle": "Еда и кафе",
+      "emoji": "🥙",
+      "order": 1,
+      "minutes": 7,
+      "description": "От первого «здравствуйте» до оплаты. Пицца, кебаб, добавки и еда с собой.",
+      "outcome": "Самостоятельно заказать кебаб или пиццу по-шведски",
+      "files": {
+        "theory": "theory.json",
+        "examples": "examples.json",
+        "cards": "cards.json",
+        "phrases": "phrases.json",
+        "dictionary": "dictionary.json",
+        "quiz": "quiz.json"
+      }
+    },
+    {
+      "slug": "at-cafe",
+      "title": "Кофе и счёт",
+      "group": "food",
+      "groupTitle": "Еда и кафе",
+      "emoji": "☕",
+      "order": 2,
+      "outcome": "Заказать кофе и попросить счёт",
+      "theory": [
+        "Вежливый заказ",
+        "Jag skulle vilja ha… — вежливое «Я бы хотел…». Kan jag få…? — «Можно мне…?». В конце просьбы часто добавляют tack.",
+        "Kan jag få notan, tack?",
+        "Можно счёт, пожалуйста?"
+      ],
+      "description": "Исходные разговорные фразы, разобранные по теме.",
+      "minutes": 5,
+      "files": {
+        "theory": "theory.json",
+        "examples": "examples.json",
+        "cards": "cards.json",
+        "phrases": "phrases.json",
+        "dictionary": "dictionary.json",
+        "quiz": "quiz.json"
+      }
+    },
+    {
+      "slug": "at-restaurant",
+      "title": "В ресторане",
+      "group": "food",
+      "groupTitle": "Еда и кафе",
+      "emoji": "🍽️",
+      "order": 3,
+      "minutes": 6,
+      "description": "Столик, меню, заказ, аллергии и счёт.",
+      "outcome": "Заказать еду за столиком, задать вопрос официанту и попросить счёт",
+      "files": {
+        "theory": "theory.json",
+        "examples": "examples.json",
+        "cards": "cards.json",
+        "dictionary": "dictionary.json",
+        "quiz": "quiz.json"
+      }
+    },
+    {
+      "slug": "in-store",
+      "title": "В магазине",
+      "group": "life",
+      "groupTitle": "Повседневные ситуации",
+      "emoji": "🛍️",
+      "order": 1,
+      "minutes": 6,
+      "description": "Найти размер, спросить цену, примерить и вернуть покупку.",
+      "outcome": "Купить вещь в магазине и обсудить размер или возврат",
+      "files": {
+        "theory": "theory.json",
+        "examples": "examples.json",
+        "cards": "cards.json",
+        "dictionary": "dictionary.json",
+        "quiz": "quiz.json"
+      }
+    },
+    {
+      "slug": "payments",
+      "title": "Цена и оплата",
+      "group": "life",
+      "groupTitle": "Повседневные ситуации",
+      "emoji": "💳",
+      "order": 2,
+      "outcome": "Узнать цену и расплатиться картой",
+      "theory": [
+        "Покупка без лишних слов",
+        "Hur mycket kostar…? — «Сколько стоит…?». Betala med kort — «платить картой», med означает «с помощью».",
+        "Kan jag betala med kort?",
+        "Можно оплатить картой?"
+      ],
+      "description": "Исходные разговорные фразы, разобранные по теме.",
+      "minutes": 5,
+      "files": {
+        "theory": "theory.json",
+        "examples": "examples.json",
+        "cards": "cards.json",
+        "phrases": "phrases.json",
+        "dictionary": "dictionary.json",
+        "quiz": "quiz.json"
+      }
+    },
+    {
+      "slug": "in-the-city",
+      "title": "Спросить дорогу",
+      "group": "life",
+      "groupTitle": "Повседневные ситуации",
+      "emoji": "📍",
+      "order": 3,
+      "outcome": "Найти адрес и спросить, сколько идти",
+      "theory": [
+        "Как спрашивать дорогу",
+        "Var — «где», когда речь идёт о месте. Для расположения здания часто используют ligger. Вопрос начинается со слова var.",
+        "Var ligger toaletten?",
+        "Где находится туалет?"
+      ],
+      "description": "Исходные разговорные фразы, разобранные по теме.",
+      "minutes": 5,
+      "files": {
+        "theory": "theory.json",
+        "examples": "examples.json",
+        "cards": "cards.json",
+        "phrases": "phrases.json",
+        "dictionary": "dictionary.json",
+        "quiz": "quiz.json"
+      }
+    },
+    {
+      "slug": "transport",
+      "title": "Автобус и поезд",
+      "group": "life",
+      "groupTitle": "Повседневные ситуации",
+      "emoji": "🚆",
+      "order": 4,
+      "outcome": "Узнать об отправлении и нужном маршруте",
+      "theory": [
+        "Вопрос о транспорте",
+        "När — «когда». Какой автобус — vilken buss. Глагол gå используется также об отправлении транспорта.",
+        "När går nästa tåg?",
+        "Когда отправляется следующий поезд?"
+      ],
+      "description": "Исходные разговорные фразы, разобранные по теме.",
+      "minutes": 5,
+      "files": {
+        "theory": "theory.json",
+        "examples": "examples.json",
+        "cards": "cards.json",
+        "phrases": "phrases.json",
+        "dictionary": "dictionary.json",
+        "quiz": "quiz.json"
+      }
+    },
+    {
+      "slug": "at-home",
+      "title": "Дела дома",
+      "group": "life",
+      "groupTitle": "Повседневные ситуации",
+      "emoji": "🏡",
+      "order": 5,
+      "outcome": "Сказать, что будете делать по возвращении",
+      "theory": [
+        "Когда я вернусь…",
+        "В шведском после вводной части När jag kommer hem… главная часть начинается с глагола: …ska jag laga middag.",
+        "När jag kommer hem ska jag laga middag.",
+        "Когда я приду домой, приготовлю ужин."
+      ],
+      "description": "Исходные разговорные фразы, разобранные по теме.",
+      "minutes": 5,
+      "files": {
+        "theory": "theory.json",
+        "examples": "examples.json",
+        "cards": "cards.json",
+        "phrases": "phrases.json",
+        "dictionary": "dictionary.json",
+        "quiz": "quiz.json"
+      }
+    },
+    {
+      "slug": "pronouns",
+      "title": "Местоимения: я, ты, мы",
+      "group": "grammar",
+      "groupTitle": "Строим предложения",
+      "emoji": "👥",
+      "order": 1,
+      "minutes": 6,
+      "description": "Кто говорит и к кому обращаются. Разбираем местоимения на простых фразах.",
+      "outcome": "Строить фразы про себя, собеседника и других людей",
+      "files": {
+        "theory": "theory.json",
+        "examples": "examples.json",
+        "cards": "cards.json",
+        "dictionary": "dictionary.json",
+        "quiz": "quiz.json"
+      }
+    },
+    {
+      "slug": "verbs-and-sentences",
+      "title": "Глаголы и порядок слов",
+      "group": "grammar",
+      "groupTitle": "Строим предложения",
+      "emoji": "🔤",
+      "order": 2,
+      "minutes": 7,
+      "description": "От «я работаю» до «сегодня я работаю дома». Простая система построения фраз.",
+      "outcome": "Самостоятельно собирать утвердительные и вопросительные предложения",
+      "files": {
+        "theory": "theory.json",
+        "examples": "examples.json",
+        "cards": "cards.json",
+        "dictionary": "dictionary.json",
+        "quiz": "quiz.json"
+      }
+    },
+    {
+      "slug": "daily-phrases",
+      "title": "Частые конструкции",
+      "group": "grammar",
+      "groupTitle": "Строим предложения",
+      "emoji": "🧩",
+      "order": 4,
+      "outcome": "Говорить о времени, причинах и готовности",
+      "theory": [
+        "Готовые блоки речи",
+        "Det beror på… — «это зависит от…». Det tar… — «это занимает…». Частые конструкции лучше запоминать как цельные выражения.",
+        "Det beror på hur mycket tid vi har.",
+        "Это зависит от того, сколько у нас времени."
+      ],
+      "description": "Исходные разговорные фразы, разобранные по теме.",
+      "minutes": 5,
+      "files": {
+        "theory": "theory.json",
+        "examples": "examples.json",
+        "cards": "cards.json",
+        "phrases": "phrases.json",
+        "dictionary": "dictionary.json",
+        "quiz": "quiz.json"
+      }
+    },
+    {
+      "slug": "plans",
+      "title": "Планы и договорённости",
+      "group": "grammar",
+      "groupTitle": "Строим предложения",
+      "emoji": "🗓️",
+      "order": 5,
+      "outcome": "Предлагать встретиться и говорить о намерениях",
+      "theory": [
+        "Намерения и возможности",
+        "Jag tänker… — «я собираюсь…». Om du vill — «если хочешь». Эти конструкции помогают согласовать планы без сложной грамматики.",
+        "Om du vill kan vi ses senare.",
+        "Если хочешь, можем встретиться позже."
+      ],
+      "description": "Исходные разговорные фразы, разобранные по теме.",
+      "minutes": 5,
+      "files": {
+        "theory": "theory.json",
+        "examples": "examples.json",
+        "cards": "cards.json",
+        "phrases": "phrases.json",
+        "dictionary": "dictionary.json",
+        "quiz": "quiz.json"
+      }
+    },
+    {
+      "slug": "experience",
+      "title": "Опыт и впечатления",
+      "group": "grammar",
+      "groupTitle": "Строим предложения",
+      "emoji": "✨",
+      "order": 6,
+      "outcome": "Сказать, что были где-то впервые или никогда не были",
+      "theory": [
+        "Har varit — был / бывал",
+        "Для жизненного опыта часто используют har + supinum: har varit, har gjort. Aldrig — «никогда».",
+        "Jag har aldrig varit där förut.",
+        "Я никогда раньше там не был."
+      ],
+      "description": "Исходные разговорные фразы, разобранные по теме.",
+      "minutes": 5,
+      "files": {
+        "theory": "theory.json",
+        "examples": "examples.json",
+        "cards": "cards.json",
+        "phrases": "phrases.json",
+        "dictionary": "dictionary.json",
+        "quiz": "quiz.json"
+      }
+    },
+    {
+      "slug": "complex-conversation",
+      "title": "Более сложный разговор",
+      "group": "grammar",
+      "groupTitle": "Строим предложения",
+      "emoji": "🗣️",
+      "order": 7,
+      "outcome": "Выразить сомнение, воспоминание и сожаление",
+      "theory": [
+        "Сомнение и условность",
+        "Jag trodde att… — «я думал, что…». Jag är inte säker på… — «я не уверен насчёт…». Запоминайте целые шаблоны.",
+        "Jag är inte säker på vad jag ska göra.",
+        "Я не уверен, что делать."
+      ],
+      "description": "Исходные разговорные фразы, разобранные по теме.",
+      "minutes": 5,
+      "files": {
+        "theory": "theory.json",
+        "examples": "examples.json",
+        "cards": "cards.json",
+        "phrases": "phrases.json",
+        "dictionary": "dictionary.json",
+        "quiz": "quiz.json"
+      }
+    },
+    {
+      "slug": "rent-apartment",
+      "title": "Арендовать квартиру",
+      "group": "housing",
+      "groupTitle": "Жильё и недвижимость",
+      "emoji": "🏠",
+      "order": 1,
+      "minutes": 8,
+      "description": "Поиск жилья, просмотр квартиры, условия договора и коммунальные платежи.",
+      "outcome": "Спросить о квартире, записаться на просмотр и уточнить условия аренды",
+      "files": {
+        "theory": "theory.json",
+        "examples": "examples.json",
+        "cards": "cards.json",
+        "dictionary": "dictionary.json",
+        "quiz": "quiz.json"
+      }
+    }
+  ]
+}

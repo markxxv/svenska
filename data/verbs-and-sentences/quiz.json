@@ -1,0 +1,45 @@
+[
+  {
+    "type": "choice",
+    "question": "Как правильно: «Сегодня я работаю дома»?",
+    "options": [
+      "Idag jag jobbar hemma.",
+      "Idag jobbar jag hemma.",
+      "Idag hemma jag jobbar."
+    ],
+    "answer": "Idag jobbar jag hemma.",
+    "explanation": "V2: глагол на второй позиции."
+  },
+  {
+    "type": "order",
+    "prompt": "Соберите «Я не понимаю»",
+    "words": [
+      "inte.",
+      "Jag",
+      "förstår"
+    ],
+    "answer": "Jag förstår inte."
+  },
+  {
+    "type": "choice",
+    "question": "Что правильно после «Jag vill»?",
+    "options": [
+      "köper en bil",
+      "köpa en bil",
+      "köpt en bil"
+    ],
+    "answer": "köpa en bil",
+    "explanation": "После vill инфинитив без att."
+  },
+  {
+    "type": "order",
+    "prompt": "Соберите вопрос «Ты можешь помочь мне?»",
+    "words": [
+      "mig?",
+      "du",
+      "Kan",
+      "hjälpa"
+    ],
+    "answer": "Kan du hjälpa mig?"
+  }
+]

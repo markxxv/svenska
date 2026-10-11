@@ -1,0 +1,40 @@
+[
+  {
+    "type": "choice",
+    "question": "Как перевести: Jag har aldrig varit där förut.",
+    "options": [
+      "Я никогда раньше там не был.",
+      "Пожалуйста.",
+      "Извините.",
+      "Ничего страшного."
+    ],
+    "answer": "Я никогда раньше там не был.",
+    "explanation": "Повторите вслух: Jag har aldrig varit där förut."
+  },
+  {
+    "type": "choice",
+    "question": "Как перевести: Det är första gången jag är här.",
+    "options": [
+      "Где туалет?",
+      "Сколько это стоит?",
+      "Можно оплатить картой?",
+      "Я здесь впервые."
+    ],
+    "answer": "Я здесь впервые.",
+    "explanation": "Повторите вслух: Det är första gången jag är här."
+  },
+  {
+    "type": "order",
+    "prompt": "Соберите по-шведски: Я никогда раньше там не был.",
+    "words": [
+      "förut.",
+      "där",
+      "varit",
+      "aldrig",
+      "har",
+      "Jag"
+    ],
+    "answer": "Jag har aldrig varit där förut.",
+    "explanation": "Начните с главной конструкции и обратите внимание на порядок слов."
+  }
+]

@@ -1,0 +1,53 @@
+[
+  {
+    "type": "choice",
+    "question": "Как перевести: Jag trodde att du skulle komma senare.",
+    "options": [
+      "Я думал, что ты придёшь позже.",
+      "Пожалуйста.",
+      "Извините.",
+      "Ничего страшного."
+    ],
+    "answer": "Я думал, что ты придёшь позже.",
+    "explanation": "Повторите вслух: Jag trodde att du skulle komma senare."
+  },
+  {
+    "type": "choice",
+    "question": "Как перевести: Jag är inte säker på vad jag ska göra.",
+    "options": [
+      "Где туалет?",
+      "Сколько это стоит?",
+      "Можно оплатить картой?",
+      "Я не уверен, что мне делать."
+    ],
+    "answer": "Я не уверен, что мне делать.",
+    "explanation": "Повторите вслух: Jag är inte säker på vad jag ska göra."
+  },
+  {
+    "type": "choice",
+    "question": "Как перевести: Jag skulle ha ringt dig, men jag glömde.",
+    "options": [
+      "Я не знаю.",
+      "Увидимся позже.",
+      "Я бы тебе позвонил, но забыл.",
+      "Когда следующий поезд?"
+    ],
+    "answer": "Я бы тебе позвонил, но забыл.",
+    "explanation": "Повторите вслух: Jag skulle ha ringt dig, men jag glömde."
+  },
+  {
+    "type": "order",
+    "prompt": "Соберите по-шведски: Я думал, что ты придёшь позже.",
+    "words": [
+      "senare.",
+      "komma",
+      "skulle",
+      "du",
+      "att",
+      "trodde",
+      "Jag"
+    ],
+    "answer": "Jag trodde att du skulle komma senare.",
+    "explanation": "Начните с главной конструкции и обратите внимание на порядок слов."
+  }
+]

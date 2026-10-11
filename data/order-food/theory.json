@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Вежливо попросить",
+    "body": "Для заказа достаточно запомнить две конструкции. Jag skulle vilja ha… — «Я бы хотел…». Kan jag få…? — «Можно мне…?». Добавьте блюдо и tack в конце.",
+    "pattern": "Jag skulle vilja ha en kebab, tack.",
+    "translation": "Я бы хотел кебаб, пожалуйста."
+  },
+  {
+    "title": "Уточнить начинку",
+    "body": "Med означает «с», utan — «без». Это работает почти с любыми продуктами: med ost — с сыром, utan lök — без лука. Du kan säga «En kebab utan lök, tack».",
+    "pattern": "En kebab utan lök, tack.",
+    "translation": "Кебаб без лука, пожалуйста."
+  },
+  {
+    "title": "Здесь или с собой?",
+    "body": "Jag äter här — «Я поем здесь». För avhämtning — «С собой / на вынос». Если вас спросят Här eller ta med? — «Здесь или с собой?», вы уже готовы ответить.",
+    "pattern": "För avhämtning, tack.",
+    "translation": "С собой, пожалуйста."
+  }
+]

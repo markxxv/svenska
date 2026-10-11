@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Попросить столик",
+    "body": "Har ni ett bord för två? — «У вас есть столик на двоих?» Ni — «вы», bord — «столик / стол», för två — «на двоих».",
+    "pattern": "Har ni ett bord för två?",
+    "translation": "Есть столик на двоих?"
+  },
+  {
+    "title": "Заказать и уточнить",
+    "body": "Jag tar… — коротко «Мне… / Я возьму…». Har ni…? — «У вас есть…?». Для аллергий лучше спросить прямо, а не угадывать состав.",
+    "pattern": "Jag tar dagens rätt, tack.",
+    "translation": "Я возьму блюдо дня, пожалуйста."
+  },
+  {
+    "title": "Завершить ужин",
+    "body": "Kan vi få notan? — «Можно нам счёт?» Vi — «мы», få — «получить», notan — «счёт».",
+    "pattern": "Kan vi få notan, tack?",
+    "translation": "Можно нам счёт, пожалуйста?"
+  }
+]

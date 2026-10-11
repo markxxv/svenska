@@ -1,0 +1,56 @@
+[
+  {
+    "sv": "hur",
+    "ru": "как",
+    "example": "Hur mycket kostar det?",
+    "category": "Покупки"
+  },
+  {
+    "sv": "mycket",
+    "ru": "много / сколько",
+    "example": "hur mycket",
+    "category": "Покупки"
+  },
+  {
+    "sv": "kostar",
+    "ru": "стоит",
+    "example": "Hur mycket kostar det?",
+    "category": "Покупки"
+  },
+  {
+    "sv": "det",
+    "ru": "это",
+    "example": "Hur mycket kostar det?",
+    "category": "Покупки"
+  },
+  {
+    "sv": "kan",
+    "ru": "могу / можно",
+    "example": "Kan jag betala med kort?",
+    "category": "Покупки"
+  },
+  {
+    "sv": "jag",
+    "ru": "я",
+    "example": "Kan jag betala med kort?",
+    "category": "Покупки"
+  },
+  {
+    "sv": "betala",
+    "ru": "платить / оплатить",
+    "example": "Kan jag betala med kort?",
+    "category": "Покупки"
+  },
+  {
+    "sv": "med",
+    "ru": "с / при помощи",
+    "example": "Kan jag betala med kort?",
+    "category": "Покупки"
+  },
+  {
+    "sv": "kort",
+    "ru": "карта",
+    "example": "betala med kort",
+    "category": "Покупки"
+  }
+]

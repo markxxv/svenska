@@ -1,0 +1,39 @@
+[
+  {
+    "type": "choice",
+    "question": "Как перевести: Jag försöker lära mig svenska.",
+    "options": [
+      "Я стараюсь выучить шведский.",
+      "Пожалуйста.",
+      "Извините.",
+      "Ничего страшного."
+    ],
+    "answer": "Я стараюсь выучить шведский.",
+    "explanation": "Повторите вслух: Jag försöker lära mig svenska."
+  },
+  {
+    "type": "choice",
+    "question": "Как перевести: Ju mer jag hör svenska, desto lättare blir det.",
+    "options": [
+      "Где туалет?",
+      "Сколько это стоит?",
+      "Можно оплатить картой?",
+      "Чем больше я слышу шведскую речь, тем легче становится."
+    ],
+    "answer": "Чем больше я слышу шведскую речь, тем легче становится.",
+    "explanation": "Повторите вслух: Ju mer jag hör svenska, desto lättare blir det."
+  },
+  {
+    "type": "order",
+    "prompt": "Соберите по-шведски: Я стараюсь выучить шведский.",
+    "words": [
+      "svenska.",
+      "mig",
+      "lära",
+      "försöker",
+      "Jag"
+    ],
+    "answer": "Jag försöker lära mig svenska.",
+    "explanation": "Начните с главной конструкции и обратите внимание на порядок слов."
+  }
+]

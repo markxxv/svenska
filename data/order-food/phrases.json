@@ -1,0 +1,134 @@
+[
+  {
+    "id": "food-1",
+    "text": "Jag skulle vilja ha en kebab, tack.",
+    "translation": "Я бы хотел кебаб, пожалуйста.",
+    "words": [
+      [
+        "Jag",
+        "jag",
+        "я"
+      ],
+      [
+        "skulle",
+        "skola",
+        "бы",
+        "Вместе с vilja — вежливая просьба.",
+        "skulle vilja ha",
+        "хотел бы"
+      ],
+      [
+        "vilja",
+        "vilja",
+        "хотеть"
+      ],
+      [
+        "ha",
+        "ha",
+        "получить"
+      ],
+      [
+        "en",
+        "en",
+        "артикль"
+      ],
+      [
+        "kebab",
+        "kebab",
+        "кебаб"
+      ],
+      [
+        "tack",
+        "tack",
+        "пожалуйста"
+      ]
+    ]
+  },
+  {
+    "id": "food-2",
+    "text": "En kebab utan lök, tack.",
+    "translation": "Кебаб без лука, пожалуйста.",
+    "words": [
+      [
+        "En",
+        "en",
+        "артикль"
+      ],
+      [
+        "kebab",
+        "kebab",
+        "кебаб"
+      ],
+      [
+        "utan",
+        "utan",
+        "без",
+        "Противоположность med — «с»."
+      ],
+      [
+        "lök",
+        "lök",
+        "лук"
+      ],
+      [
+        "tack",
+        "tack",
+        "пожалуйста"
+      ]
+    ]
+  },
+  {
+    "id": "food-3",
+    "text": "Kan jag betala med kort?",
+    "translation": "Можно расплатиться картой?",
+    "words": [
+      [
+        "Kan",
+        "kunna",
+        "могу / можно"
+      ],
+      [
+        "jag",
+        "jag",
+        "я"
+      ],
+      [
+        "betala",
+        "betala",
+        "платить"
+      ],
+      [
+        "med",
+        "med",
+        "с помощью"
+      ],
+      [
+        "kort",
+        "kort",
+        "карта"
+      ]
+    ]
+  },
+  {
+    "id": "food-4",
+    "text": "Är det starkt?",
+    "translation": "Это острое?",
+    "words": [
+      [
+        "Är",
+        "vara",
+        "является"
+      ],
+      [
+        "det",
+        "det",
+        "это"
+      ],
+      [
+        "starkt",
+        "stark",
+        "острое"
+      ]
+    ]
+  }
+]

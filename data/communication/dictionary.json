@@ -1,0 +1,80 @@
+[
+  {
+    "sv": "jag",
+    "ru": "я",
+    "example": "Jag förstår inte.",
+    "category": "Общение"
+  },
+  {
+    "sv": "förstår",
+    "ru": "понимаю",
+    "example": "Jag förstår inte.",
+    "category": "Общение"
+  },
+  {
+    "sv": "inte",
+    "ru": "не",
+    "example": "Jag förstår inte.",
+    "category": "Общение"
+  },
+  {
+    "sv": "kan",
+    "ru": "можешь",
+    "example": "Kan du säga det igen?",
+    "category": "Общение"
+  },
+  {
+    "sv": "du",
+    "ru": "ты",
+    "example": "Kan du säga det igen?",
+    "category": "Общение"
+  },
+  {
+    "sv": "säga",
+    "ru": "сказать",
+    "example": "Kan du säga det igen?",
+    "category": "Общение"
+  },
+  {
+    "sv": "det",
+    "ru": "это",
+    "example": "Kan du säga det igen?",
+    "category": "Общение"
+  },
+  {
+    "sv": "igen",
+    "ru": "снова / ещё раз",
+    "example": "säga det igen",
+    "category": "Общение"
+  },
+  {
+    "sv": "prata",
+    "ru": "говорить",
+    "example": "Kan du prata lite långsammare?",
+    "category": "Общение"
+  },
+  {
+    "sv": "lite",
+    "ru": "немного",
+    "example": "Kan du prata lite långsammare?",
+    "category": "Общение"
+  },
+  {
+    "sv": "långsammare",
+    "ru": "медленнее",
+    "example": "Kan du prata lite långsammare?",
+    "category": "Общение"
+  },
+  {
+    "sv": "vad",
+    "ru": "что",
+    "example": "Vad betyder det?",
+    "category": "Общение"
+  },
+  {
+    "sv": "betyder",
+    "ru": "значит / означает",
+    "example": "Vad betyder det?",
+    "category": "Общение"
+  }
+]

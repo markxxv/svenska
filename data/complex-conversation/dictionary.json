@@ -1,0 +1,104 @@
+[
+  {
+    "sv": "jag",
+    "ru": "я",
+    "example": "Jag trodde att du skulle komma senare.",
+    "category": "Разговор"
+  },
+  {
+    "sv": "trodde",
+    "ru": "думал / полагал",
+    "example": "Jag trodde att du skulle komma senare.",
+    "category": "Разговор"
+  },
+  {
+    "sv": "att",
+    "ru": "что",
+    "example": "Jag trodde att du skulle komma senare.",
+    "category": "Разговор"
+  },
+  {
+    "sv": "du",
+    "ru": "ты",
+    "example": "Jag trodde att du skulle komma senare.",
+    "category": "Разговор"
+  },
+  {
+    "sv": "skulle",
+    "ru": "должен был / собирался",
+    "example": "Jag trodde att du skulle komma senare.",
+    "category": "Разговор"
+  },
+  {
+    "sv": "komma",
+    "ru": "прийти",
+    "example": "Jag trodde att du skulle komma senare.",
+    "category": "Разговор"
+  },
+  {
+    "sv": "senare",
+    "ru": "позже",
+    "example": "Jag trodde att du skulle komma senare.",
+    "category": "Разговор"
+  },
+  {
+    "sv": "är",
+    "ru": "есть / являюсь",
+    "example": "Jag är inte säker på vad jag ska göra.",
+    "category": "Разговор"
+  },
+  {
+    "sv": "inte",
+    "ru": "не",
+    "example": "Jag är inte säker på vad jag ska göra.",
+    "category": "Разговор"
+  },
+  {
+    "sv": "säker",
+    "ru": "уверен",
+    "example": "Jag är inte säker på vad jag ska göra.",
+    "category": "Разговор"
+  },
+  {
+    "sv": "på",
+    "ru": "в / насчёт",
+    "example": "säker på",
+    "category": "Разговор"
+  },
+  {
+    "sv": "vad",
+    "ru": "что",
+    "example": "Jag är inte säker på vad jag ska göra.",
+    "category": "Разговор"
+  },
+  {
+    "sv": "göra",
+    "ru": "делать",
+    "example": "Jag är inte säker på vad jag ska göra.",
+    "category": "Разговор"
+  },
+  {
+    "sv": "ha",
+    "ru": "иметь / вспомогательный глагол",
+    "example": "Jag skulle ha ringt dig, men jag glömde.",
+    "category": "Разговор"
+  },
+  {
+    "sv": "ringt",
+    "ru": "позвонил",
+    "example": "skulle ha ringt",
+    "category": "Разговор"
+  },
+  {
+    "sv": "men",
+    "ru": "но",
+    "example": "Jag skulle ha ringt dig, men jag glömde.",
+    "category": "Разговор"
+  },
+  {
+    "sv": "glömde",
+    "ru": "забыл",
+    "example": "Jag skulle ha ringt dig, men jag glömde.",
+    "category": "Разговор"
+  }
+]

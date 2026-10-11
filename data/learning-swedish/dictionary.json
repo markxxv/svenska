@@ -1,0 +1,68 @@
+[
+  {
+    "sv": "jag",
+    "ru": "я",
+    "example": "Jag försöker lära mig svenska.",
+    "category": "Обучение"
+  },
+  {
+    "sv": "försöker",
+    "ru": "стараюсь / пытаюсь",
+    "example": "Jag försöker lära mig svenska.",
+    "category": "Обучение"
+  },
+  {
+    "sv": "lära",
+    "ru": "учить",
+    "example": "Jag försöker lära mig svenska.",
+    "category": "Обучение"
+  },
+  {
+    "sv": "svenska",
+    "ru": "шведский язык",
+    "example": "Jag försöker lära mig svenska.",
+    "category": "Обучение"
+  },
+  {
+    "sv": "ju",
+    "ru": "чем",
+    "example": "ju … desto …",
+    "category": "Обучение"
+  },
+  {
+    "sv": "mer",
+    "ru": "больше",
+    "example": "Ju mer jag hör svenska, desto lättare blir det.",
+    "category": "Обучение"
+  },
+  {
+    "sv": "hör",
+    "ru": "слышу",
+    "example": "Ju mer jag hör svenska, desto lättare blir det.",
+    "category": "Обучение"
+  },
+  {
+    "sv": "desto",
+    "ru": "тем",
+    "example": "ju … desto …",
+    "category": "Обучение"
+  },
+  {
+    "sv": "lättare",
+    "ru": "легче",
+    "example": "Ju mer jag hör svenska, desto lättare blir det.",
+    "category": "Обучение"
+  },
+  {
+    "sv": "blir",
+    "ru": "становится",
+    "example": "Ju mer jag hör svenska, desto lättare blir det.",
+    "category": "Обучение"
+  },
+  {
+    "sv": "det",
+    "ru": "это",
+    "example": "Ju mer jag hör svenska, desto lättare blir det.",
+    "category": "Обучение"
+  }
+]

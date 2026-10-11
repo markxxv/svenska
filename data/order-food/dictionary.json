@@ -1,0 +1,75 @@
+[
+  {
+    "sv": "kebab",
+    "ru": "кебаб",
+    "category": "Блюда",
+    "example": "En kebab, tack."
+  },
+  {
+    "sv": "kebabrulle",
+    "ru": "кебаб в лаваше",
+    "category": "Блюда"
+  },
+  {
+    "sv": "pizza",
+    "ru": "пицца",
+    "category": "Блюда"
+  },
+  {
+    "sv": "vegetarisk",
+    "ru": "вегетарианский",
+    "category": "Блюда"
+  },
+  {
+    "sv": "ost",
+    "ru": "сыр",
+    "category": "Добавки"
+  },
+  {
+    "sv": "lök",
+    "ru": "лук",
+    "category": "Добавки"
+  },
+  {
+    "sv": "sås",
+    "ru": "соус",
+    "category": "Добавки"
+  },
+  {
+    "sv": "med allt",
+    "ru": "со всеми добавками",
+    "category": "Добавки"
+  },
+  {
+    "sv": "utan",
+    "ru": "без",
+    "category": "Добавки",
+    "example": "Utan lök, tack."
+  },
+  {
+    "sv": "starkt",
+    "ru": "острый",
+    "category": "Добавки",
+    "example": "Är det starkt?"
+  },
+  {
+    "sv": "för avhämtning",
+    "ru": "с собой",
+    "category": "Заказ"
+  },
+  {
+    "sv": "jag äter här",
+    "ru": "я поем здесь",
+    "category": "Заказ"
+  },
+  {
+    "sv": "med kort",
+    "ru": "картой",
+    "category": "Оплата"
+  },
+  {
+    "sv": "kontant",
+    "ru": "наличными",
+    "category": "Оплата"
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "sv": "var",
+    "ru": "где",
+    "example": "Var ligger toaletten?"
+  },
+  {
+    "sv": "ligger",
+    "ru": "находится",
+    "example": "Var ligger toaletten?"
+  },
+  {
+    "sv": "toaletten",
+    "ru": "туалет",
+    "example": "Var ligger toaletten?"
+  },
+  {
+    "sv": "jag",
+    "ru": "я",
+    "example": "Jag letar efter den här adressen."
+  },
+  {
+    "sv": "letar",
+    "ru": "ищу",
+    "example": "leta efter"
+  },
+  {
+    "sv": "efter",
+    "ru": "за / после",
+    "example": "leta efter"
+  },
+  {
+    "sv": "den",
+    "ru": "этот",
+    "example": "Jag letar efter den här adressen."
+  },
+  {
+    "sv": "här",
+    "ru": "здесь",
+    "example": "den här"
+  },
+  {
+    "sv": "adressen",
+    "ru": "адрес",
+    "example": "Jag letar efter den här adressen."
+  },
+  {
+    "sv": "kan",
+    "ru": "можешь",
+    "example": "Kan du hjälpa mig att hitta rätt?"
+  },
+  {
+    "sv": "du",
+    "ru": "ты",
+    "example": "Kan du hjälpa mig att hitta rätt?"
+  },
+  {
+    "sv": "hjälpa",
+    "ru": "помочь",
+    "example": "Kan du hjälpa mig att hitta rätt?"
+  }
+]
