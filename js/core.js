@@ -16,20 +16,23 @@ export const collectionRoute = (kind,slug) => {
   return '#/'+kind+'/'+encodeURIComponent(slug);
 };
 export function icons() { if (window.lucide?.createIcons) window.lucide.createIcons(); }
-async function json(path, fresh=false) {
+// Always use a new URL per app launch: GitHub Pages/CDN may cache static JSON.
+const VERSION = globalThis.__svenskaVersion || Date.now().toString(36);
+export async function json(path) {
   const url = new URL(path, ROOT);
   if (!url.href.startsWith(ROOT.href)) throw new Error('Недопустимый путь к JSON');
-  const response = await fetch(url, fresh?{cache:'no-store'}:undefined);
+  url.searchParams.set('v', VERSION);
+  const response = await fetch(url, {cache:'no-store'});
   if (!response.ok) throw new Error('Не удалось загрузить '+path+' ('+response.status+')');
   return response.json();
 }
 export async function catalog() {
-  const data = await json('index.json',true);
+  const data = await json('index.json');
   return data.topics || [];
 }
 export async function collectionCatalog(kind) {
   if (!kinds.has(kind)) throw new Error('Неизвестный тип коллекции');
-  const data = await json(kind+'/index.json',true);
+  const data = await json(kind+'/index.json');
   return data.collections || [];
 }
 export async function topic(entry) {

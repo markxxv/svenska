@@ -1,10 +1,8 @@
-import {e,ico,route,sectionTitle,progress,completion} from '../core.js';
+import {e,ico,route,sectionTitle,progress,completion,json} from '../core.js';
 
 // Самостоятельный каталог учебных тем. Уроки главной сюда не попадают.
 export async function catalog() {
-  const response=await fetch(new URL('../../data/topics/index.json',import.meta.url),{cache:'no-store'});
-  if(!response.ok)throw Error('Не удалось загрузить каталог тем');
-  const data=await response.json();
+  const data=await json('topics/index.json');
   return data.topics || [];
 }
 export function render(items) {

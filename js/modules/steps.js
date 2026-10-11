@@ -10,9 +10,12 @@ export function render(data, state, mode) {
     if (item.rows?.length) {
       html+='<dl class="mt-5 divide-y divide-zinc-100">';
       for (const row of item.rows) {
-        html+='<div class="flex items-baseline justify-between gap-4 py-3 first:pt-0 last:pb-0">'+
-          '<dt lang="sv" class="text-[19px] font-semibold tracking-tight text-zinc-950">'+e(row.sv)+'</dt>'+
-          '<dd class="text-right text-[15px] leading-relaxed text-zinc-600">'+e(row.ru)+'</dd>'+
+        html+='<div class="flex items-center justify-between gap-3 py-2.5 first:pt-0 last:pb-0">'+
+          '<dt lang="sv" class="min-w-0 text-[19px] font-semibold tracking-tight text-zinc-950">'+e(row.sv)+'</dt>'+
+          '<dd class="ml-auto flex shrink-0 items-center gap-2.5 text-right">'+
+            '<span class="text-[15px] leading-relaxed text-zinc-600">'+e(row.ru)+'</span>'+
+            '<button type="button" class="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-zinc-100 text-zinc-600 transition active:scale-95 active:bg-zinc-200" data-action="speak" data-sv="'+e(row.sv)+'" aria-label="Прослушать '+e(row.sv)+'" title="Прослушать">'+ico('volume-2','h-[17px] w-[17px]')+'</button>'+
+          '</dd>'+
         '</div>';
       }
       html+='</dl>';

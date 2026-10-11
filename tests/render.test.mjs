@@ -65,6 +65,13 @@ test('pronouns theory shows aligned vocabulary rows and a pronunciation note',as
   assert.ok(screen.includes('<dl class="mt-5 divide-y divide-zinc-100">'));
   assert.ok(screen.includes('<dt lang="sv"'));
   assert.ok(screen.includes('jag</dt>'));
+  assert.ok(screen.includes('data-action="speak" data-sv="jag"'));
+  assert.ok(screen.includes('aria-label="Прослушать jag"'));
+  assert.equal((screen.match(/data-action="speak"/g)||[]).length,8);
+  for(let i=1;i<content.length;i++){
+    const html=steps.render(data,{pos:i},'theory');
+    for(const row of content[i].rows)assert.ok(html.includes('data-sv="'+row.sv+'"'));
+  }
   assert.ok(screen.includes('В разговорной речи de'));
   assert.ok(!screen.includes('jag — я, du — ты'));
 });

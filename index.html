@@ -66,6 +66,34 @@
       </nav>
     </main>
   </div>
-  <script type="module" src="./js/app.js"></script>
+  <!-- Import map versions every local module on each page load. HTML can stay cached on GitHub Pages. -->
+  <script>
+    (() => {
+      const version = Date.now().toString(36);
+      globalThis.__svenskaVersion = version;
+      const files = [
+        'js/app.js', 'js/core.js',
+        'js/modules/home.js', 'js/modules/topics.js', 'js/modules/collections.js',
+        'js/modules/overview.js', 'js/modules/steps.js', 'js/modules/cards.js',
+        'js/modules/phrases.js', 'js/modules/dictionary.js', 'js/modules/quiz.js'
+      ];
+      const imports = {};
+      for (const file of files) {
+        const url = new URL('./' + file, document.baseURI);
+        const fresh = new URL(url);
+        fresh.searchParams.set('v', version);
+        imports[url.href] = fresh.href;
+      }
+      const map = document.createElement('script');
+      map.type = 'importmap';
+      map.textContent = JSON.stringify({imports});
+      document.head.appendChild(map);
+      import('./js/app.js').catch(error => {
+        console.error('Svenska failed to load', error);
+        const view = document.querySelector('#view');
+        if (view) view.textContent = 'Ошибка загрузки приложения. Обновите страницу.';
+      });
+    })();
+  </script>
 </body>
 </html>
