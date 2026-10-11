@@ -4,6 +4,15 @@ const STORAGE = 'svenska-progress-v1';
 const lessonCache = new Map();
 const collectionCache = new Map();
 const kinds = new Set(['dictionaries','phrases']);
+// Одна перестановка на прохождение: алгоритм Фишера — Йетса.
+export function shuffleIndices(length,random=Math.random) {
+  const order=Array.from({length},(_,i)=>i);
+  for(let i=order.length-1;i>0;i--){
+    const j=Math.floor(random()*(i+1));
+    [order[i],order[j]]=[order[j],order[i]];
+  }
+  return order;
+}
 export const stages = [
   ['theory','Теория'],['examples','Примеры'],['cards','Карточки'],['quiz','Тест']
 ];

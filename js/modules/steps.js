@@ -1,13 +1,6 @@
-import {e,ico,speak,complete,nextLink,sectionTitle} from '../core.js';
+import {e,ico,speak,complete,nextLink,sectionTitle,shuffleIndices} from '../core.js';
 // Общая для всех уроков последовательность: один случайный порядок на прохождение.
-export function shuffleIndices(length, random=Math.random) {
-  const order=Array.from({length},(_,index)=>index);
-  for(let i=order.length-1;i>0;i--){
-    const j=Math.floor(random()*(i+1));
-    [order[i],order[j]]=[order[j],order[i]];
-  }
-  return order;
-}
+export {shuffleIndices};
 export function currentExample(list,state,random=Math.random) {
   if(!Array.isArray(state.exampleOrder)||state.exampleOrder.length!==list.length){
     state.exampleOrder=shuffleIndices(list.length,random);

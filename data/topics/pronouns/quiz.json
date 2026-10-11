@@ -1,47 +1,653 @@
 [
   {
     "type": "choice",
-    "question": "Как по-шведски «мы»?",
+    "question": "Какое шведское местоимение означает «я»?",
+    "options": [
+      "jag",
+      "han",
+      "du",
+      "hon"
+    ],
+    "answer": "jag",
+    "explanation": "«jag» — я.",
+    "source": "jag"
+  },
+  {
+    "type": "choice",
+    "question": "Какое шведское местоимение означает «ты»?",
+    "options": [
+      "ni",
+      "du",
+      "vi",
+      "de"
+    ],
+    "answer": "du",
+    "explanation": "«du» — ты.",
+    "source": "du"
+  },
+  {
+    "type": "choice",
+    "question": "Какое шведское местоимение означает «он»?",
+    "options": [
+      "hon",
+      "han",
+      "de",
+      "jag"
+    ],
+    "answer": "han",
+    "explanation": "«han» — он.",
+    "source": "han"
+  },
+  {
+    "type": "choice",
+    "question": "Какое шведское местоимение означает «она»?",
+    "options": [
+      "hon",
+      "han",
+      "ni",
+      "vi"
+    ],
+    "answer": "hon",
+    "explanation": "«hon» — она.",
+    "source": "hon"
+  },
+  {
+    "type": "choice",
+    "question": "Какое шведское местоимение означает «мы»?",
+    "options": [
+      "ni",
+      "de",
+      "vi",
+      "du"
+    ],
+    "answer": "vi",
+    "explanation": "«vi» — мы.",
+    "source": "vi"
+  },
+  {
+    "type": "choice",
+    "question": "Какое шведское местоимение означает «вы (множественное число)»?",
     "options": [
       "ni",
       "vi",
-      "de",
-      "du"
+      "du",
+      "de"
     ],
-    "answer": "vi"
+    "answer": "ni",
+    "explanation": "«ni» — вы (множественное число).",
+    "source": "ni"
   },
   {
     "type": "choice",
-    "question": "Как сказать «мне» в «помоги мне»?",
+    "question": "Какое шведское местоимение означает «они»?",
+    "options": [
+      "du",
+      "de",
+      "ni",
+      "vi"
+    ],
+    "answer": "de",
+    "explanation": "«de» — они.",
+    "source": "de"
+  },
+  {
+    "type": "choice",
+    "question": "Какое шведское местоимение означает «меня / мне»?",
     "options": [
       "jag",
+      "dig",
       "mig",
-      "vi",
-      "hon"
+      "oss"
     ],
     "answer": "mig",
-    "explanation": "Объектная форма jag — mig."
+    "explanation": "«mig» — меня / мне.",
+    "source": "mig"
+  },
+  {
+    "type": "choice",
+    "question": "Какое шведское местоимение означает «тебя / тебе»?",
+    "options": [
+      "mig",
+      "du",
+      "oss",
+      "dig"
+    ],
+    "answer": "dig",
+    "explanation": "«dig» — тебя / тебе.",
+    "source": "dig"
+  },
+  {
+    "type": "choice",
+    "question": "Какое шведское местоимение означает «нас / нам»?",
+    "options": [
+      "vi",
+      "oss",
+      "mig",
+      "dig"
+    ],
+    "answer": "oss",
+    "explanation": "«oss» — нас / нам.",
+    "source": "oss"
+  },
+  {
+    "type": "choice",
+    "question": "Вставьте местоимение:\n«____ letar efter busshållplatsen.»\nЯ ищу автобусную остановку.",
+    "options": [
+      "Jag",
+      "Du",
+      "Vi",
+      "Han"
+    ],
+    "answer": "Jag",
+    "explanation": "«Jag» — я.",
+    "source": "Jag letar efter busshållplatsen."
+  },
+  {
+    "type": "choice",
+    "question": "Вставьте местоимение:\n«____ går åt samma håll.»\nНам в одну сторону.",
+    "options": [
+      "Ni",
+      "De",
+      "Vi",
+      "Jag"
+    ],
+    "answer": "Vi",
+    "explanation": "«Vi» — мы.",
+    "source": "Vi går åt samma håll."
+  },
+  {
+    "type": "choice",
+    "question": "Вставьте местоимение:\n«____ kommer om fem minuter.»\nОн придёт через пять минут.",
+    "options": [
+      "Hon",
+      "Vi",
+      "Han",
+      "De"
+    ],
+    "answer": "Han",
+    "explanation": "«Han» — он.",
+    "source": "Han kommer om fem minuter."
+  },
+  {
+    "type": "choice",
+    "question": "Вставьте местоимение:\n«____ väntar vid hörnet.»\nОна ждёт за углом.",
+    "options": [
+      "Hon",
+      "Han",
+      "De",
+      "Ni"
+    ],
+    "answer": "Hon",
+    "explanation": "«Hon» — она.",
+    "source": "Hon väntar vid hörnet."
+  },
+  {
+    "type": "choice",
+    "question": "Вставьте местоимение:\n«Är ____ också på väg dit?»\nВы тоже туда идёте?",
+    "options": [
+      "du",
+      "ni",
+      "vi",
+      "de"
+    ],
+    "answer": "ni",
+    "explanation": "«Ni» — вы (множественное число).",
+    "source": "Är ni också på väg dit?"
+  },
+  {
+    "type": "choice",
+    "question": "Вставьте местоимение:\n«____ står där borta.»\nОни стоят вон там.",
+    "options": [
+      "Vi",
+      "De",
+      "Ni",
+      "Du"
+    ],
+    "answer": "De",
+    "explanation": "«De» — они.",
+    "source": "De står där borta."
+  },
+  {
+    "type": "choice",
+    "question": "Вставьте местоимение:\n«Kan du visa ____ vägen?»\nМожешь показать мне дорогу?",
+    "options": [
+      "oss",
+      "dig",
+      "jag",
+      "mig"
+    ],
+    "answer": "mig",
+    "explanation": "«Mig» — меня / мне.",
+    "source": "Kan du visa mig vägen?"
+  },
+  {
+    "type": "choice",
+    "question": "Вставьте местоимение:\n«Jag tror ____ är framme.»\nКажется, мы пришли.",
+    "options": [
+      "ni",
+      "de",
+      "vi",
+      "du"
+    ],
+    "answer": "vi",
+    "explanation": "«Vi» — мы.",
+    "source": "Jag tror vi är framme."
+  },
+  {
+    "type": "choice",
+    "question": "Вставьте местоимение:\n«____ tar en kaffe, tack.»\nМне кофе, пожалуйста.",
+    "options": [
+      "Han",
+      "Vi",
+      "Jag",
+      "Hon"
+    ],
+    "answer": "Jag",
+    "explanation": "«Jag» — я.",
+    "source": "Jag tar en kaffe, tack."
+  },
+  {
+    "type": "choice",
+    "question": "Вставьте местоимение:\n«Vill ____ ha något mer?»\nХочешь ещё что-нибудь?",
+    "options": [
+      "ni",
+      "jag",
+      "du",
+      "vi"
+    ],
+    "answer": "du",
+    "explanation": "«Du» — ты.",
+    "source": "Vill du ha något mer?"
+  },
+  {
+    "type": "choice",
+    "question": "Вставьте местоимение:\n«____ sitter redan där inne.»\nОна уже сидит внутри.",
+    "options": [
+      "Han",
+      "Hon",
+      "Vi",
+      "De"
+    ],
+    "answer": "Hon",
+    "explanation": "«Hon» — она.",
+    "source": "Hon sitter redan där inne."
+  },
+  {
+    "type": "choice",
+    "question": "Вставьте местоимение:\n«Ska ____ sätta oss här?»\nСядем здесь?",
+    "options": [
+      "vi",
+      "ni",
+      "du",
+      "de"
+    ],
+    "answer": "vi",
+    "explanation": "«Vi» — мы.",
+    "source": "Ska vi sätta oss här?"
+  },
+  {
+    "type": "choice",
+    "question": "Вставьте местоимение:\n«Har ____ ett bord för två?»\nУ вас есть столик на двоих?",
+    "options": [
+      "ni",
+      "vi",
+      "du",
+      "de"
+    ],
+    "answer": "ni",
+    "explanation": "«Ni» — вы (множественное число).",
+    "source": "Har ni ett bord för två?"
+  },
+  {
+    "type": "choice",
+    "question": "Вставьте местоимение:\n«____ har jättegott kaffe här.»\nУ них тут очень вкусный кофе.",
+    "options": [
+      "Ni",
+      "De",
+      "Han",
+      "Hon"
+    ],
+    "answer": "De",
+    "explanation": "«De» — они.",
+    "source": "De har jättegott kaffe här."
+  },
+  {
+    "type": "choice",
+    "question": "Вставьте местоимение:\n«Jag betalar för ____.»\nЯ заплачу за нас.",
+    "options": [
+      "mig",
+      "vi",
+      "oss",
+      "dig"
+    ],
+    "answer": "oss",
+    "explanation": "«Oss» — нас / нам.",
+    "source": "Jag betalar för oss."
+  },
+  {
+    "type": "choice",
+    "question": "Вставьте местоимение:\n«Kan ____ få notan, tack?»\nМожно нам счёт, пожалуйста?",
+    "options": [
+      "jag",
+      "du",
+      "ni",
+      "vi"
+    ],
+    "answer": "vi",
+    "explanation": "«Vi» — мы.",
+    "source": "Kan vi få notan, tack?"
+  },
+  {
+    "type": "choice",
+    "question": "Вставьте местоимение:\n«____ kollar bara, tack.»\nЯ просто смотрю, спасибо.",
+    "options": [
+      "Jag",
+      "Du",
+      "Vi",
+      "Han"
+    ],
+    "answer": "Jag",
+    "explanation": "«Jag» — я.",
+    "source": "Jag kollar bara, tack."
+  },
+  {
+    "type": "choice",
+    "question": "Вставьте местоимение:\n«Har ____ den i en annan storlek?»\nУ тебя есть это в другом размере?",
+    "options": [
+      "ni",
+      "du",
+      "vi",
+      "de"
+    ],
+    "answer": "du",
+    "explanation": "«Du» — ты.",
+    "source": "Har du den i en annan storlek?"
+  },
+  {
+    "type": "choice",
+    "question": "Вставьте местоимение:\n«____ provar den där jackan.»\nОна примеряет вон ту куртку.",
+    "options": [
+      "Hon",
+      "Han",
+      "Vi",
+      "Ni"
+    ],
+    "answer": "Hon",
+    "explanation": "«Hon» — она.",
+    "source": "Hon provar den där jackan."
+  },
+  {
+    "type": "choice",
+    "question": "Вставьте местоимение:\n«____ jobbar i kassan.»\nОн работает на кассе.",
+    "options": [
+      "Hon",
+      "De",
+      "Han",
+      "Jag"
+    ],
+    "answer": "Han",
+    "explanation": "«Han» — он.",
+    "source": "Han jobbar i kassan."
+  },
+  {
+    "type": "choice",
+    "question": "Вставьте местоимение:\n«____ behöver bara mjölk.»\nНам нужно только молоко.",
+    "options": [
+      "Ni",
+      "De",
+      "Vi",
+      "Jag"
+    ],
+    "answer": "Vi",
+    "explanation": "«Vi» — мы.",
+    "source": "Vi behöver bara mjölk."
+  },
+  {
+    "type": "choice",
+    "question": "Вставьте местоимение:\n«Tar ____ kort?»\nВы принимаете карты?",
+    "options": [
+      "du",
+      "vi",
+      "ni",
+      "de"
+    ],
+    "answer": "ni",
+    "explanation": "«Ni» — вы (множественное число).",
+    "source": "Tar ni kort?"
+  },
+  {
+    "type": "choice",
+    "question": "Вставьте местоимение:\n«____ stänger snart.»\nОни скоро закрываются.",
+    "options": [
+      "De",
+      "Vi",
+      "Ni",
+      "Jag"
+    ],
+    "answer": "De",
+    "explanation": "«De» — они.",
+    "source": "De stänger snart."
+  },
+  {
+    "type": "choice",
+    "question": "Вставьте местоимение:\n«Kan du hjälpa ____?»\nМожешь нам помочь?",
+    "options": [
+      "dig",
+      "oss",
+      "vi",
+      "mig"
+    ],
+    "answer": "oss",
+    "explanation": "«Oss» — нас / нам.",
+    "source": "Kan du hjälpa oss?"
+  },
+  {
+    "type": "choice",
+    "question": "Вставьте местоимение:\n«____ ska av här.»\nМне выходить здесь.",
+    "options": [
+      "Vi",
+      "Jag",
+      "Ni",
+      "Han"
+    ],
+    "answer": "Jag",
+    "explanation": "«Jag» — я.",
+    "source": "Jag ska av här."
+  },
+  {
+    "type": "choice",
+    "question": "Вставьте местоимение:\n«Ska ____ också till centrum?»\nТы тоже едешь в центр?",
+    "options": [
+      "ni",
+      "du",
+      "jag",
+      "de"
+    ],
+    "answer": "du",
+    "explanation": "«Du» — ты.",
+    "source": "Ska du också till centrum?"
+  },
+  {
+    "type": "choice",
+    "question": "Вставьте местоимение:\n«____ kommer med nästa tåg.»\nОна приедет следующим поездом.",
+    "options": [
+      "Han",
+      "Hon",
+      "De",
+      "Vi"
+    ],
+    "answer": "Hon",
+    "explanation": "«Hon» — она.",
+    "source": "Hon kommer med nästa tåg."
+  },
+  {
+    "type": "choice",
+    "question": "Вставьте местоимение:\n«Hör av ____ när du är framme.»\nНапиши, когда доберёшься.",
+    "options": [
+      "mig",
+      "du",
+      "oss",
+      "dig"
+    ],
+    "answer": "dig",
+    "explanation": "«Dig» — тебя / тебе.",
+    "source": "Hör av dig när du är framme."
   },
   {
     "type": "order",
-    "prompt": "Соберите «Она здесь работает»",
+    "prompt": "Соберите фразу из примеров:\n«Увидимся у входа.»",
     "words": [
-      "här.",
-      "Hon",
-      "jobbar"
+      "ses",
+      "vid",
+      "entrén.",
+      "Vi"
     ],
-    "answer": "Hon jobbar här."
+    "answer": "Vi ses vid entrén.",
+    "explanation": "Эта конструкция встречалась в разделе «Примеры».",
+    "source": "Vi ses vid entrén."
   },
   {
-    "type": "choice",
-    "question": "Как меняется jobbar в «мы работаем»?",
-    "options": [
-      "Vi jobbar",
-      "Vi jobbarar",
-      "Vi jobben",
-      "Vi jobb"
+    "type": "order",
+    "prompt": "Соберите фразу из примеров:\n«Можешь занять моё место.»",
+    "words": [
+      "ta",
+      "min",
+      "plats.",
+      "Du",
+      "kan"
     ],
-    "answer": "Vi jobbar",
-    "explanation": "Глагол в настоящем времени не зависит от лица."
+    "answer": "Du kan ta min plats.",
+    "explanation": "Эта конструкция встречалась в разделе «Примеры».",
+    "source": "Du kan ta min plats."
+  },
+  {
+    "type": "order",
+    "prompt": "Соберите фразу из примеров:\n«Они скоро закрываются.»",
+    "words": [
+      "stänger",
+      "snart.",
+      "De"
+    ],
+    "answer": "De stänger snart.",
+    "explanation": "Эта конструкция встречалась в разделе «Примеры».",
+    "source": "De stänger snart."
+  },
+  {
+    "type": "order",
+    "prompt": "Соберите фразу из примеров:\n«Он опоздал на автобус.»",
+    "words": [
+      "bussen.",
+      "Han",
+      "missade"
+    ],
+    "answer": "Han missade bussen.",
+    "explanation": "Эта конструкция встречалась в разделе «Примеры».",
+    "source": "Han missade bussen."
+  },
+  {
+    "type": "order",
+    "prompt": "Соберите фразу из примеров:\n«Ты должен это попробовать!»",
+    "words": [
+      "måste",
+      "smaka",
+      "det",
+      "här!",
+      "Du"
+    ],
+    "answer": "Du måste smaka det här!",
+    "explanation": "Эта конструкция встречалась в разделе «Примеры».",
+    "source": "Du måste smaka det här!"
+  },
+  {
+    "type": "order",
+    "prompt": "Соберите фразу из примеров:\n«Ну что, пойдём?»",
+    "words": [
+      "dra?",
+      "Ska",
+      "vi"
+    ],
+    "answer": "Ska vi dra?",
+    "explanation": "Эта конструкция встречалась в разделе «Примеры».",
+    "source": "Ska vi dra?"
+  },
+  {
+    "type": "order",
+    "prompt": "Соберите фразу из примеров:\n«Он ещё спит.»",
+    "words": [
+      "sover",
+      "fortfarande.",
+      "Han"
+    ],
+    "answer": "Han sover fortfarande.",
+    "explanation": "Эта конструкция встречалась в разделе «Примеры».",
+    "source": "Han sover fortfarande."
+  },
+  {
+    "type": "order",
+    "prompt": "Соберите фразу из примеров:\n«Приготовим что-нибудь простое.»",
+    "words": [
+      "något",
+      "enkelt.",
+      "Vi",
+      "lagar"
+    ],
+    "answer": "Vi lagar något enkelt.",
+    "explanation": "Эта конструкция встречалась в разделе «Примеры».",
+    "source": "Vi lagar något enkelt."
+  },
+  {
+    "type": "order",
+    "prompt": "Соберите фразу из примеров:\n«Они живут этажом выше.»",
+    "words": [
+      "bor",
+      "en",
+      "trappa",
+      "upp.",
+      "De"
+    ],
+    "answer": "De bor en trappa upp.",
+    "explanation": "Эта конструкция встречалась в разделе «Примеры».",
+    "source": "De bor en trappa upp."
+  },
+  {
+    "type": "order",
+    "prompt": "Соберите фразу из примеров:\n«Нам в одну сторону.»",
+    "words": [
+      "åt",
+      "samma",
+      "håll.",
+      "Vi",
+      "går"
+    ],
+    "answer": "Vi går åt samma håll.",
+    "explanation": "Эта конструкция встречалась в разделе «Примеры».",
+    "source": "Vi går åt samma håll."
+  },
+  {
+    "type": "order",
+    "prompt": "Соберите фразу из примеров:\n«У них тут очень вкусный кофе.»",
+    "words": [
+      "kaffe",
+      "här.",
+      "De",
+      "har",
+      "jättegott"
+    ],
+    "answer": "De har jättegott kaffe här.",
+    "explanation": "Эта конструкция встречалась в разделе «Примеры».",
+    "source": "De har jättegott kaffe här."
+  },
+  {
+    "type": "order",
+    "prompt": "Соберите фразу из примеров:\n«Нам нужно только молоко.»",
+    "words": [
+      "mjölk.",
+      "Vi",
+      "behöver",
+      "bara"
+    ],
+    "answer": "Vi behöver bara mjölk.",
+    "explanation": "Эта конструкция встречалась в разделе «Примеры».",
+    "source": "Vi behöver bara mjölk."
   }
 ]
