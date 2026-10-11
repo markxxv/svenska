@@ -1,339 +1,63 @@
 <!doctype html>
 <html lang="ru">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<meta name="theme-color" content="#fafafa">
-<title>Swedish — разговорные фразы</title>
-<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-<script src="https://unpkg.com/lucide@latest"></script>
-<style type="text/tailwindcss">
-@theme {
-  --font-sans: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-}
-@layer base {
-  html { -webkit-tap-highlight-color: transparent; }
-  body { @apply bg-zinc-100 text-zinc-950 antialiased; }
-  button { touch-action: manipulation; }
-}
-@layer utilities {
-  .safe-top { padding-top: max(18px, env(safe-area-inset-top)); }
-  .safe-bottom { padding-bottom: max(18px, env(safe-area-inset-bottom)); }
-  .sheet-shadow { box-shadow: 0 -18px 60px rgba(0,0,0,.12); }
-  .phone-shadow { box-shadow: 0 24px 80px rgba(0,0,0,.10); }
-  .word-chip { @apply rounded-2xl border border-zinc-200 bg-white px-4 py-3.5 text-[20px] font-medium leading-none tracking-[-0.02em] transition active:scale-[.97] active:bg-zinc-100; }
-  .word-chip-active { @apply border-black bg-black text-white; }
-}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#fafafa">
+  <title>Svenska — шведский для жизни</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style type="text/tailwindcss">
+    @theme { --font-sans: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; }
+    @layer base {
+      html { -webkit-tap-highlight-color: transparent; }
+      body { @apply bg-zinc-100 text-zinc-950 antialiased; }
+      button { touch-action: manipulation; }
+    }
+    @layer utilities {
+      .safe-top { padding-top: max(18px, env(safe-area-inset-top)); }
+      .safe-bottom { padding-bottom: max(18px, env(safe-area-inset-bottom)); }
+      .phone-shadow { box-shadow: 0 24px 80px rgba(0,0,0,.08); }
+      .chip { @apply inline-flex min-h-10 items-center gap-1.5 rounded-xl bg-zinc-100 px-3.5 text-[13px] font-medium text-zinc-700 transition active:scale-[.98]; }
+      .primary { @apply inline-flex min-h-13 items-center justify-center gap-2 rounded-2xl bg-zinc-950 px-5 text-[14px] font-semibold text-white transition active:scale-[.98]; }
+      .surface { @apply rounded-[26px] bg-white p-5 shadow-[0_10px_36px_rgba(0,0,0,.035)]; }
+      .ghost { @apply inline-flex min-h-12 items-center justify-center gap-2 rounded-2xl bg-zinc-100 px-4 text-[14px] font-semibold text-zinc-700 transition active:scale-[.98]; }
+      .word-chip { @apply rounded-2xl bg-zinc-100 px-4 py-3.5 text-[19px] font-medium leading-none tracking-tight transition active:scale-[.97] active:bg-zinc-200; }
+      .flip-card { perspective: 1200px; }
+      .flip-inner { transform-style: preserve-3d; transition: transform .45s ease; }
+      .flip-card.is-flipped .flip-inner { transform: rotateY(180deg); }
+      .flip-face { backface-visibility: hidden; -webkit-backface-visibility: hidden; }
+      .flip-back { transform: rotateY(180deg); }
+      .scrollbar-none { scrollbar-width:none; }
+      .scrollbar-none::-webkit-scrollbar { display:none; }
+    }
+  </style>
 </head>
 <body>
-<div class="min-h-screen md:flex md:items-center md:justify-center md:p-8">
-<main class="mx-auto flex min-h-screen w-full max-w-[430px] flex-col overflow-hidden bg-[#fafafa] md:min-h-[860px] md:rounded-[36px] md:border md:border-zinc-200 md:phone-shadow">
-<header class="safe-top px-5 pb-4">
-<div class="flex items-center justify-between gap-4">
-<button id="backBtn" class="flex h-10 w-10 items-center justify-center rounded-full text-zinc-700 transition hover:bg-zinc-100 active:scale-95" aria-label="Предыдущая фраза"><i data-lucide="chevron-left" class="h-5 w-5"></i></button>
-<div class="min-w-0 flex-1 text-center"><div class="text-[15px] font-semibold tracking-[-0.02em]">Разговорные фразы</div><div id="topicLabel" class="mt-0.5 truncate text-[12px] text-zinc-400">Бытовая речь</div></div>
-<div id="counter" class="w-10 text-right text-[13px] font-medium tabular-nums text-zinc-500">1 / 40</div>
-</div>
-<div class="mt-4 h-1.5 overflow-hidden rounded-full bg-zinc-200"><div id="progressBar" class="h-full rounded-full bg-black transition-all duration-300" style="width:2.5%"></div></div>
-</header>
-
-<section class="flex flex-1 flex-col px-5 pb-5">
-<div class="mt-3 rounded-[28px] bg-white p-5 shadow-[0_10px_40px_rgba(0,0,0,.04)] ring-1 ring-zinc-200/70">
-<div class="flex items-center gap-4">
-<button id="playPhraseBtn" class="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-black text-white shadow-lg shadow-black/10 transition active:scale-95" aria-label="Прослушать фразу"><i id="playIcon" data-lucide="play" class="ml-0.5 h-6 w-6 fill-current"></i></button>
-<div class="min-w-0 flex-1">
-<div class="flex h-9 items-end gap-[3px]" id="waveform" aria-hidden="true"></div>
-<div class="mt-2 flex items-center justify-between text-[11px] font-medium text-zinc-400"><span>Натуральное произношение</span><button id="slowBtn" class="rounded-full bg-zinc-100 px-2.5 py-1 text-zinc-600 transition active:scale-95">1×</button></div>
-</div>
-</div>
-
-<div class="mt-7"><div id="words" class="flex flex-wrap gap-2.5"></div></div>
-
-<div id="translationCard" class="mt-6 hidden rounded-2xl bg-zinc-100 p-4"><div class="flex items-center gap-2 text-[11px] font-semibold uppercase tracking-[0.08em] text-zinc-500"><i data-lucide="languages" class="h-4 w-4"></i>Перевод фразы</div><div id="translationText" class="mt-2 text-[18px] font-medium leading-snug tracking-[-0.02em]"></div></div>
-
-<div class="mt-6 grid grid-cols-2 gap-2.5">
-<button id="translateBtn" class="flex min-h-12 items-center justify-center gap-2 rounded-2xl bg-zinc-100 px-4 text-[14px] font-semibold text-zinc-700 transition active:scale-[.98] active:bg-zinc-200"><i data-lucide="languages" class="h-4 w-4"></i><span>Перевод</span></button>
-<button id="favoriteBtn" class="flex min-h-12 items-center justify-center gap-2 rounded-2xl bg-zinc-100 px-4 text-[14px] font-semibold text-zinc-700 transition active:scale-[.98] active:bg-zinc-200"><i id="favoriteIcon" data-lucide="heart" class="h-4 w-4"></i><span id="favoriteText">В избранное</span></button>
-</div>
-</div>
-
-<div class="mt-auto pt-5">
-<div id="hint" class="mb-3 px-1 text-center text-[12px] leading-relaxed text-zinc-400">Нажмите на любое слово, чтобы увидеть значение именно в этой фразе.</div>
-<button id="nextBtn" class="flex h-14 w-full items-center justify-center gap-2 rounded-2xl bg-black text-[15px] font-semibold text-white transition active:scale-[.99]"><span>Дальше</span><i data-lucide="arrow-right" class="h-4 w-4"></i></button>
-</div>
-</section>
-
-<nav class="safe-bottom border-t border-zinc-200/80 bg-white/90 px-4 pt-2 backdrop-blur-xl">
-<div class="grid grid-cols-3 gap-2">
-<button id="lessonsTab" class="flex flex-col items-center gap-1 rounded-2xl px-3 py-2 text-black"><i data-lucide="message-circle-more" class="h-5 w-5"></i><span class="text-[10px] font-semibold">Фразы</span></button>
-<button id="favoritesTab" class="flex flex-col items-center gap-1 rounded-2xl px-3 py-2 text-zinc-400"><i data-lucide="heart" class="h-5 w-5"></i><span class="text-[10px] font-semibold">Избранное</span></button>
-<button id="resetBtn" class="flex flex-col items-center gap-1 rounded-2xl px-3 py-2 text-zinc-400"><i data-lucide="rotate-ccw" class="h-5 w-5"></i><span class="text-[10px] font-semibold">Сначала</span></button>
-</div>
-</nav>
-</main>
-</div>
-
-<div id="sheetBackdrop" class="fixed inset-0 z-40 hidden bg-black/35 backdrop-blur-[2px]"></div>
-<div id="wordSheet" class="fixed inset-x-0 bottom-0 z-50 mx-auto hidden max-w-[430px] translate-y-0 rounded-t-[30px] bg-white p-5 pb-[max(22px,env(safe-area-inset-bottom))] sheet-shadow md:bottom-4 md:rounded-[30px]">
-<div class="mx-auto mb-5 h-1.5 w-10 rounded-full bg-zinc-200"></div>
-<div class="flex items-start justify-between gap-4"><div><div id="sheetWord" class="text-[30px] font-semibold tracking-[-0.04em]"></div><div id="sheetLemma" class="mt-1 text-[13px] text-zinc-400"></div></div><button id="playWordBtn" class="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-zinc-100 text-zinc-700 transition active:scale-95" aria-label="Прослушать слово"><i data-lucide="volume-2" class="h-5 w-5"></i></button></div>
-<div id="sheetTranslation" class="mt-5 rounded-2xl bg-zinc-100 px-4 py-4 text-[22px] font-semibold tracking-[-0.03em]"></div>
-<div id="sheetNoteWrap" class="mt-4 hidden rounded-2xl border border-zinc-200 p-4"><div class="flex items-start gap-3"><div class="mt-0.5 flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-black text-white"><i data-lucide="lightbulb" class="h-3.5 w-3.5"></i></div><div><div class="text-[11px] font-semibold uppercase tracking-[0.08em] text-zinc-400">В этой фразе</div><div id="sheetNote" class="mt-1 text-[14px] leading-relaxed text-zinc-700"></div></div></div></div>
-<div id="sheetChunkWrap" class="mt-4 hidden rounded-2xl bg-black p-4 text-white"><div class="text-[10px] font-semibold uppercase tracking-[0.1em] text-white/50">Полезная конструкция</div><div id="sheetChunk" class="mt-1 text-[18px] font-semibold"></div><div id="sheetChunkTranslation" class="mt-0.5 text-[13px] text-white/60"></div></div>
-<button id="closeSheetBtn" class="mt-5 h-12 w-full rounded-2xl bg-zinc-100 text-[14px] font-semibold text-zinc-700 transition active:scale-[.99]">Закрыть</button>
-</div>
-
-<div id="favoritesPanel" class="fixed inset-0 z-30 hidden bg-[#fafafa]">
-<div class="mx-auto flex min-h-screen w-full max-w-[430px] flex-col md:min-h-[860px]">
-<header class="safe-top flex items-center gap-3 px-5 pb-4"><button id="closeFavoritesBtn" class="flex h-10 w-10 items-center justify-center rounded-full hover:bg-zinc-100"><i data-lucide="chevron-left" class="h-5 w-5"></i></button><div><div class="text-[18px] font-semibold tracking-[-0.03em]">Избранное</div><div id="favoritesCount" class="text-[12px] text-zinc-400">0 фраз</div></div></header>
-<div id="favoritesList" class="flex-1 space-y-2 overflow-y-auto px-5 pb-8"></div>
-</div>
-</div>
-
-<script>
-const phrases = [
-  {id:1,text:'Hej!',translation:'Привет!',topic:'Базовые фразы',words:[['Hej','hej','привет','Обычное нейтральное приветствие.']]},
-  {id:2,text:'Hur är det?',translation:'Как дела?',topic:'Базовые фразы',words:[['Hur','hur','как'],['är','vara','есть / обстоят'],['det','det','это / дела','Вся конструкция "Hur är det?" — обычное «Как дела?».','Hur är det?','Как дела?']]},
-  {id:3,text:'Tack så mycket.',translation:'Большое спасибо.',topic:'Базовые фразы',words:[['Tack','tack','спасибо'],['så','så','так / настолько'],['mycket','mycket','много','Вместе: "tack så mycket" — «большое спасибо».','tack så mycket','большое спасибо']]},
-  {id:4,text:'Varsågod.',translation:'Пожалуйста.',topic:'Базовые фразы',words:[['Varsågod','varsågod','пожалуйста','Говорят, когда что-то дают или отвечают на благодарность.']]},
-  {id:5,text:'Ursäkta.',translation:'Извините.',topic:'Базовые фразы',words:[['Ursäkta','ursäkta','извините','Подходит, чтобы привлечь внимание или извиниться.']]},
-  {id:6,text:'Ingen fara.',translation:'Ничего страшного.',topic:'Базовые фразы',words:[['Ingen','ingen','никакой / нет'],['fara','fara','опасность / проблема','Устойчивая фраза: «ничего страшного», «без проблем».','ingen fara','ничего страшного']]},
-  {id:7,text:'Jag förstår inte.',translation:'Я не понимаю.',topic:'Общение',words:[['Jag','jag','я'],['förstår','förstå','понимаю'],['inte','inte','не','В простом главном предложении отрицание обычно стоит после глагола.']]},
-  {id:8,text:'Kan du säga det igen?',translation:'Можешь повторить?',topic:'Общение',words:[['Kan','kunna','можешь'],['du','du','ты'],['säga','säga','сказать'],['det','det','это'],['igen','igen','снова / ещё раз','"säga det igen" — сказать это ещё раз.','säga det igen','повторить / сказать ещё раз']]},
-  {id:9,text:'Kan du prata lite långsammare?',translation:'Можешь говорить немного медленнее?',topic:'Общение',words:[['Kan','kunna','можешь'],['du','du','ты'],['prata','prata','говорить'],['lite','lite','немного'],['långsammare','långsam','медленнее']]},
-  {id:10,text:'Vad betyder det?',translation:'Что это значит?',topic:'Общение',words:[['Vad','vad','что'],['betyder','betyda','значит / означает'],['det','det','это']]},
-  {id:11,text:'Var ligger toaletten?',translation:'Где туалет?',topic:'В городе',words:[['Var','var','где'],['ligger','ligga','находится','Глагол "ligga" часто используют о местонахождении места или объекта.'],['toaletten','toalett','туалет','Определённая форма: "toaletten" — «этот / конкретный туалет».']]},
-  {id:12,text:'Hur mycket kostar det?',translation:'Сколько это стоит?',topic:'Покупки',words:[['Hur','hur','как'],['mycket','mycket','много / сколько','"hur mycket" — «сколько».','hur mycket','сколько'],['kostar','kosta','стоит'],['det','det','это']]},
-  {id:13,text:'Kan jag betala med kort?',translation:'Можно оплатить картой?',topic:'Покупки',words:[['Kan','kunna','могу / можно'],['jag','jag','я'],['betala','betala','платить / оплатить'],['med','med','с / при помощи'],['kort','kort','карта','"med kort" — картой.','betala med kort','платить картой']]},
-  {id:14,text:'Jag skulle vilja ha en kaffe, tack.',translation:'Я бы хотел кофе, пожалуйста.',topic:'Кафе',words:[['Jag','jag','я'],['skulle','skola','бы','Здесь часть вежливой конструкции "skulle vilja" — «хотел бы».','skulle vilja','хотел бы'],['vilja','vilja','хотеть','Вместе со "skulle" образует вежливое желание.','skulle vilja','хотел бы'],['ha','ha','иметь / получить','После "skulle vilja": что именно вы хотели бы получить.'],['en','en','неопределённый артикль'],['kaffe','kaffe','кофе'],['tack','tack','пожалуйста','В конце просьбы "tack" звучит как вежливое «пожалуйста».']]},
-  {id:15,text:'Kan jag få notan, tack?',translation:'Можно счёт, пожалуйста?',topic:'Кафе',words:[['Kan','kunna','можно / могу'],['jag','jag','я'],['få','få','получить','Конструкция "Kan jag få…?" — естественный способ что-то попросить.','Kan jag få…?','Можно мне…?'],['notan','nota','счёт','Определённая форма слова "nota".'],['tack','tack','пожалуйста']]},
-  {id:16,text:'Jag letar efter den här adressen.',translation:'Я ищу этот адрес.',topic:'В городе',words:[['Jag','jag','я'],['letar','leta','ищу','Глагол часто используется с "efter".','leta efter','искать'],['efter','efter','за / после','Здесь часть конструкции "leta efter" — «искать».','leta efter','искать'],['den','den','этот'],['här','här','здесь','"den här" — «этот / эта».','den här','этот / эта'],['adressen','adress','адрес']]},
-  {id:17,text:'Vilken buss ska jag ta?',translation:'На какой автобус мне сесть?',topic:'Транспорт',words:[['Vilken','vilken','какой'],['buss','buss','автобус'],['ska','skola','нужно / следует','Здесь "ska jag" передаёт «мне нужно / следует».'],['jag','jag','я'],['ta','ta','взять / сесть на','С транспортом "ta" часто значит «поехать на / сесть на».']]},
-  {id:18,text:'När går nästa tåg?',translation:'Когда следующий поезд?',topic:'Транспорт',words:[['När','när','когда'],['går','gå','идёт / отправляется','О транспорте "går" часто значит «отправляется».'],['nästa','nästa','следующий'],['tåg','tåg','поезд']]},
-  {id:19,text:'Jag vet inte.',translation:'Я не знаю.',topic:'Базовые фразы',words:[['Jag','jag','я'],['vet','veta','знаю'],['inte','inte','не']]},
-  {id:20,text:'Vi ses senare.',translation:'Увидимся позже.',topic:'Базовые фразы',words:[['Vi','vi','мы'],['ses','ses','увидимся','Возвратная форма: буквально «мы увидимся».'],['senare','sen','позже']]},
-  {id:21,text:'Jag har bott här i tre år.',translation:'Я живу здесь уже три года.',topic:'О себе',words:[['Jag','jag','я'],['har','ha','имею / вспомогательный глагол'],['bott','bo','жил / живу','"har bott" — действие началось раньше и связано с настоящим.','har bott','живу / жил до настоящего момента'],['här','här','здесь'],['i','i','в / на протяжении'],['tre','tre','три'],['år','år','года']]},
-  {id:22,text:'Jag tänkte gå och handla efter jobbet.',translation:'Я собирался зайти за покупками после работы.',topic:'Планы',words:[['Jag','jag','я'],['tänkte','tänka','думал / собирался','В разговоре "jag tänkte…" часто мягко сообщает о плане.','jag tänkte…','я собирался / я думал…'],['gå','gå','идти'],['och','och','и'],['handla','handla','делать покупки'],['efter','efter','после'],['jobbet','jobb','работы','Определённая форма: "jobbet" — «работа / рабочий день».']]},
-  {id:23,text:'Om du vill kan vi ses senare.',translation:'Если хочешь, можем встретиться позже.',topic:'Планы',words:[['Om','om','если'],['du','du','ты'],['vill','vilja','хочешь'],['kan','kunna','можем'],['vi','vi','мы'],['ses','ses','встретиться / увидеться'],['senare','sen','позже']]},
-  {id:24,text:'Jag vet inte om jag hinner idag.',translation:'Я не знаю, успею ли я сегодня.',topic:'Планы',words:[['Jag','jag','я'],['vet','veta','знаю'],['inte','inte','не'],['om','om','ли','После "jag vet inte" слово "om" вводит косвенный вопрос.','vet inte om…','не знаю, … ли'],['jag','jag','я'],['hinner','hinna','успею','"hinna" — успеть сделать что-то за имеющееся время.'],['idag','idag','сегодня']]},
-  {id:25,text:'Det beror på hur mycket tid vi har.',translation:'Это зависит от того, сколько у нас времени.',topic:'Повседневная речь',words:[['Det','det','это'],['beror','bero','зависит','Используется с предлогом "på".','beror på','зависит от'],['på','på','от','Часть конструкции "beror på".','beror på','зависит от'],['hur','hur','как'],['mycket','mycket','много / сколько','"hur mycket" — «сколько».','hur mycket','сколько'],['tid','tid','времени'],['vi','vi','мы'],['har','ha','имеем / у нас есть']]},
-  {id:26,text:'Jag måste gå nu, annars blir jag sen.',translation:'Мне нужно идти, иначе я опоздаю.',topic:'Повседневная речь',words:[['Jag','jag','я'],['måste','måste','должен / нужно'],['gå','gå','идти'],['nu','nu','сейчас'],['annars','annars','иначе'],['blir','bli','стану / окажусь'],['jag','jag','я'],['sen','sen','поздно / опоздавший','"bli sen" — опоздать.','bli sen','опоздать']]},
-  {id:27,text:'När jag kommer hem ska jag laga middag.',translation:'Когда я приду домой, я приготовлю ужин.',topic:'Дом',words:[['När','när','когда'],['jag','jag','я'],['kommer','komma','прихожу / приду'],['hem','hem','домой'],['ska','skola','буду / собираюсь'],['jag','jag','я'],['laga','laga','готовить'],['middag','middag','ужин']]},
-  {id:28,text:'Jag har redan gjort det.',translation:'Я уже это сделал.',topic:'Повседневная речь',words:[['Jag','jag','я'],['har','ha','вспомогательный глагол'],['redan','redan','уже'],['gjort','göra','сделал','"har gjort" — «сделал / уже сделал».','har gjort','сделал'],['det','det','это']]},
-  {id:29,text:'Jag har aldrig varit där förut.',translation:'Я никогда раньше там не был.',topic:'Опыт',words:[['Jag','jag','я'],['har','ha','вспомогательный глагол'],['aldrig','aldrig','никогда'],['varit','vara','был','"har varit" — «был / бывал».','har varit','был / бывал'],['där','där','там'],['förut','förut','раньше / прежде']]},
-  {id:30,text:'Jag skulle gärna följa med.',translation:'Я бы с удовольствием пошёл с вами.',topic:'Планы',words:[['Jag','jag','я'],['skulle','skola','бы'],['gärna','gärna','с удовольствием','"skulle gärna" — «с удовольствием бы».','skulle gärna','с удовольствием бы'],['följa','följa','следовать / пойти'],['med','med','с','"följa med" — пойти вместе / присоединиться.','följa med','пойти вместе / присоединиться']]},
-  {id:31,text:'Kan du hjälpa mig att hitta rätt?',translation:'Можешь помочь мне найти нужное место?',topic:'В городе',words:[['Kan','kunna','можешь'],['du','du','ты'],['hjälpa','hjälpa','помочь'],['mig','jag','мне'],['att','att','частица инфинитива'],['hitta','hitta','найти'],['rätt','rätt','правильно / нужное','"hitta rätt" — найти правильный путь или нужное место.','hitta rätt','найти нужное место / путь']]},
-  {id:32,text:'Jag försöker lära mig svenska.',translation:'Я стараюсь выучить шведский.',topic:'Обучение',words:[['Jag','jag','я'],['försöker','försöka','стараюсь / пытаюсь'],['lära','lära','учить'],['mig','jag','себя / мне','"lära mig" — учиться / выучить для себя.','lära mig','учиться / выучить'],['svenska','svenska','шведский язык']]},
-  {id:33,text:'Det är första gången jag är här.',translation:'Я здесь впервые.',topic:'Опыт',words:[['Det','det','это'],['är','vara','есть'],['första','första','первый'],['gången','gång','раз','"första gången" — «в первый раз».','första gången','в первый раз'],['jag','jag','я'],['är','vara','нахожусь'],['här','här','здесь']]},
-  {id:34,text:'Jag trodde att du skulle komma senare.',translation:'Я думал, что ты придёшь позже.',topic:'Разговор',words:[['Jag','jag','я'],['trodde','tro','думал / полагал'],['att','att','что'],['du','du','ты'],['skulle','skola','должен был / собирался','Здесь "skulle" передаёт будущее с точки зрения прошлого.'],['komma','komma','прийти'],['senare','sen','позже']]},
-  {id:35,text:'Även om det regnar tänker jag gå ut.',translation:'Даже если будет дождь, я всё равно собираюсь выйти.',topic:'Планы',words:[['Även','även','даже'],['om','om','если','"även om" — «даже если».','även om','даже если'],['det','det','это / формальное подлежащее'],['regnar','regna','идёт дождь'],['tänker','tänka','собираюсь','"tänker + infinitiv" часто выражает намерение.'],['jag','jag','я'],['gå','gå','идти'],['ut','ut','наружу / выйти','"gå ut" — выйти.','gå ut','выйти']]},
-  {id:36,text:'Jag är inte säker på vad jag ska göra.',translation:'Я не уверен, что мне делать.',topic:'Разговор',words:[['Jag','jag','я'],['är','vara','есть / являюсь'],['inte','inte','не'],['säker','säker','уверен'],['på','på','в / насчёт','"säker på" — уверен в чём-то.','säker på','уверен в'],['vad','vad','что'],['jag','jag','я'],['ska','skola','следует / нужно'],['göra','göra','делать']]},
-  {id:37,text:'Så fort jag är klar ringer jag dig.',translation:'Как только я закончу, я тебе позвоню.',topic:'Планы',words:[['Så','så','так / как','Часть конструкции "så fort" — «как только».','så fort','как только'],['fort','fort','быстро / только','Вместе: "så fort" — «как только».','så fort','как только'],['jag','jag','я'],['är','vara','буду / есть'],['klar','klar','готов / закончил','"är klar" — закончить и быть готовым.','är klar','закончить / быть готовым'],['ringer','ringa','звоню / позвоню','Настоящее время естественно используется для ближайшего будущего.'],['jag','jag','я'],['dig','du','тебе / тебя']]},
-  {id:38,text:'Det tar ungefär tjugo minuter att gå dit.',translation:'Туда идти примерно двадцать минут.',topic:'В городе',words:[['Det','det','это'],['tar','ta','занимает','"det tar" — «это занимает (времени)».','det tar','это занимает'],['ungefär','ungefär','примерно'],['tjugo','tjugo','двадцать'],['minuter','minut','минут'],['att','att','частица инфинитива'],['gå','gå','идти'],['dit','dit','туда']]},
-  {id:39,text:'Jag skulle ha ringt dig, men jag glömde.',translation:'Я бы тебе позвонил, но забыл.',topic:'Разговор',words:[['Jag','jag','я'],['skulle','skola','бы'],['ha','ha','иметь / вспомогательный глагол'],['ringt','ringa','позвонил','"skulle ha ringt" — «позвонил бы / должен был позвонить».','skulle ha ringt','позвонил бы / должен был позвонить'],['dig','du','тебе'],['men','men','но'],['jag','jag','я'],['glömde','glömma','забыл']]},
-  {id:40,text:'Ju mer jag hör svenska, desto lättare blir det.',translation:'Чем больше я слышу шведскую речь, тем легче становится.',topic:'Обучение',words:[['Ju','ju','чем','Начало сравнительной конструкции "ju … desto …".','ju … desto …','чем … тем …'],['mer','mycket','больше'],['jag','jag','я'],['hör','höra','слышу'],['svenska','svenska','шведский язык / шведскую речь'],['desto','desto','тем','Вторая часть конструкции "ju … desto …".','ju … desto …','чем … тем …'],['lättare','lätt','легче'],['blir','bli','становится'],['det','det','это']]}
-];
-
-const state = {
-  index: Math.max(0, Math.min(phrases.length - 1, Number(localStorage.getItem('sv-index') || 0))),
-  favorites: new Set(JSON.parse(localStorage.getItem('sv-favorites') || '[]')),
-  translationVisible: false,
-  slow: false,
-  selectedWord: null
-};
-
-const $ = (id) => document.getElementById(id);
-const wordsEl = $('words');
-const translationCard = $('translationCard');
-const translationText = $('translationText');
-const counter = $('counter');
-const topicLabel = $('topicLabel');
-const progressBar = $('progressBar');
-const favoriteText = $('favoriteText');
-const waveform = $('waveform');
-
-function escapeHtml(value) {
-  return String(value).replace(/[&<>'"]/g, (char) => ({'&':'&amp;','<':'&lt;','>':'&gt;',"'":'&#39;','"':'&quot;'}[char]));
-}
-
-function punctuationFor(phraseText, wordText, occurrenceIndex) {
-  const escaped = wordText.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-  const matches = [...phraseText.matchAll(new RegExp(`\\b${escaped}([,?.!;:]?)`, 'gi'))];
-  return matches[occurrenceIndex]?.[1] || '';
-}
-
-function renderWaveform() {
-  const bars = [10,16,22,13,26,18,31,20,15,28,34,23,18,27,15,11,20,13];
-  waveform.innerHTML = bars.map((h, i) => `<span class="wavebar block w-[3px] rounded-full bg-zinc-300 transition-all duration-200" style="height:${h}px"></span>`).join('');
-}
-
-function renderPhrase() {
-  stopSpeech();
-  state.translationVisible = false;
-  translationCard.classList.add('hidden');
-  const phrase = phrases[state.index];
-  counter.textContent = `${state.index + 1} / ${phrases.length}`;
-  topicLabel.textContent = phrase.topic;
-  progressBar.style.width = `${((state.index + 1) / phrases.length) * 100}%`;
-  translationText.textContent = phrase.translation;
-  wordsEl.innerHTML = '';
-
-  const seen = {};
-  phrase.words.forEach((word, wordIndex) => {
-    const [surface] = word;
-    const key = surface.toLowerCase();
-    const occurrence = seen[key] || 0;
-    seen[key] = occurrence + 1;
-    const suffix = punctuationFor(phrase.text, surface, occurrence);
-    const button = document.createElement('button');
-    button.className = 'word-chip';
-    button.innerHTML = `${escapeHtml(surface)}${escapeHtml(suffix)}`;
-    button.addEventListener('click', () => openWordSheet(wordIndex));
-    wordsEl.appendChild(button);
-  });
-
-  const isFav = state.favorites.has(phrase.id);
-  favoriteText.textContent = isFav ? 'В избранном' : 'В избранное';
-  const favIcon = $('favoriteIcon');
-  if (favIcon) favIcon.setAttribute('fill', isFav ? 'currentColor' : 'none');
-  $('backBtn').classList.toggle('opacity-30', state.index === 0);
-  $('backBtn').disabled = state.index === 0;
-  localStorage.setItem('sv-index', String(state.index));
-  lucide.createIcons();
-}
-
-function chooseSwedishVoice() {
-  const voices = speechSynthesis.getVoices();
-  const swedish = voices.filter(v => /^sv(-|_)/i.test(v.lang));
-  return swedish.find(v => /siri|alva|klara|google|microsoft/i.test(v.name)) || swedish[0] || null;
-}
-
-function speak(text, rate = 0.92, onEnd = null) {
-  if (!('speechSynthesis' in window)) {
-    alert('Этот браузер не поддерживает Web Speech API.');
-    return;
-  }
-  stopSpeech();
-  const utterance = new SpeechSynthesisUtterance(text);
-  utterance.lang = 'sv-SE';
-  utterance.rate = rate;
-  utterance.pitch = 1;
-  const voice = chooseSwedishVoice();
-  if (voice) utterance.voice = voice;
-  utterance.onstart = () => setSpeaking(true);
-  utterance.onend = () => { setSpeaking(false); if (onEnd) onEnd(); };
-  utterance.onerror = () => setSpeaking(false);
-  speechSynthesis.speak(utterance);
-}
-
-function stopSpeech() {
-  if ('speechSynthesis' in window) speechSynthesis.cancel();
-  setSpeaking(false);
-}
-
-function setSpeaking(active) {
-  document.querySelectorAll('.wavebar').forEach((bar, i) => {
-    bar.style.transform = active ? `scaleY(${[1.2,.75,1.45,.9,1.3][i % 5]})` : 'scaleY(1)';
-    bar.classList.toggle('bg-black', active);
-  });
-  $('playPhraseBtn').classList.toggle('scale-95', active);
-}
-
-function openWordSheet(wordIndex) {
-  const phrase = phrases[state.index];
-  const word = phrase.words[wordIndex];
-  const [surface, lemma, translation, note, chunk, chunkTranslation] = word;
-  state.selectedWord = word;
-  $('sheetWord').textContent = surface;
-  $('sheetLemma').textContent = lemma && lemma.toLowerCase() !== surface.toLowerCase() ? `lemma: ${lemma}` : 'слово в текущей форме';
-  $('sheetTranslation').textContent = translation;
-  $('sheetNote').textContent = note || '';
-  $('sheetNoteWrap').classList.toggle('hidden', !note);
-  $('sheetChunk').textContent = chunk || '';
-  $('sheetChunkTranslation').textContent = chunkTranslation || '';
-  $('sheetChunkWrap').classList.toggle('hidden', !chunk);
-  $('sheetBackdrop').classList.remove('hidden');
-  $('wordSheet').classList.remove('hidden');
-  document.body.style.overflow = 'hidden';
-  lucide.createIcons();
-}
-
-function closeWordSheet() {
-  $('sheetBackdrop').classList.add('hidden');
-  $('wordSheet').classList.add('hidden');
-  document.body.style.overflow = '';
-  state.selectedWord = null;
-}
-
-function nextPhrase() {
-  if (state.index < phrases.length - 1) state.index += 1;
-  else state.index = 0;
-  renderPhrase();
-}
-
-function previousPhrase() {
-  if (state.index > 0) state.index -= 1;
-  renderPhrase();
-}
-
-function toggleFavorite() {
-  const id = phrases[state.index].id;
-  if (state.favorites.has(id)) state.favorites.delete(id); else state.favorites.add(id);
-  localStorage.setItem('sv-favorites', JSON.stringify([...state.favorites]));
-  renderPhrase();
-}
-
-function openFavorites() {
-  const items = phrases.filter(p => state.favorites.has(p.id));
-  $('favoritesCount').textContent = `${items.length} ${items.length === 1 ? 'фраза' : items.length >= 2 && items.length <= 4 ? 'фразы' : 'фраз'}`;
-  $('favoritesList').innerHTML = items.length ? items.map(p => `<button class="favorite-row w-full rounded-2xl bg-white p-4 text-left ring-1 ring-zinc-200/70" data-id="${p.id}"><div class="text-[17px] font-semibold tracking-[-0.02em]">${escapeHtml(p.text)}</div><div class="mt-1 text-[13px] leading-relaxed text-zinc-500">${escapeHtml(p.translation)}</div></button>`).join('') : `<div class="rounded-3xl border border-dashed border-zinc-300 p-8 text-center"><div class="mx-auto flex h-12 w-12 items-center justify-center rounded-full bg-zinc-100"><i data-lucide="heart" class="h-5 w-5 text-zinc-400"></i></div><div class="mt-4 text-[15px] font-semibold">Пока пусто</div><div class="mt-1 text-[13px] leading-relaxed text-zinc-400">Добавляйте полезные фразы сердечком.</div></div>`;
-  document.querySelectorAll('.favorite-row').forEach(btn => btn.addEventListener('click', () => {
-    const id = Number(btn.dataset.id);
-    state.index = phrases.findIndex(p => p.id === id);
-    closeFavorites();
-    renderPhrase();
-  }));
-  $('favoritesPanel').classList.remove('hidden');
-  document.body.style.overflow = 'hidden';
-  lucide.createIcons();
-}
-
-function closeFavorites() {
-  $('favoritesPanel').classList.add('hidden');
-  document.body.style.overflow = '';
-}
-
-$('playPhraseBtn').addEventListener('click', () => speak(phrases[state.index].text, state.slow ? 0.78 : 0.95));
-$('slowBtn').addEventListener('click', () => { state.slow = !state.slow; $('slowBtn').textContent = state.slow ? '0.8×' : '1×'; });
-$('translateBtn').addEventListener('click', () => { state.translationVisible = !state.translationVisible; translationCard.classList.toggle('hidden', !state.translationVisible); });
-$('favoriteBtn').addEventListener('click', toggleFavorite);
-$('nextBtn').addEventListener('click', nextPhrase);
-$('backBtn').addEventListener('click', previousPhrase);
-$('sheetBackdrop').addEventListener('click', closeWordSheet);
-$('closeSheetBtn').addEventListener('click', closeWordSheet);
-$('playWordBtn').addEventListener('click', () => { if (state.selectedWord) speak(state.selectedWord[0], 0.82); });
-$('favoritesTab').addEventListener('click', openFavorites);
-$('closeFavoritesBtn').addEventListener('click', closeFavorites);
-$('lessonsTab').addEventListener('click', () => {});
-$('resetBtn').addEventListener('click', () => { state.index = 0; renderPhrase(); });
-
-let touchStartX = 0;
-let touchStartY = 0;
-document.querySelector('main').addEventListener('touchstart', (e) => { touchStartX = e.changedTouches[0].screenX; touchStartY = e.changedTouches[0].screenY; }, {passive:true});
-document.querySelector('main').addEventListener('touchend', (e) => {
-  if (!$('wordSheet').classList.contains('hidden')) return;
-  const dx = e.changedTouches[0].screenX - touchStartX;
-  const dy = e.changedTouches[0].screenY - touchStartY;
-  if (Math.abs(dx) > 70 && Math.abs(dx) > Math.abs(dy) * 1.5) dx < 0 ? nextPhrase() : previousPhrase();
-}, {passive:true});
-
-renderWaveform();
-renderPhrase();
-if ('speechSynthesis' in window) {
-  speechSynthesis.getVoices();
-  speechSynthesis.onvoiceschanged = () => chooseSwedishVoice();
-}
-</script>
+  <div class="min-h-screen md:flex md:items-center md:justify-center md:p-8">
+    <main class="mx-auto flex h-dvh min-h-[550px] w-full max-w-[430px] flex-col overflow-hidden bg-[#fafafa] md:h-[860px] md:rounded-[34px] md:phone-shadow">
+      <header class="safe-top shrink-0 px-5 pb-3">
+        <div class="flex items-center gap-3">
+          <a href="#/" id="homeButton" class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white text-zinc-700" aria-label="К темам"><i data-lucide="arrow-left" class="h-5 w-5"></i></a>
+          <div class="min-w-0 flex-1">
+            <h1 id="headerTitle" class="truncate text-[17px] font-semibold tracking-tight">Svenska</h1>
+            <p id="headerSubtitle" class="truncate text-[12px] text-zinc-500">Шведский для реальной жизни</p>
+          </div>
+          <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white text-lg">🇸🇪</div>
+        </div>
+        <nav id="stageNav" class="scrollbar-none mt-4 hidden gap-1.5 overflow-x-auto pb-1" aria-label="Этапы урока"></nav>
+      </header>
+      <div id="view" class="min-h-0 flex-1 overflow-y-auto px-5 pb-8" aria-live="polite">
+        <div class="pt-12 text-center text-sm text-zinc-400">Загружаем темы…</div>
+      </div>
+      <footer class="safe-bottom shrink-0 border-t border-zinc-100 bg-white px-5 pt-3">
+        <div class="flex items-center justify-between gap-3">
+          <a href="#/" class="flex items-center gap-2 rounded-xl px-3 py-2 text-[13px] font-semibold"><i data-lucide="layout-grid" class="h-4 w-4"></i> Все темы</a>
+          <span id="footerStatus" class="text-right text-[11px] text-zinc-400">Учитесь в своём темпе</span>
+        </div>
+      </footer>
+    </main>
+  </div>
+  <script type="module" src="./js/app.js"></script>
 </body>
 </html>

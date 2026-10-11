@@ -1,0 +1,62 @@
+[
+  {
+    "sv": "det",
+    "ru": "это",
+    "example": "Det beror på hur mycket tid vi har."
+  },
+  {
+    "sv": "beror",
+    "ru": "зависит",
+    "example": "beror på"
+  },
+  {
+    "sv": "på",
+    "ru": "от",
+    "example": "beror på"
+  },
+  {
+    "sv": "hur",
+    "ru": "как",
+    "example": "Det beror på hur mycket tid vi har."
+  },
+  {
+    "sv": "mycket",
+    "ru": "много / сколько",
+    "example": "hur mycket"
+  },
+  {
+    "sv": "tid",
+    "ru": "времени",
+    "example": "Det beror på hur mycket tid vi har."
+  },
+  {
+    "sv": "vi",
+    "ru": "мы",
+    "example": "Det beror på hur mycket tid vi har."
+  },
+  {
+    "sv": "har",
+    "ru": "имеем / у нас есть",
+    "example": "Det beror på hur mycket tid vi har."
+  },
+  {
+    "sv": "jag",
+    "ru": "я",
+    "example": "Jag måste gå nu, annars blir jag sen."
+  },
+  {
+    "sv": "måste",
+    "ru": "должен / нужно",
+    "example": "Jag måste gå nu, annars blir jag sen."
+  },
+  {
+    "sv": "gå",
+    "ru": "идти",
+    "example": "Jag måste gå nu, annars blir jag sen."
+  },
+  {
+    "sv": "nu",
+    "ru": "сейчас",
+    "example": "Jag måste gå nu, annars blir jag sen."
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "sv": "en kebab",
+    "ru": "кебаб",
+    "example": "En kebab, tack."
+  },
+  {
+    "sv": "en pizza",
+    "ru": "пицца",
+    "example": "En pizza, tack."
+  },
+  {
+    "sv": "en kebabrulle",
+    "ru": "кебаб в лаваше"
+  },
+  {
+    "sv": "med",
+    "ru": "с (чем-то)",
+    "example": "med ost — с сыром"
+  },
+  {
+    "sv": "utan",
+    "ru": "без",
+    "example": "utan lök — без лука"
+  },
+  {
+    "sv": "lök",
+    "ru": "лук"
+  },
+  {
+    "sv": "ost",
+    "ru": "сыр"
+  },
+  {
+    "sv": "starkt",
+    "ru": "острый (о еде)",
+    "example": "Är det starkt?"
+  },
+  {
+    "sv": "avhämtning",
+    "ru": "еда на вынос",
+    "example": "För avhämtning"
+  },
+  {
+    "sv": "här",
+    "ru": "здесь",
+    "example": "Jag äter här."
+  },
+  {
+    "sv": "betala",
+    "ru": "платить",
+    "example": "Kan jag betala med kort?"
+  },
+  {
+    "sv": "notan",
+    "ru": "счёт (в ресторане)"
+  }
+]

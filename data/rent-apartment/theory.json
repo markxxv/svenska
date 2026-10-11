@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Сказать, что ищете",
+    "body": "Jag söker en lägenhet att hyra — «Я ищу квартиру для аренды». En lägenhet — квартира. Hyra — арендовать или аренда в зависимости от контекста.",
+    "pattern": "Jag söker en lägenhet att hyra.",
+    "translation": "Я ищу квартиру для аренды."
+  },
+  {
+    "title": "Назначить просмотр",
+    "body": "Visning — просмотр объекта. Можно спросить: Kan jag boka en visning? — «Можно записаться на просмотр?»",
+    "pattern": "Kan jag boka en visning?",
+    "translation": "Можно записаться на просмотр?"
+  },
+  {
+    "title": "Условия и платежи",
+    "body": "Månadshyra — месячная арендная плата. Ingår…? — «Входит ли…?». Например, Ingår el och vatten i hyran? — «Электричество и вода входят в аренду?»",
+    "pattern": "Ingår el och vatten i hyran?",
+    "translation": "Входят ли электричество и вода в арендную плату?"
+  },
+  {
+    "title": "Договор",
+    "body": "Hyreskontrakt — договор аренды. Möblerad — меблированная, omöblerad — без мебели. Перед согласием полезно уточнить срок договора и дополнительные платежи.",
+    "pattern": "Är lägenheten möblerad?",
+    "translation": "Квартира меблированная?"
+  }
+]

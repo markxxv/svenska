@@ -1,0 +1,44 @@
+[
+  {
+    "sv": "när",
+    "ru": "когда",
+    "example": "När jag kommer hem ska jag laga middag.",
+    "category": "Дом"
+  },
+  {
+    "sv": "jag",
+    "ru": "я",
+    "example": "När jag kommer hem ska jag laga middag.",
+    "category": "Дом"
+  },
+  {
+    "sv": "kommer",
+    "ru": "прихожу / приду",
+    "example": "När jag kommer hem ska jag laga middag.",
+    "category": "Дом"
+  },
+  {
+    "sv": "hem",
+    "ru": "домой",
+    "example": "När jag kommer hem ska jag laga middag.",
+    "category": "Дом"
+  },
+  {
+    "sv": "ska",
+    "ru": "буду / собираюсь",
+    "example": "När jag kommer hem ska jag laga middag.",
+    "category": "Дом"
+  },
+  {
+    "sv": "laga",
+    "ru": "готовить",
+    "example": "När jag kommer hem ska jag laga middag.",
+    "category": "Дом"
+  },
+  {
+    "sv": "middag",
+    "ru": "ужин",
+    "example": "När jag kommer hem ska jag laga middag.",
+    "category": "Дом"
+  }
+]

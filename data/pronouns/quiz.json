@@ -1,0 +1,47 @@
+[
+  {
+    "type": "choice",
+    "question": "Как по-шведски «мы»?",
+    "options": [
+      "ni",
+      "vi",
+      "de",
+      "du"
+    ],
+    "answer": "vi"
+  },
+  {
+    "type": "choice",
+    "question": "Как сказать «мне» в «помоги мне»?",
+    "options": [
+      "jag",
+      "mig",
+      "vi",
+      "hon"
+    ],
+    "answer": "mig",
+    "explanation": "Объектная форма jag — mig."
+  },
+  {
+    "type": "order",
+    "prompt": "Соберите «Она здесь работает»",
+    "words": [
+      "här.",
+      "Hon",
+      "jobbar"
+    ],
+    "answer": "Hon jobbar här."
+  },
+  {
+    "type": "choice",
+    "question": "Как меняется jobbar в «мы работаем»?",
+    "options": [
+      "Vi jobbar",
+      "Vi jobbarar",
+      "Vi jobben",
+      "Vi jobb"
+    ],
+    "answer": "Vi jobbar",
+    "explanation": "Глагол в настоящем времени не зависит от лица."
+  }
+]

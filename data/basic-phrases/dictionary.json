@@ -1,0 +1,104 @@
+[
+  {
+    "sv": "hej",
+    "ru": "привет",
+    "example": "Hej!",
+    "category": "Базовые фразы"
+  },
+  {
+    "sv": "hur",
+    "ru": "как",
+    "example": "Hur är det?",
+    "category": "Базовые фразы"
+  },
+  {
+    "sv": "är",
+    "ru": "есть / обстоят",
+    "example": "Hur är det?",
+    "category": "Базовые фразы"
+  },
+  {
+    "sv": "det",
+    "ru": "это / дела",
+    "example": "Hur är det?",
+    "category": "Базовые фразы"
+  },
+  {
+    "sv": "tack",
+    "ru": "спасибо",
+    "example": "Tack så mycket.",
+    "category": "Базовые фразы"
+  },
+  {
+    "sv": "så",
+    "ru": "так / настолько",
+    "example": "Tack så mycket.",
+    "category": "Базовые фразы"
+  },
+  {
+    "sv": "mycket",
+    "ru": "много",
+    "example": "tack så mycket",
+    "category": "Базовые фразы"
+  },
+  {
+    "sv": "varsågod",
+    "ru": "пожалуйста",
+    "example": "Varsågod.",
+    "category": "Базовые фразы"
+  },
+  {
+    "sv": "ursäkta",
+    "ru": "извините",
+    "example": "Ursäkta.",
+    "category": "Базовые фразы"
+  },
+  {
+    "sv": "ingen",
+    "ru": "никакой / нет",
+    "example": "Ingen fara.",
+    "category": "Базовые фразы"
+  },
+  {
+    "sv": "fara",
+    "ru": "опасность / проблема",
+    "example": "ingen fara",
+    "category": "Базовые фразы"
+  },
+  {
+    "sv": "jag",
+    "ru": "я",
+    "example": "Jag vet inte.",
+    "category": "Базовые фразы"
+  },
+  {
+    "sv": "vet",
+    "ru": "знаю",
+    "example": "Jag vet inte.",
+    "category": "Базовые фразы"
+  },
+  {
+    "sv": "inte",
+    "ru": "не",
+    "example": "Jag vet inte.",
+    "category": "Базовые фразы"
+  },
+  {
+    "sv": "vi",
+    "ru": "мы",
+    "example": "Vi ses senare.",
+    "category": "Базовые фразы"
+  },
+  {
+    "sv": "ses",
+    "ru": "увидимся",
+    "example": "Vi ses senare.",
+    "category": "Базовые фразы"
+  },
+  {
+    "sv": "senare",
+    "ru": "позже",
+    "example": "Vi ses senare.",
+    "category": "Базовые фразы"
+  }
+]

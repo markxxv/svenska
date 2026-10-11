@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Спросить о товаре",
+    "body": "Har ni den här i en annan storlek? — «У вас это есть в другом размере?» Har ni…? универсально для наличия товара.",
+    "pattern": "Har ni den här i en annan storlek?",
+    "translation": "Есть это в другом размере?"
+  },
+  {
+    "title": "Примерка и покупка",
+    "body": "Kan jag prova den? — «Можно примерить?» Jag tar den — «Я возьму это». Если нужен конкретный размер: i storlek M — «в размере M».",
+    "pattern": "Kan jag prova den?",
+    "translation": "Можно примерить?"
+  },
+  {
+    "title": "Возврат",
+    "body": "Jag vill lämna tillbaka den — «Я хочу вернуть эту вещь». Har du kvittot? — «У вас есть чек?»; ett kvitto — чек.",
+    "pattern": "Jag vill lämna tillbaka den.",
+    "translation": "Я хочу это вернуть."
+  }
+]

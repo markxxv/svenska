@@ -1,0 +1,62 @@
+[
+  {
+    "sv": "jag",
+    "ru": "я",
+    "example": "Jag har aldrig varit där förut.",
+    "category": "Опыт"
+  },
+  {
+    "sv": "har",
+    "ru": "вспомогательный глагол",
+    "example": "Jag har aldrig varit där förut.",
+    "category": "Опыт"
+  },
+  {
+    "sv": "aldrig",
+    "ru": "никогда",
+    "example": "Jag har aldrig varit där förut.",
+    "category": "Опыт"
+  },
+  {
+    "sv": "varit",
+    "ru": "был",
+    "example": "har varit",
+    "category": "Опыт"
+  },
+  {
+    "sv": "där",
+    "ru": "там",
+    "example": "Jag har aldrig varit där förut.",
+    "category": "Опыт"
+  },
+  {
+    "sv": "förut",
+    "ru": "раньше / прежде",
+    "example": "Jag har aldrig varit där förut.",
+    "category": "Опыт"
+  },
+  {
+    "sv": "det",
+    "ru": "это",
+    "example": "Det är första gången jag är här.",
+    "category": "Опыт"
+  },
+  {
+    "sv": "första",
+    "ru": "первый",
+    "example": "Det är första gången jag är här.",
+    "category": "Опыт"
+  },
+  {
+    "sv": "gången",
+    "ru": "раз",
+    "example": "första gången",
+    "category": "Опыт"
+  },
+  {
+    "sv": "här",
+    "ru": "здесь",
+    "example": "Det är första gången jag är här.",
+    "category": "Опыт"
+  }
+]

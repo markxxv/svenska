@@ -1,0 +1,68 @@
+[
+  {
+    "type": "choice",
+    "question": "Что такое utgångspris?",
+    "options": [
+      "Итоговая стоимость",
+      "Стартовая цена",
+      "Коммунальный платёж",
+      "Залог"
+    ],
+    "answer": "Стартовая цена",
+    "explanation": "Указанная в объявлении цена может измениться в ходе торгов."
+  },
+  {
+    "type": "order",
+    "prompt": "Соберите «Можем записаться на просмотр?»",
+    "words": [
+      "visning?",
+      "vi",
+      "en",
+      "Kan",
+      "boka"
+    ],
+    "answer": "Kan vi boka en visning?"
+  },
+  {
+    "type": "choice",
+    "question": "Как называется процесс торгов?",
+    "options": [
+      "besiktning",
+      "budgivning",
+      "tillträde",
+      "månadsavgift"
+    ],
+    "answer": "budgivning"
+  },
+  {
+    "type": "choice",
+    "question": "Что обычно означает månadsavgift для bostadsrätt?",
+    "options": [
+      "Первоначальный взнос",
+      "Ежемесячный взнос объединению",
+      "Стартовая цена",
+      "Налог за продажу"
+    ],
+    "answer": "Ежемесячный взнос объединению"
+  },
+  {
+    "type": "order",
+    "prompt": "Соберите «Когда передача жилья?»",
+    "words": [
+      "tillträdet?",
+      "är",
+      "När"
+    ],
+    "answer": "När är tillträdet?"
+  },
+  {
+    "type": "choice",
+    "question": "Как спросить о наличии энергетического сертификата?",
+    "options": [
+      "Finns det en energideklaration?",
+      "Är det ett bord?",
+      "Kan jag få notan?"
+    ],
+    "answer": "Finns det en energideklaration?"
+  }
+]

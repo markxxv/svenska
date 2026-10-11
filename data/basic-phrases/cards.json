@@ -1,0 +1,62 @@
+[
+  {
+    "sv": "hej",
+    "ru": "привет",
+    "example": "Hej!"
+  },
+  {
+    "sv": "hur",
+    "ru": "как",
+    "example": "Hur är det?"
+  },
+  {
+    "sv": "är",
+    "ru": "есть / обстоят",
+    "example": "Hur är det?"
+  },
+  {
+    "sv": "det",
+    "ru": "это / дела",
+    "example": "Hur är det?"
+  },
+  {
+    "sv": "tack",
+    "ru": "спасибо",
+    "example": "Tack så mycket."
+  },
+  {
+    "sv": "så",
+    "ru": "так / настолько",
+    "example": "Tack så mycket."
+  },
+  {
+    "sv": "mycket",
+    "ru": "много",
+    "example": "tack så mycket"
+  },
+  {
+    "sv": "varsågod",
+    "ru": "пожалуйста",
+    "example": "Varsågod."
+  },
+  {
+    "sv": "ursäkta",
+    "ru": "извините",
+    "example": "Ursäkta."
+  },
+  {
+    "sv": "ingen",
+    "ru": "никакой / нет",
+    "example": "Ingen fara."
+  },
+  {
+    "sv": "fara",
+    "ru": "опасность / проблема",
+    "example": "ingen fara"
+  },
+  {
+    "sv": "jag",
+    "ru": "я",
+    "example": "Jag vet inte."
+  }
+]

@@ -1,0 +1,62 @@
+[
+  {
+    "sv": "ett bord",
+    "ru": "столик",
+    "category": "Посадка"
+  },
+  {
+    "sv": "en bokning",
+    "ru": "бронирование",
+    "category": "Посадка"
+  },
+  {
+    "sv": "en meny",
+    "ru": "меню",
+    "category": "Заказ"
+  },
+  {
+    "sv": "dagens rätt",
+    "ru": "блюдо дня",
+    "category": "Заказ"
+  },
+  {
+    "sv": "en förrätt",
+    "ru": "закуска",
+    "category": "Заказ"
+  },
+  {
+    "sv": "en huvudrätt",
+    "ru": "основное блюдо",
+    "category": "Заказ"
+  },
+  {
+    "sv": "en efterrätt",
+    "ru": "десерт",
+    "category": "Заказ"
+  },
+  {
+    "sv": "vatten",
+    "ru": "вода",
+    "category": "Напитки"
+  },
+  {
+    "sv": "ett glas",
+    "ru": "стакан / бокал",
+    "category": "Напитки"
+  },
+  {
+    "sv": "notan",
+    "ru": "счёт",
+    "category": "Оплата"
+  },
+  {
+    "sv": "allergi",
+    "ru": "аллергия",
+    "category": "Состав"
+  },
+  {
+    "sv": "nötter",
+    "ru": "орехи",
+    "category": "Состав"
+  }
+]

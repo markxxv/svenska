@@ -1,0 +1,10 @@
+{
+  "name": "svenska-trainer",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "content:sync": "node scripts/sync-content.mjs",
+    "content:check": "node scripts/sync-content.mjs --check",
+    "test": "node --test"
+  }
+}

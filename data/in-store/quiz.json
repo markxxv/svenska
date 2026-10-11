@@ -1,0 +1,44 @@
+[
+  {
+    "type": "choice",
+    "question": "Как спросить другой размер?",
+    "options": [
+      "Har ni den här i en annan storlek?",
+      "Jag är en storlek.",
+      "Kan jag betala i Stockholm?"
+    ],
+    "answer": "Har ni den här i en annan storlek?"
+  },
+  {
+    "type": "order",
+    "prompt": "Соберите «Можно примерить это?»",
+    "words": [
+      "prova",
+      "den?",
+      "jag",
+      "Kan"
+    ],
+    "answer": "Kan jag prova den?"
+  },
+  {
+    "type": "choice",
+    "question": "Что значит «ett kvitto»?",
+    "options": [
+      "Скидка",
+      "Чек",
+      "Размер",
+      "Корзина"
+    ],
+    "answer": "Чек"
+  },
+  {
+    "type": "choice",
+    "question": "Как сказать «Я хочу это вернуть»?",
+    "options": [
+      "Jag vill lämna tillbaka den.",
+      "Jag vill köpa den.",
+      "Jag bor här."
+    ],
+    "answer": "Jag vill lämna tillbaka den."
+  }
+]

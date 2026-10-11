@@ -1,0 +1,57 @@
+[
+  {
+    "sv": "jag",
+    "ru": "я",
+    "example": "Jag försöker lära mig svenska."
+  },
+  {
+    "sv": "försöker",
+    "ru": "стараюсь / пытаюсь",
+    "example": "Jag försöker lära mig svenska."
+  },
+  {
+    "sv": "lära",
+    "ru": "учить",
+    "example": "Jag försöker lära mig svenska."
+  },
+  {
+    "sv": "svenska",
+    "ru": "шведский язык",
+    "example": "Jag försöker lära mig svenska."
+  },
+  {
+    "sv": "ju",
+    "ru": "чем",
+    "example": "ju … desto …"
+  },
+  {
+    "sv": "mer",
+    "ru": "больше",
+    "example": "Ju mer jag hör svenska, desto lättare blir det."
+  },
+  {
+    "sv": "hör",
+    "ru": "слышу",
+    "example": "Ju mer jag hör svenska, desto lättare blir det."
+  },
+  {
+    "sv": "desto",
+    "ru": "тем",
+    "example": "ju … desto …"
+  },
+  {
+    "sv": "lättare",
+    "ru": "легче",
+    "example": "Ju mer jag hör svenska, desto lättare blir det."
+  },
+  {
+    "sv": "blir",
+    "ru": "становится",
+    "example": "Ju mer jag hör svenska, desto lättare blir det."
+  },
+  {
+    "sv": "det",
+    "ru": "это",
+    "example": "Ju mer jag hör svenska, desto lättare blir det."
+  }
+]

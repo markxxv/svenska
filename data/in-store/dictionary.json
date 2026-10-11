@@ -1,0 +1,62 @@
+[
+  {
+    "sv": "en storlek",
+    "ru": "размер",
+    "category": "Одежда"
+  },
+  {
+    "sv": "prova",
+    "ru": "примерять",
+    "category": "Одежда"
+  },
+  {
+    "sv": "ett provrum",
+    "ru": "примерочная",
+    "category": "Одежда"
+  },
+  {
+    "sv": "en färg",
+    "ru": "цвет",
+    "category": "Одежда"
+  },
+  {
+    "sv": "en rabatt",
+    "ru": "скидка",
+    "category": "Цена"
+  },
+  {
+    "sv": "ett pris",
+    "ru": "цена",
+    "category": "Цена"
+  },
+  {
+    "sv": "billig",
+    "ru": "дешёвый",
+    "category": "Цена"
+  },
+  {
+    "sv": "dyr",
+    "ru": "дорогой",
+    "category": "Цена"
+  },
+  {
+    "sv": "ett kvitto",
+    "ru": "чек",
+    "category": "Оплата"
+  },
+  {
+    "sv": "med kort",
+    "ru": "картой",
+    "category": "Оплата"
+  },
+  {
+    "sv": "lämna tillbaka",
+    "ru": "вернуть",
+    "category": "Возврат"
+  },
+  {
+    "sv": "ett byte",
+    "ru": "обмен",
+    "category": "Возврат"
+  }
+]

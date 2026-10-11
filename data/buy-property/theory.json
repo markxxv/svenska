@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Найти подходящее жильё",
+    "body": "Jag letar efter en bostad att köpa — «Я ищу жильё для покупки». Bostad — жильё, köpa — купить, en mäklare — агент по недвижимости. Вопрос о просмотре: Kan vi boka en visning?",
+    "pattern": "Jag letar efter en bostad att köpa.",
+    "translation": "Я ищу жильё для покупки."
+  },
+  {
+    "title": "Цена и торги",
+    "body": "Utgångspris — стартовая цена в объявлении. В Швеции продажа часто проходит через budgivning — торги, а итоговая цена может отличаться. Fråga: Har budgivningen börjat? — «Торги уже начались?»",
+    "pattern": "Vad är utgångspriset?",
+    "translation": "Какая стартовая цена?"
+  },
+  {
+    "title": "Какая форма собственности",
+    "body": "Bostadsrätt — право пользования квартирой через жилищное объединение, не то же самое, что полная собственность на саму квартиру. Äganderätt — полное право собственности. Для bostadsrätt обычно есть månadsavgift — ежемесячный взнос объединению.",
+    "pattern": "Hur stor är månadsavgiften?",
+    "translation": "Каков ежемесячный взнос?"
+  },
+  {
+    "title": "Документы и въезд",
+    "body": "Besiktning — техническая инспекция объекта, energideklaration — энергетический сертификат, tillträde — дата передачи жилья. Полезный вопрос: När är tillträdet?",
+    "pattern": "När är tillträdet?",
+    "translation": "Когда передача жилья?"
+  }
+]

@@ -1,0 +1,64 @@
+[
+  {
+    "type": "choice",
+    "question": "Как вежливо попросить кебаб?",
+    "options": [
+      "Jag skulle vilja ha en kebab, tack.",
+      "Jag är en kebab.",
+      "Kebab ligger där.",
+      "Jag kommer från kebab."
+    ],
+    "answer": "Jag skulle vilja ha en kebab, tack.",
+    "explanation": "Jag skulle vilja ha… — «Я бы хотел…»."
+  },
+  {
+    "type": "choice",
+    "question": "Что значит «utan lök»?",
+    "options": [
+      "С луком",
+      "Без лука",
+      "Без сыра",
+      "Острое"
+    ],
+    "answer": "Без лука",
+    "explanation": "Utan — без; lök — лук."
+  },
+  {
+    "type": "order",
+    "prompt": "Соберите фразу «Можно мне пиццу?»",
+    "words": [
+      "en",
+      "jag",
+      "pizza?",
+      "Kan",
+      "få"
+    ],
+    "answer": "Kan jag få en pizza?",
+    "explanation": "Вопрос начинается с kan, затем jag и få."
+  },
+  {
+    "type": "choice",
+    "question": "Как сказать «С собой, пожалуйста»?",
+    "options": [
+      "Jag äter här.",
+      "För avhämtning, tack.",
+      "Här är det bra.",
+      "Kan jag se?"
+    ],
+    "answer": "För avhämtning, tack.",
+    "explanation": "Avhämtning — заказ на вынос."
+  },
+  {
+    "type": "order",
+    "prompt": "Соберите «Можно оплатить картой?»",
+    "words": [
+      "kort?",
+      "betala",
+      "Kan",
+      "med",
+      "jag"
+    ],
+    "answer": "Kan jag betala med kort?",
+    "explanation": "Kan + jag + betala + med kort."
+  }
+]

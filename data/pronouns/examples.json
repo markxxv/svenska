@@ -1,0 +1,37 @@
+[
+  {
+    "sv": "Jag bor i Sverige.",
+    "ru": "Я живу в Швеции.",
+    "note": "Jag — я."
+  },
+  {
+    "sv": "Du pratar svenska.",
+    "ru": "Ты говоришь по-шведски.",
+    "note": "Du — ты."
+  },
+  {
+    "sv": "Hon jobbar här.",
+    "ru": "Она работает здесь.",
+    "note": "Hon — она."
+  },
+  {
+    "sv": "Vi lär oss svenska.",
+    "ru": "Мы учим шведский.",
+    "note": "Vi — мы; oss — нас / себя."
+  },
+  {
+    "sv": "Ni kan komma imorgon.",
+    "ru": "Вы можете прийти завтра.",
+    "note": "Ni — вы (множественное число)."
+  },
+  {
+    "sv": "De bor i Stockholm.",
+    "ru": "Они живут в Стокгольме.",
+    "note": "De часто произносится «dom»."
+  },
+  {
+    "sv": "Kan du hjälpa mig?",
+    "ru": "Можешь мне помочь?",
+    "note": "Mig — объектная форма jag."
+  }
+]

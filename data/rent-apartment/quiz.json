@@ -1,0 +1,59 @@
+[
+  {
+    "type": "choice",
+    "question": "Что значит «visning»?",
+    "options": [
+      "Залог",
+      "Просмотр квартиры",
+      "Договор",
+      "Балкон"
+    ],
+    "answer": "Просмотр квартиры"
+  },
+  {
+    "type": "order",
+    "prompt": "Соберите «Можно записаться на просмотр?»",
+    "words": [
+      "visning?",
+      "boka",
+      "jag",
+      "Kan",
+      "en"
+    ],
+    "answer": "Kan jag boka en visning?"
+  },
+  {
+    "type": "choice",
+    "question": "Что означает «möblerad»?",
+    "options": [
+      "Меблированная",
+      "Без мебели",
+      "Свободная",
+      "Дорогая"
+    ],
+    "answer": "Меблированная"
+  },
+  {
+    "type": "choice",
+    "question": "Как спросить «Вода входит в стоимость?»",
+    "options": [
+      "Har du vatten?",
+      "Ingår vatten i hyran?",
+      "Är vatten stort?",
+      "Var ligger vatten?"
+    ],
+    "answer": "Ingår vatten i hyran?"
+  },
+  {
+    "type": "order",
+    "prompt": "Соберите «Когда я могу въехать?»",
+    "words": [
+      "in?",
+      "jag",
+      "När",
+      "flytta",
+      "kan"
+    ],
+    "answer": "När kan jag flytta in?"
+  }
+]
