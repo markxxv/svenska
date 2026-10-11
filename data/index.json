@@ -206,23 +206,6 @@
       }
     },
     {
-      "slug": "pronouns",
-      "title": "Местоимения: я, ты, мы",
-      "group": "grammar",
-      "groupTitle": "Строим предложения",
-      "emoji": "👥",
-      "order": 1,
-      "minutes": 6,
-      "description": "Кто говорит и к кому обращаются. Разбираем местоимения на простых фразах.",
-      "outcome": "Строить фразы про себя, собеседника и других людей",
-      "files": {
-        "theory": "theory.json",
-        "examples": "examples.json",
-        "cards": "cards.json",
-        "quiz": "quiz.json"
-      }
-    },
-    {
       "slug": "verbs-and-sentences",
       "title": "Глаголы и порядок слов",
       "group": "grammar",

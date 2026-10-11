@@ -1,12 +1,13 @@
 # Svenska
 
-Статический тренажёр шведского. Vanilla JavaScript ES modules, Tailwind v4, Web Speech API. Уроки, словари и фразы — **три независимых типа материалов**, доступные из нижнего меню.
+Статический тренажёр шведского. Vanilla JavaScript ES modules, Tailwind v4, Web Speech API. Уроки, словари, фразы и темы — **четыре независимых раздела**, доступные из нижнего меню.
 
 ## Навигация и файлы
 
 - **Главная** (`#/`): уроки по темам с теорией, примерами, карточками и тестами.
 - **Словари** (`#/dictionaries`): независимые коллекции слов, например «50 базовых слов», «В магазине».
 - **Фразы** (`#/phrases`): независимые коллекции разговорных фраз с озвучкой, переводом и разбором слов.
+- **Темы** (`#/topics`): отдельные тематические уроки, сейчас только «Местоимения».
 
 ```text
 data/
@@ -17,6 +18,14 @@ data/
 │   ├── examples.json
 │   ├── cards.json
 │   └── quiz.json
+├── topics/
+│   ├── index.json               # отдельный каталог тем
+│   └── pronouns/
+│       ├── meta.json
+│       ├── theory.json
+│       ├── examples.json
+│       ├── cards.json
+│       └── quiz.json
 ├── dictionaries/
 │   ├── index.json               # каталог словарей, автоматически
 │   ├── essentials/
@@ -68,7 +77,7 @@ data/
 Запуск без сборки: `python3 -m http.server 8000` → http://localhost:8000/
 
 ```bash
-npm run content:sync  # обновить три index.json
+npm run content:sync  # обновить четыре index.json
 npm run content:check # проверить актуальность
 npm test              # тесты структуры и рендеринга
 ```

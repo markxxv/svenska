@@ -33,13 +33,14 @@ export async function collectionCatalog(kind) {
   return data.collections || [];
 }
 export async function topic(entry) {
-  if (lessonCache.has(entry.slug)) return lessonCache.get(entry.slug);
+  const key=entry.path || entry.slug;
+  if (lessonCache.has(key)) return lessonCache.get(key);
   const result = {meta:entry, slug:entry.slug};
   await Promise.all(stages.map(async ([name]) => {
-    result[name] = entry.files?.[name] ? await json(entry.slug+'/'+entry.files[name]) : [];
+    result[name] = entry.files?.[name] ? await json(key+'/'+entry.files[name]) : [];
     if (!Array.isArray(result[name])) throw new Error('Ожидался массив: '+entry.slug+'/'+name);
   }));
-  lessonCache.set(entry.slug,result);
+  lessonCache.set(key,result);
   return result;
 }
 export async function collection(kind,entry) {

@@ -46,3 +46,19 @@ test('all 40 original phrase IDs are present exactly once in phrase collections'
   const all=(await Promise.all(catalog.collections.map(entry=>load('phrases/'+entry.slug+'/items.json')))).flat();
   for(let id=1;id<=40;id++)assert.equal(all.filter(p=>p.id===id).length,1,'original phrase '+id);
 });
+
+test('topics are a separate catalog with pronouns as the only entry',async()=>{
+  const lessons=await load('index.json');
+  const topics=await load('topics/index.json');
+  assert.equal(topics.topics.length,1);
+  assert.equal(topics.topics[0].slug,'pronouns');
+  assert.ok(!lessons.topics.some(entry=>entry.slug==='pronouns'));
+  for(const entry of topics.topics){
+    assert.equal(entry.path,'topics/'+entry.slug);
+    assert.equal((await load(entry.path+'/meta.json')).title,entry.title);
+    for(const file of Object.values(entry.files)){
+      const items=await load(entry.path+'/'+file);
+      assert.ok(Array.isArray(items)&&items.length>0);
+    }
+  }
+});

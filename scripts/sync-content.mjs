@@ -17,7 +17,7 @@ async function output(url,value,label){
 }
 const entries=await readdir(root,{withFileTypes:true});
 const topics=[];
-for(const dir of entries.filter(x=>x.isDirectory()&&!x.name.startsWith('_')&&!['dictionaries','phrases'].includes(x.name))){
+for(const dir of entries.filter(x=>x.isDirectory()&&!x.name.startsWith('_')&&!['dictionaries','phrases','topics'].includes(x.name))){
   const slug=dir.name;
   if(!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug))throw Error('Invalid lesson slug: '+slug);
   const folder=new URL(slug+'/',root),names=await readdir(folder);
@@ -38,6 +38,32 @@ for(const dir of entries.filter(x=>x.isDirectory()&&!x.name.startsWith('_')&&!['
 }
 topics.sort((a,b)=>(ranks[a.group]||99)-(ranks[b.group]||99)||(a.order||0)-(b.order||0)||a.title.localeCompare(b.title,'ru'));
 await output(new URL('index.json',root),{version:1,topics},'data/index.json');
+
+// Отдельный каталог тематических уроков, не смешанный с уроками на главной.
+const topicsFolder=new URL('topics/',root);
+const topicDirectories=await readdir(topicsFolder,{withFileTypes:true});
+const thematic=[];
+for(const dir of topicDirectories.filter(x=>x.isDirectory())){
+  const slug=dir.name;
+  if(!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(slug))throw Error('Invalid topic slug: '+slug);
+  const folder=new URL(slug+'/',topicsFolder),names=await readdir(folder);
+  if(!names.includes('meta.json'))throw Error('Topic missing meta.json: '+slug);
+  const meta=await readJSON(new URL('meta.json',folder));
+  if(meta.slug!==slug)throw Error('Topic slug mismatch: '+slug);
+  for(const field of required)if(!meta[field])throw Error('Missing topic field '+field+': '+slug);
+  const files={};
+  for(const name of allowed){
+    const filename=name+'.json';
+    if(!names.includes(filename))continue;
+    const content=await readJSON(new URL(filename,folder));
+    if(!Array.isArray(content))throw Error('Topic content must be an array: '+slug+'/'+name);
+    if(content.length)files[name]=filename;
+  }
+  if(!Object.keys(files).length)throw Error('Empty topic: '+slug);
+  thematic.push({...meta,path:'topics/'+slug,files});
+}
+thematic.sort((a,b)=>(a.order||0)-(b.order||0)||a.title.localeCompare(b.title,'ru'));
+await output(new URL('index.json',topicsFolder),{version:1,topics:thematic},'data/topics/index.json');
 for(const kind of ['dictionaries','phrases']){
   const folder=new URL(kind+'/',root);
   const entries=await readdir(folder,{withFileTypes:true});

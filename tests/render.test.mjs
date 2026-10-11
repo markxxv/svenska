@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import * as home from '../js/modules/home.js';
+import * as topics from '../js/modules/topics.js';
 import * as collections from '../js/modules/collections.js';
 import * as overview from '../js/modules/overview.js';
 import * as steps from '../js/modules/steps.js';
@@ -44,4 +45,15 @@ test('lesson and section screens render',async()=>{
       assert.ok(rendered.includes(meta.title));
     }
   }
+});
+
+test('topics tab renders only pronouns and its lesson stages',async()=>{
+  const {topics:items}=await load('topics/index.json');
+  const screen=topics.render(items);
+  assert.match(screen,/Местоимения/);
+  assert.ok(screen.includes('#/topic/pronouns/overview'));
+  const entry=items[0], data={slug:entry.slug,meta:entry};
+  for(const [name,file] of Object.entries(entry.files))data[name]=await load(entry.path+'/'+file);
+  assert.match(overview.render(data),/Этапы урока/);
+  assert.ok(steps.render(data,{pos:0},'theory').length>100);
 });

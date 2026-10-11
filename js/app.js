@@ -1,6 +1,7 @@
 import {catalog,collectionCatalog,topic,collection,route,stages,e,icons,markCurrent,stopSpeech} from './core.js';
 import * as home from './modules/home.js';
 import * as collections from './modules/collections.js';
+import * as topics from './modules/topics.js';
 import * as overview from './modules/overview.js';
 import * as steps from './modules/steps.js';
 import * as cards from './modules/cards.js';
@@ -13,10 +14,11 @@ const stageNav=document.querySelector('#stageNav');
 const bottomNav=document.querySelector('#bottomNav');
 const modules={theory:steps,examples:steps,cards,quiz,phrases,dictionary};
 const library={dictionaries:[],phrases:[]};
-let lessons=[],section='home',current=null,data=null,mode=null,state={},ticket=0,screenKey='';
+let lessons=[],studyTopics=[],section='home',current=null,data=null,mode=null,state={},ticket=0,screenKey='';
 function parseHash() {
   const path=location.hash.replace(/^#\/?/,'').split('/').filter(Boolean);
   if(path[0]==='topic'&&path[1]) return {section:'home',type:'lesson',slug:decodeURIComponent(path[1]),mode:path[2]||'overview'};
+  if(path[0]==='topics'&&!path[1])return {section:'topics',type:'list'};
   if(['dictionaries','phrases'].includes(path[0])) return {
     section:path[0],type:path[1]?'collection':'list',slug:path[1]?decodeURIComponent(path[1]):null
   };
@@ -59,6 +61,7 @@ function advance() {
 function refresh() {
   if(!current) view.innerHTML=section==='home'
     ?home.render(lessons)
+    :section==='topics'?topics.render(studyTopics)
     :collections.render(section,library[section]);
   else if(mode==='overview')view.innerHTML=overview.render(data);
   else view.innerHTML=modules[mode].render(data,state,mode);
@@ -74,19 +77,21 @@ async function navigate() {
   try {
     if(info.type==='list') {
       current=null;data=null;mode=null;state={};screenKey='';
-      setHeader(info.section==='home'?'Svenska':info.section==='dictionaries'?'Словари':'Фразы','Шведский для жизни');
+      setHeader(({home:'Svenska',dictionaries:'Словари',phrases:'Фразы',topics:'Темы'})[info.section]||'Svenska','Шведский для жизни');
       updateStageNav();refresh();return;
     }
     if(info.type==='lesson') {
-      const entry=lessons.find(item=>item.slug===info.slug);
-      if(!entry)throw Error('Урок не найден: '+info.slug);
+      const entry=lessons.find(item=>item.slug===info.slug)||studyTopics.find(item=>item.slug===info.slug);
+      if(!entry)throw Error('Материал не найден: '+info.slug);
+      section=studyTopics.some(item=>item.slug===info.slug)?'topics':'home';
+      updateTabs();
       const value=await topic(entry);
       if(id!==ticket)return;
       const target=info.mode==='overview'||entry.files?.[info.mode]?info.mode:'overview';
       const key='lesson:'+entry.slug+':'+target;
       if(key!==screenKey){state={};screenKey=key;}
       current=entry;data=value;mode=target;
-      setHeader(entry.title,entry.groupTitle||'Урок','#/');
+      setHeader(entry.title,entry.groupTitle||'Тема',section==='topics'?'#/topics':'#/');
       if(target!=='overview')markCurrent(entry.slug,target);
     } else {
       const entry=library[info.section].find(item=>item.slug===info.slug);
@@ -121,8 +126,8 @@ document.addEventListener('keydown',event=>{
 });
 async function init() {
   try{
-    [lessons,library.dictionaries,library.phrases]=await Promise.all([
-      catalog(),collectionCatalog('dictionaries'),collectionCatalog('phrases')
+    [lessons,studyTopics,library.dictionaries,library.phrases]=await Promise.all([
+      catalog(),topics.catalog(),collectionCatalog('dictionaries'),collectionCatalog('phrases')
     ]);
     await navigate();
   }catch(err){
