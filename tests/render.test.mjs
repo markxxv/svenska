@@ -57,3 +57,14 @@ test('topics tab renders only pronouns and its lesson stages',async()=>{
   assert.match(overview.render(data),/Этапы урока/);
   assert.ok(steps.render(data,{pos:0},'theory').length>100);
 });
+
+test('pronouns theory shows aligned vocabulary rows and a pronunciation note',async()=>{
+  const content=await load('topics/pronouns/theory.json');
+  const data={slug:'pronouns',theory:content};
+  const screen=steps.render(data,{pos:0},'theory');
+  assert.ok(screen.includes('<dl class="mt-5 divide-y divide-zinc-100">'));
+  assert.ok(screen.includes('<dt lang="sv"'));
+  assert.ok(screen.includes('jag</dt>'));
+  assert.ok(screen.includes('В разговорной речи de'));
+  assert.ok(!screen.includes('jag — я, du — ты'));
+});
