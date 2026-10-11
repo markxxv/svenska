@@ -11,13 +11,13 @@
       "minutes": 6,
       "description": "Кто говорит и к кому обращаются. Разбираем местоимения на простых фразах.",
       "outcome": "Строить фразы про себя, собеседника и других людей",
+      "path": "topics/pronouns",
       "files": {
         "theory": "theory.json",
         "examples": "examples.json",
         "cards": "cards.json",
         "quiz": "quiz.json"
-      },
-      "path": "topics/pronouns"
+      }
     }
   ]
 }
