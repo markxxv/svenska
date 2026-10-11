@@ -1,4 +1,4 @@
-name: Update lesson catalog
+name: Update content catalogs
 on:
   push:
     branches: [main]
@@ -18,14 +18,14 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Build catalog
+      - name: Build catalogs
         run: node scripts/sync-content.mjs
-      - name: Commit updated index
+      - name: Commit updated indexes
         run: |
-          if ! git diff --quiet -- data/index.json; then
+          if ! git diff --quiet -- data/index.json data/dictionaries/index.json data/phrases/index.json; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add data/index.json
-            git commit -m "chore: refresh lesson catalog"
+            git add data/index.json data/dictionaries/index.json data/phrases/index.json
+            git commit -m "chore: refresh content catalogs"
             git push
           fi

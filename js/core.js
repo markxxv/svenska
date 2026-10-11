@@ -1,39 +1,59 @@
-// Общие функции без привязки к конкретному тренажёру.
+// Общие функции: JSON, озвучка и прогресс. Коллекции словарей и фраз живут отдельно от уроков.
 const ROOT = new URL('../data/', import.meta.url);
 const STORAGE = 'svenska-progress-v1';
-const cache = new Map();
+const lessonCache = new Map();
+const collectionCache = new Map();
+const kinds = new Set(['dictionaries','phrases']);
 export const stages = [
-  ['theory','Теория'],['examples','Примеры'],['cards','Карточки'],
-  ['phrases','Фразы'],['dictionary','Словарь'],['quiz','Тест']
+  ['theory','Теория'],['examples','Примеры'],['cards','Карточки'],['quiz','Тест']
 ];
 export const e = value => String(value ?? '').replace(/[&<>"']/g, ch =>
   ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
 export const ico = (name, cls='h-4 w-4') => '<i data-lucide="'+e(name)+'" class="'+cls+'"></i>';
 export const route = (slug, mode='overview') => '#/topic/'+encodeURIComponent(slug)+'/'+mode;
+export const collectionRoute = (kind,slug) => {
+  if (!kinds.has(kind)) throw new Error('Неизвестный тип коллекции');
+  return '#/'+kind+'/'+encodeURIComponent(slug);
+};
 export function icons() { if (window.lucide?.createIcons) window.lucide.createIcons(); }
-async function json(path) {
+async function json(path, fresh=false) {
   const url = new URL(path, ROOT);
   if (!url.href.startsWith(ROOT.href)) throw new Error('Недопустимый путь к JSON');
-  const response = await fetch(url);
+  const response = await fetch(url, fresh?{cache:'no-store'}:undefined);
   if (!response.ok) throw new Error('Не удалось загрузить '+path+' ('+response.status+')');
   return response.json();
 }
 export async function catalog() {
-  const result = await fetch(new URL('index.json', ROOT), {cache:'no-store'});
-  if (!result.ok) throw new Error('Не найден data/index.json. Запустите npm run content:sync.');
-  const data = await result.json();
+  const data = await json('index.json',true);
   return data.topics || [];
 }
+export async function collectionCatalog(kind) {
+  if (!kinds.has(kind)) throw new Error('Неизвестный тип коллекции');
+  const data = await json(kind+'/index.json',true);
+  return data.collections || [];
+}
 export async function topic(entry) {
-  if (cache.has(entry.slug)) return cache.get(entry.slug);
-  const files = entry.files || {};
+  if (lessonCache.has(entry.slug)) return lessonCache.get(entry.slug);
   const result = {meta:entry, slug:entry.slug};
-  const names = ['theory','examples','cards','phrases','dictionary','quiz'];
-  await Promise.all(names.map(async name => {
-    result[name] = files[name] ? await json(entry.slug+'/'+files[name]) : [];
+  await Promise.all(stages.map(async ([name]) => {
+    result[name] = entry.files?.[name] ? await json(entry.slug+'/'+entry.files[name]) : [];
     if (!Array.isArray(result[name])) throw new Error('Ожидался массив: '+entry.slug+'/'+name);
   }));
-  cache.set(entry.slug, result);
+  lessonCache.set(entry.slug,result);
+  return result;
+}
+export async function collection(kind,entry) {
+  if (!kinds.has(kind)) throw new Error('Неизвестный тип коллекции');
+  const cacheKey = kind+'/'+entry.slug;
+  if (collectionCache.has(cacheKey)) return collectionCache.get(cacheKey);
+  const items = await json(kind+'/'+entry.slug+'/'+(entry.file || 'items.json'));
+  if (!Array.isArray(items)) throw new Error('Ожидался массив: '+cacheKey);
+  const result = {
+    slug:kind+':'+entry.slug, collectionType:kind, meta:entry,
+    dictionary:kind==='dictionaries'?items:[],
+    phrases:kind==='phrases'?items:[]
+  };
+  collectionCache.set(cacheKey,result);
   return result;
 }
 function store() {
@@ -62,10 +82,8 @@ export function completion(entry) {
   const modes = stages.filter(([key]) => entry.files?.[key]);
   return modes.length ? Math.round(100*modes.filter(([key]) => completed[key]).length/modes.length) : 0;
 }
-let activeUtterance = null;
 export function stopSpeech() {
   if ('speechSynthesis' in window) window.speechSynthesis.cancel();
-  activeUtterance = null;
 }
 export function speak(value, slow=false) {
   if (!('speechSynthesis' in window)) { alert('Озвучивание не поддерживается браузером.'); return; }
@@ -75,7 +93,6 @@ export function speak(value, slow=false) {
   utterance.rate = slow ? 0.76 : 0.94;
   const voices = speechSynthesis.getVoices().filter(v => /^sv[-_]/i.test(v.lang));
   utterance.voice = voices.find(v => /alva|klara|siri|google|microsoft/i.test(v.name)) || voices[0] || null;
-  activeUtterance = utterance;
   speechSynthesis.speak(utterance);
 }
 export function sectionTitle(kicker, title, subtitle='') {

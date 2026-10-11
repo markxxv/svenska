@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "collections": [
+    {
+      "slug": "basics",
+      "title": "Основные фразы",
+      "description": "Приветствия, просьбы и общение, когда ещё не хватает слов.",
+      "emoji": "👋",
+      "order": 1,
+      "file": "items.json",
+      "count": 14
+    },
+    {
+      "slug": "around-town",
+      "title": "В городе, кафе и магазине",
+      "description": "Покупки, транспорт, вопросы о цене и полезные просьбы.",
+      "emoji": "🛍️",
+      "order": 2,
+      "file": "items.json",
+      "count": 16
+    },
+    {
+      "slug": "conversation",
+      "title": "Планы и разговор",
+      "description": "Повседневные конструкции, договорённости и более сложные мысли.",
+      "emoji": "💬",
+      "order": 3,
+      "file": "items.json",
+      "count": 14
+    }
+  ]
+}

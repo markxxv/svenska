@@ -2,34 +2,46 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import * as home from '../js/modules/home.js';
+import * as collections from '../js/modules/collections.js';
 import * as overview from '../js/modules/overview.js';
 import * as steps from '../js/modules/steps.js';
 import * as cards from '../js/modules/cards.js';
 import * as phrases from '../js/modules/phrases.js';
 import * as dictionary from '../js/modules/dictionary.js';
 import * as quiz from '../js/modules/quiz.js';
-
 globalThis.localStorage={
   items:new Map(),
   getItem(key){return this.items.get(key)??null;},
   setItem(key,value){this.items.set(key,String(value));}
 };
 const root=new URL('../data/',import.meta.url);
-async function load(path) {
-  return JSON.parse(await readFile(new URL(path,root),'utf8'));
-}
-test('every lesson renders its available stages',async()=>{
+const load=async path=>JSON.parse(await readFile(new URL(path,root),'utf8'));
+test('lesson and section screens render',async()=>{
   const index=await load('index.json');
-  assert.match(home.render(index.topics),/Заказать пиццу или кебаб/);
-  for(const meta of index.topics) {
+  assert.match(home.render(index.topics),/Уроки шведского/);
+  for(const meta of index.topics){
     const data={slug:meta.slug,meta};
-    for(const [name,file] of Object.entries(meta.files)) data[name]=await load(meta.slug+'/'+file);
+    for(const [name,file] of Object.entries(meta.files))data[name]=await load(meta.slug+'/'+file);
     assert.match(overview.render(data),/Этапы урока/);
-    if(data.theory) assert.ok(steps.render(data,{pos:0},'theory').length>100,meta.slug+' theory');
-    if(data.examples) assert.ok(steps.render(data,{pos:0},'examples').length>100,meta.slug+' examples');
-    if(data.cards) assert.ok(cards.render(data,{}).includes('data-action="flip"'),meta.slug+' cards');
-    if(data.phrases) assert.ok(phrases.render(data,{}).includes('data-action="phrase-speak"'),meta.slug+' phrases');
-    if(data.dictionary) assert.ok(dictionary.render(data,{}).includes('data-dictionary-item'),meta.slug+' dictionary');
-    if(data.quiz) assert.ok(quiz.render(data,{}).includes('data-action='),meta.slug+' quiz');
+    if(data.theory)assert.ok(steps.render(data,{pos:0},'theory').length>100,meta.slug+' theory');
+    if(data.examples)assert.ok(steps.render(data,{pos:0},'examples').length>100,meta.slug+' examples');
+    if(data.cards)assert.ok(cards.render(data,{}).includes('data-action="flip"'),meta.slug+' cards');
+    if(data.quiz)assert.ok(quiz.render(data,{}).includes('data-action='),meta.slug+' quiz');
+  }
+  for(const kind of ['dictionaries','phrases']){
+    const index=await load(kind+'/index.json');
+    const overview=collections.render(kind,index.collections);
+    assert.match(overview,kind==='dictionaries'?/Словари/:/Фразы/);
+    for(const meta of index.collections){
+      assert.ok(overview.includes('#/'+kind+'/'+meta.slug));
+      const items=await load(kind+'/'+meta.slug+'/items.json');
+      const data={meta,slug:kind+':'+meta.slug,collectionType:kind,
+        dictionary:kind==='dictionaries'?items:[],
+        phrases:kind==='phrases'?items:[]};
+      const rendered=kind==='dictionaries'?dictionary.render(data,{}):phrases.render(data,{});
+      assert.ok(rendered.length>100);
+      assert.ok(rendered.includes(kind==='dictionaries'?'data-dictionary-item':'data-action="phrase-speak"'));
+      assert.ok(rendered.includes(meta.title));
+    }
   }
 });

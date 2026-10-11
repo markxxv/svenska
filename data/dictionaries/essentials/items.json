@@ -1,0 +1,284 @@
+[
+  {
+    "sv": "hej",
+    "ru": "привет",
+    "example": "Hej!",
+    "category": "Базовые фразы"
+  },
+  {
+    "sv": "hur",
+    "ru": "как",
+    "example": "Hur är det?",
+    "category": "Базовые фразы"
+  },
+  {
+    "sv": "är",
+    "ru": "есть / обстоят",
+    "example": "Hur är det?",
+    "category": "Базовые фразы"
+  },
+  {
+    "sv": "det",
+    "ru": "это / дела",
+    "example": "Hur är det?",
+    "category": "Базовые фразы"
+  },
+  {
+    "sv": "tack",
+    "ru": "спасибо",
+    "example": "Tack så mycket.",
+    "category": "Базовые фразы"
+  },
+  {
+    "sv": "så",
+    "ru": "так / настолько",
+    "example": "Tack så mycket.",
+    "category": "Базовые фразы"
+  },
+  {
+    "sv": "mycket",
+    "ru": "много",
+    "example": "tack så mycket",
+    "category": "Базовые фразы"
+  },
+  {
+    "sv": "varsågod",
+    "ru": "пожалуйста",
+    "example": "Varsågod.",
+    "category": "Базовые фразы"
+  },
+  {
+    "sv": "ursäkta",
+    "ru": "извините",
+    "example": "Ursäkta.",
+    "category": "Базовые фразы"
+  },
+  {
+    "sv": "ingen",
+    "ru": "никакой / нет",
+    "example": "Ingen fara.",
+    "category": "Базовые фразы"
+  },
+  {
+    "sv": "fara",
+    "ru": "опасность / проблема",
+    "example": "ingen fara",
+    "category": "Базовые фразы"
+  },
+  {
+    "sv": "jag",
+    "ru": "я",
+    "example": "Jag vet inte.",
+    "category": "Базовые фразы"
+  },
+  {
+    "sv": "vet",
+    "ru": "знаю",
+    "example": "Jag vet inte.",
+    "category": "Базовые фразы"
+  },
+  {
+    "sv": "inte",
+    "ru": "не",
+    "example": "Jag vet inte.",
+    "category": "Базовые фразы"
+  },
+  {
+    "sv": "vi",
+    "ru": "мы",
+    "example": "Vi ses senare.",
+    "category": "Базовые фразы"
+  },
+  {
+    "sv": "ses",
+    "ru": "увидимся",
+    "example": "Vi ses senare.",
+    "category": "Базовые фразы"
+  },
+  {
+    "sv": "senare",
+    "ru": "позже",
+    "example": "Vi ses senare.",
+    "category": "Базовые фразы"
+  },
+  {
+    "sv": "du",
+    "ru": "ты",
+    "category": "Подлежащее"
+  },
+  {
+    "sv": "han",
+    "ru": "он",
+    "category": "Подлежащее"
+  },
+  {
+    "sv": "hon",
+    "ru": "она",
+    "category": "Подлежащее"
+  },
+  {
+    "sv": "den",
+    "ru": "он / она (предмет en-рода)",
+    "category": "Подлежащее"
+  },
+  {
+    "sv": "ni",
+    "ru": "вы",
+    "category": "Подлежащее"
+  },
+  {
+    "sv": "de",
+    "ru": "они",
+    "category": "Подлежащее"
+  },
+  {
+    "sv": "mig",
+    "ru": "мне / меня",
+    "category": "Дополнение"
+  },
+  {
+    "sv": "dig",
+    "ru": "тебе / тебя",
+    "category": "Дополнение"
+  },
+  {
+    "sv": "oss",
+    "ru": "нам / нас",
+    "category": "Дополнение"
+  },
+  {
+    "sv": "er",
+    "ru": "вам / вас",
+    "category": "Дополнение"
+  },
+  {
+    "sv": "dem",
+    "ru": "им / их",
+    "category": "Дополнение"
+  },
+  {
+    "sv": "bor",
+    "ru": "живёт / живу",
+    "category": "Настоящее время",
+    "example": "Jag bor här."
+  },
+  {
+    "sv": "jobbar",
+    "ru": "работает / работаю",
+    "category": "Настоящее время"
+  },
+  {
+    "sv": "köper",
+    "ru": "покупает / покупаю",
+    "category": "Настоящее время"
+  },
+  {
+    "sv": "pratar",
+    "ru": "говорит / говорю",
+    "category": "Настоящее время"
+  },
+  {
+    "sv": "kan",
+    "ru": "могу / может",
+    "category": "Модальные"
+  },
+  {
+    "sv": "vill",
+    "ru": "хочу / хочет",
+    "category": "Модальные"
+  },
+  {
+    "sv": "ska",
+    "ru": "собираюсь / должен",
+    "category": "Модальные"
+  },
+  {
+    "sv": "måste",
+    "ru": "нужно / должен",
+    "category": "Модальные"
+  },
+  {
+    "sv": "förstår",
+    "ru": "понимаю",
+    "example": "Jag förstår inte.",
+    "category": "Общение"
+  },
+  {
+    "sv": "säga",
+    "ru": "сказать",
+    "example": "Kan du säga det igen?",
+    "category": "Общение"
+  },
+  {
+    "sv": "igen",
+    "ru": "снова / ещё раз",
+    "example": "säga det igen",
+    "category": "Общение"
+  },
+  {
+    "sv": "prata",
+    "ru": "говорить",
+    "example": "Kan du prata lite långsammare?",
+    "category": "Общение"
+  },
+  {
+    "sv": "lite",
+    "ru": "немного",
+    "example": "Kan du prata lite långsammare?",
+    "category": "Общение"
+  },
+  {
+    "sv": "långsammare",
+    "ru": "медленнее",
+    "example": "Kan du prata lite långsammare?",
+    "category": "Общение"
+  },
+  {
+    "sv": "vad",
+    "ru": "что",
+    "example": "Vad betyder det?",
+    "category": "Общение"
+  },
+  {
+    "sv": "betyder",
+    "ru": "значит / означает",
+    "example": "Vad betyder det?",
+    "category": "Общение"
+  },
+  {
+    "sv": "kostar",
+    "ru": "стоит",
+    "example": "Hur mycket kostar det?",
+    "category": "Покупки"
+  },
+  {
+    "sv": "betala",
+    "ru": "платить / оплатить",
+    "example": "Kan jag betala med kort?",
+    "category": "Покупки"
+  },
+  {
+    "sv": "med",
+    "ru": "с / при помощи",
+    "example": "Kan jag betala med kort?",
+    "category": "Покупки"
+  },
+  {
+    "sv": "kort",
+    "ru": "карта",
+    "example": "betala med kort",
+    "category": "Покупки"
+  },
+  {
+    "sv": "skulle",
+    "ru": "бы",
+    "example": "skulle vilja",
+    "category": "Кафе"
+  },
+  {
+    "sv": "vilja",
+    "ru": "хотеть",
+    "example": "skulle vilja",
+    "category": "Кафе"
+  }
+]

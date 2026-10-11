@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "collections": [
+    {
+      "slug": "essentials",
+      "title": "50 базовых слов",
+      "description": "Основа для первых разговоров: местоимения, действия и повседневные слова.",
+      "emoji": "⭐",
+      "order": 1,
+      "file": "items.json",
+      "count": 50
+    },
+    {
+      "slug": "shop",
+      "title": "В магазине",
+      "description": "Размеры, примерка, оплата и возврат.",
+      "emoji": "🛍️",
+      "order": 2,
+      "file": "items.json",
+      "count": 12
+    },
+    {
+      "slug": "food",
+      "title": "Еда и ресторан",
+      "description": "Блюда, добавки, заказ и счёт.",
+      "emoji": "🍽️",
+      "order": 3,
+      "file": "items.json",
+      "count": 26
+    },
+    {
+      "slug": "housing",
+      "title": "Недвижимость",
+      "description": "Аренда, покупка, просмотры и условия.",
+      "emoji": "🏠",
+      "order": 4,
+      "file": "items.json",
+      "count": 31
+    }
+  ]
+}

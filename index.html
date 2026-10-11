@@ -16,7 +16,7 @@
     }
     @layer utilities {
       .safe-top { padding-top: max(18px, env(safe-area-inset-top)); }
-      .safe-bottom { padding-bottom: max(18px, env(safe-area-inset-bottom)); }
+      .safe-bottom { padding-bottom: max(12px, env(safe-area-inset-bottom)); }
       .phone-shadow { box-shadow: 0 24px 80px rgba(0,0,0,.08); }
       .chip { @apply inline-flex min-h-10 items-center gap-1.5 rounded-xl bg-zinc-100 px-3.5 text-[13px] font-medium text-zinc-700 transition active:scale-[.98]; }
       .primary { @apply inline-flex min-h-13 items-center justify-center gap-2 rounded-2xl bg-zinc-950 px-5 text-[14px] font-semibold text-white transition active:scale-[.98]; }
@@ -38,24 +38,29 @@
     <main class="mx-auto flex h-dvh min-h-[550px] w-full max-w-[430px] flex-col overflow-hidden bg-[#fafafa] md:h-[860px] md:rounded-[34px] md:phone-shadow">
       <header class="safe-top shrink-0 px-5 pb-3">
         <div class="flex items-center gap-3">
-          <a href="#/" id="homeButton" class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white text-zinc-700" aria-label="К темам"><i data-lucide="arrow-left" class="h-5 w-5"></i></a>
+          <a href="#/" id="backButton" class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white text-zinc-700" aria-label="Назад"><i data-lucide="arrow-left" class="h-5 w-5"></i></a>
           <div class="min-w-0 flex-1">
             <h1 id="headerTitle" class="truncate text-[17px] font-semibold tracking-tight">Svenska</h1>
             <p id="headerSubtitle" class="truncate text-[12px] text-zinc-500">Шведский для реальной жизни</p>
           </div>
-          <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white text-lg">🇸🇪</div>
+          <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white text-lg" aria-hidden="true">🇸🇪</div>
         </div>
         <nav id="stageNav" class="scrollbar-none mt-4 hidden gap-1.5 overflow-x-auto pb-1" aria-label="Этапы урока"></nav>
       </header>
-      <div id="view" class="min-h-0 flex-1 overflow-y-auto px-5 pb-8" aria-live="polite">
-        <div class="pt-12 text-center text-sm text-zinc-400">Загружаем темы…</div>
+      <div id="view" class="min-h-0 flex-1 overflow-y-auto px-5 pb-7" aria-live="polite">
+        <div class="pt-12 text-center text-sm text-zinc-400">Загружаем материалы…</div>
       </div>
-      <footer class="safe-bottom shrink-0 border-t border-zinc-100 bg-white px-5 pt-3">
-        <div class="flex items-center justify-between gap-3">
-          <a href="#/" class="flex items-center gap-2 rounded-xl px-3 py-2 text-[13px] font-semibold"><i data-lucide="layout-grid" class="h-4 w-4"></i> Все темы</a>
-          <span id="footerStatus" class="text-right text-[11px] text-zinc-400">Учитесь в своём темпе</span>
-        </div>
-      </footer>
+      <nav id="bottomNav" aria-label="Основная навигация" class="safe-bottom grid shrink-0 grid-cols-3 border-t border-zinc-100 bg-white px-4 pt-2">
+        <a data-nav="home" href="#/" class="flex min-h-[55px] flex-col items-center justify-center gap-1 rounded-2xl text-zinc-400 transition-colors">
+          <i data-lucide="house" class="h-[21px] w-[21px]"></i><span class="text-[11px] font-medium">Главная</span>
+        </a>
+        <a data-nav="dictionaries" href="#/dictionaries" class="flex min-h-[55px] flex-col items-center justify-center gap-1 rounded-2xl text-zinc-400 transition-colors">
+          <i data-lucide="book-open" class="h-[21px] w-[21px]"></i><span class="text-[11px] font-medium">Словари</span>
+        </a>
+        <a data-nav="phrases" href="#/phrases" class="flex min-h-[55px] flex-col items-center justify-center gap-1 rounded-2xl text-zinc-400 transition-colors">
+          <i data-lucide="messages-square" class="h-[21px] w-[21px]"></i><span class="text-[11px] font-medium">Фразы</span>
+        </a>
+      </nav>
     </main>
   </div>
   <script type="module" src="./js/app.js"></script>

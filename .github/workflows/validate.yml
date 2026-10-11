@@ -1,9 +1,9 @@
-name: Validate lessons
+name: Validate content and app
 on:
   pull_request:
     branches: [main]
   push:
-    branches: [feature/modular-learning]
+    branches: [main]
 permissions:
   contents: read
 jobs:
@@ -14,9 +14,9 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
-      - name: Verify content index
+      - name: Verify catalogs
         run: npm run content:check
-      - name: Test content
+      - name: Test content and screens
         run: npm test
       - name: Check JavaScript syntax
         run: |
