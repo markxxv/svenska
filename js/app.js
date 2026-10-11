@@ -12,6 +12,42 @@ import * as quiz from './modules/quiz.js';
 const view=document.querySelector('#view');
 const stageNav=document.querySelector('#stageNav');
 const bottomNav=document.querySelector('#bottomNav');
+const settingsContainer=document.querySelector('#settingsContainer');
+const settingsTrigger=document.querySelector('#settingsTrigger');
+const settingsMenu=document.querySelector('#settingsMenu');
+function closeSettings() {
+  settingsMenu.hidden=true;
+  settingsTrigger.setAttribute('aria-expanded','false');
+}
+function syncThemeSettings() {
+  const theme=document.documentElement.classList.contains('dark')?'dark':'light';
+  for(const option of settingsMenu.querySelectorAll('[data-theme-option]')) {
+    option.setAttribute('aria-pressed',String(option.dataset.themeOption===theme));
+  }
+  document.querySelector('meta[name="theme-color"]').content=theme==='dark'?'#000000':'#fafafa';
+}
+function setTheme(theme) {
+  if(theme!=='light'&&theme!=='dark') return;
+  document.documentElement.classList.toggle('dark',theme==='dark');
+  try {localStorage.setItem('svenska-theme',theme);} catch {}
+  syncThemeSettings();
+}
+settingsTrigger.addEventListener('click',()=>{
+  settingsMenu.hidden=!settingsMenu.hidden;
+  settingsTrigger.setAttribute('aria-expanded',String(!settingsMenu.hidden));
+});
+settingsMenu.addEventListener('click',event=>{
+  const choice=event.target.closest('[data-theme-option]');
+  if(!choice)return;
+  setTheme(choice.dataset.themeOption);
+  closeSettings();
+  settingsTrigger.focus();
+});
+document.addEventListener('pointerdown',event=>{
+  if(!settingsContainer.contains(event.target))closeSettings();
+});
+syncThemeSettings();
+
 const modules={theory:steps,examples:steps,cards,quiz,phrases,dictionary};
 const library={dictionaries:[],phrases:[]};
 let lessons=[],studyTopics=[],section='home',current=null,data=null,mode=null,state={},ticket=0,screenKey='';
@@ -69,6 +105,7 @@ function refresh() {
   icons();
 }
 async function navigate() {
+  closeSettings();
   const id=++ticket,info=parseHash();
   stopSpeech();
   view.scrollTop=0;
@@ -120,6 +157,7 @@ view.addEventListener('click',event=>{
 });
 window.addEventListener('hashchange',navigate);
 document.addEventListener('keydown',event=>{
+  if(event.key==='Escape'&&!settingsMenu.hidden){closeSettings();settingsTrigger.focus();return;}
   if(event.key==='Escape'&&state.openWord!==undefined&&state.openWord!==null){
     state.openWord=null;refresh();
   }

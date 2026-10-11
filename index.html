@@ -5,6 +5,105 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#fafafa">
   <title>Svenska — шведский для жизни</title>
+  <!-- Apply the saved theme before loading any external styles to avoid a white flash. -->
+  <script>
+    (() => {
+      let theme = 'light';
+      try { if (localStorage.getItem('svenska-theme') === 'dark') theme = 'dark'; } catch {}
+      document.documentElement.classList.toggle('dark', theme === 'dark');
+      if (theme === 'dark') document.querySelector('meta[name="theme-color"]').content = '#000000';
+    })();
+  </script>
+  <style id="theme-styles">
+    /* These non-layered overrides cover all existing screens, including JS-rendered markup. */
+    html.dark { background: #000; color-scheme: dark; }
+    html.dark body, html.dark main { background: #000 !important; color: #d4d4d8; }
+    html.dark .surface, html.dark .bg-white { background-color: #121212 !important; }
+    html.dark .bg-zinc-100 { background-color: #202023 !important; }
+    html.dark .bg-zinc-200 { background-color: #2b2b2f !important; }
+    html.dark .bg-zinc-950 { background-color: #252528 !important; }
+    html.dark .bg-black { background-color: #252528 !important; }
+    html.dark .text-zinc-950, html.dark .text-zinc-900 { color: #e4e4e7 !important; }
+    html.dark .text-zinc-700 { color: #d4d4d8 !important; }
+    html.dark .text-zinc-600, html.dark .text-zinc-500 { color: #a1a1aa !important; }
+    html.dark .text-zinc-400, html.dark .text-zinc-300 { color: #92929e !important; }
+    html.dark .border-zinc-100, html.dark .divide-zinc-100 > :not(:last-child) {
+      border-color: #29292d !important;
+    }
+    html.dark .chip, html.dark .ghost, html.dark .word-chip {
+      background-color: #242427 !important;
+      color: #dedee2 !important;
+    }
+    html.dark .word-chip:active { background-color: #35353a !important; }
+    html.dark .primary,
+    html.dark .chip[class*="!bg-black"],
+    html.dark .chip[class*="!bg-zinc-950"],
+    html.dark button[class*="!bg-zinc-950"],
+    html.dark button[class*="!bg-black"] {
+      background-color: #dedee2 !important;
+      color: #111114 !important;
+    }
+    html.dark .h-full.bg-zinc-950, html.dark .h-full.bg-black {
+      background-color: #d4d4d8 !important;
+    }
+    html.dark .bg-black.text-white {
+      background-color: #dedee2 !important;
+      color: #111114 !important;
+    }
+    html.dark .bg-zinc-950.text-white, html.dark .flip-back {
+      background-color: #27272a !important;
+      color: #f4f4f5 !important;
+    }
+    html.dark .bg-emerald-50 { background-color: #073b31 !important; }
+    html.dark .text-emerald-900 { color: #a7f3d0 !important; }
+    html.dark .text-emerald-600 { color: #6ee7b7 !important; }
+    html.dark .bg-rose-50 { background-color: #4c1626 !important; }
+    html.dark .text-rose-900 { color: #fecdd3 !important; }
+    html.dark .bg-black\/40 { background-color: rgba(0,0,0,.78) !important; }
+    html.dark #bottomNav {
+      background-color: #080808 !important;
+      border-color: #29292d !important;
+    }
+    html.dark #bottomNav [data-nav] { color: #92929e !important; }
+    html.dark #bottomNav [data-nav][aria-current="page"] {
+      background-color: #222225 !important;
+      color: #ededf0 !important;
+    }
+    html.dark #backButton, html.dark #settingsTrigger { background-color: #222225 !important; }
+    html.dark input { color: #ededf0; caret-color: #ededf0; }
+    html.dark input::placeholder { color: #777783; }
+    /* The settings menu is independent of the lesson renderer. */
+    .settings-menu {
+      position: absolute;
+      top: calc(100% + 10px);
+      right: 0;
+      width: 224px;
+      z-index: 50;
+      padding: 12px;
+      border-radius: 20px;
+      background: #fff;
+      color: #18181b;
+      box-shadow: 0 14px 45px rgba(0,0,0,.12);
+    }
+    .settings-menu[hidden] { display: none; }
+    .settings-option {
+      display: flex; align-items: center; gap: 10px;
+      width: 100%; min-height: 44px; padding: 10px 12px;
+      border-radius: 12px; font-size: 14px; font-weight: 500;
+      text-align: left; cursor: pointer;
+    }
+    .settings-option[aria-pressed="true"] { background: #f4f4f5; }
+    .settings-option[aria-pressed="false"] .settings-check { visibility: hidden; }
+    html.dark .settings-menu {
+      background: #171719; color: #ededf0;
+      border: 1px solid #2a2a2d;
+      box-shadow: 0 18px 44px rgba(0,0,0,.65);
+    }
+    html.dark .settings-option[aria-pressed="true"] { background: #2a2a2f; }
+    .settings-option:focus-visible, #settingsTrigger:focus-visible {
+      outline: 2px solid currentColor; outline-offset: 2px;
+    }
+  </style>
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <script src="https://unpkg.com/lucide@latest"></script>
   <style type="text/tailwindcss">
@@ -36,14 +135,26 @@
 <body>
   <div class="min-h-screen md:flex md:items-center md:justify-center md:p-8">
     <main class="mx-auto flex h-dvh min-h-[550px] w-full max-w-[430px] flex-col overflow-hidden bg-[#fafafa] md:h-[860px] md:rounded-[34px] md:phone-shadow">
-      <header class="safe-top shrink-0 px-5 pb-3">
+      <header class="safe-top relative z-30 shrink-0 px-5 pb-3">
         <div class="flex items-center gap-3">
           <a href="#/" id="backButton" class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white text-zinc-700" aria-label="Назад"><i data-lucide="arrow-left" class="h-5 w-5"></i></a>
           <div class="min-w-0 flex-1">
             <h1 id="headerTitle" class="truncate text-[17px] font-semibold tracking-tight">Svenska</h1>
             <p id="headerSubtitle" class="truncate text-[12px] text-zinc-500">Шведский для реальной жизни</p>
           </div>
-          <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-white text-lg" aria-hidden="true">🇸🇪</div>
+          <div id="settingsContainer" class="relative shrink-0">
+            <button id="settingsTrigger" type="button" class="flex h-10 w-10 items-center justify-center rounded-full bg-white text-lg" aria-label="Настройки" aria-controls="settingsMenu" aria-expanded="false" aria-haspopup="true">🇸🇪</button>
+            <div id="settingsMenu" class="settings-menu" role="group" aria-label="Настройки приложения" hidden>
+              <p class="px-3 pt-1 text-[15px] font-semibold">Настройки</p>
+              <p class="mb-2 mt-4 px-3 text-[11px] font-medium text-zinc-500">Оформление</p>
+              <button type="button" class="settings-option" data-theme-option="light" aria-pressed="true">
+                <i data-lucide="sun" class="h-4 w-4"></i><span class="flex-1">Светлая</span><span class="settings-check text-sm" aria-hidden="true">✓</span>
+              </button>
+              <button type="button" class="settings-option" data-theme-option="dark" aria-pressed="false">
+                <i data-lucide="moon" class="h-4 w-4"></i><span class="flex-1">Тёмная</span><span class="settings-check text-sm" aria-hidden="true">✓</span>
+              </button>
+            </div>
+          </div>
         </div>
         <nav id="stageNav" class="scrollbar-none mt-4 hidden gap-1.5 overflow-x-auto pb-1" aria-label="Этапы урока"></nav>
       </header>
