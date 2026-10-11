@@ -55,6 +55,9 @@ test('topics tab renders only pronouns and its lesson stages',async()=>{
   const entry=items[0], data={slug:entry.slug,meta:entry};
   for(const [name,file] of Object.entries(entry.files))data[name]=await load(entry.path+'/'+file);
   assert.match(overview.render(data),/Этапы урока/);
+  assert.ok(!entry.files.cards);
+  assert.ok(!overview.render(data).includes('Карточки'));
+  assert.equal(data.examples.length,50);
   assert.ok(steps.render(data,{pos:0},'theory').length>100);
 });
 

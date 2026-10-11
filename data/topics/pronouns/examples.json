@@ -1,37 +1,252 @@
 [
   {
-    "sv": "Jag bor i Sverige.",
-    "ru": "Я живу в Швеции.",
-    "note": "Jag — я."
+    "sv": "Du, vet du vad klockan är?",
+    "ru": "Слушай, не знаешь, который час?",
+    "context": "На улице"
   },
   {
-    "sv": "Du pratar svenska.",
-    "ru": "Ты говоришь по-шведски.",
-    "note": "Du — ты."
+    "sv": "Jag letar efter busshållplatsen.",
+    "ru": "Я ищу автобусную остановку.",
+    "context": "На улице"
   },
   {
-    "sv": "Hon jobbar här.",
-    "ru": "Она работает здесь.",
-    "note": "Hon — она."
+    "sv": "Vi går åt samma håll.",
+    "ru": "Нам в одну сторону.",
+    "context": "На улице"
   },
   {
-    "sv": "Vi lär oss svenska.",
-    "ru": "Мы учим шведский.",
-    "note": "Vi — мы; oss — нас / себя."
+    "sv": "Han kommer om fem minuter.",
+    "ru": "Он придёт через пять минут.",
+    "context": "На улице"
   },
   {
-    "sv": "Ni kan komma imorgon.",
-    "ru": "Вы можете прийти завтра.",
-    "note": "Ni — вы (множественное число)."
+    "sv": "Hon väntar vid hörnet.",
+    "ru": "Она ждёт за углом.",
+    "context": "На улице"
   },
   {
-    "sv": "De bor i Stockholm.",
-    "ru": "Они живут в Стокгольме.",
-    "note": "De часто произносится «dom»."
+    "sv": "Är ni också på väg dit?",
+    "ru": "Вы тоже туда идёте?",
+    "context": "На улице"
   },
   {
-    "sv": "Kan du hjälpa mig?",
-    "ru": "Можешь мне помочь?",
-    "note": "Mig — объектная форма jag."
+    "sv": "De står där borta.",
+    "ru": "Они стоят вон там.",
+    "context": "На улице"
+  },
+  {
+    "sv": "Kan du visa mig vägen?",
+    "ru": "Можешь показать мне дорогу?",
+    "context": "На улице"
+  },
+  {
+    "sv": "Jag tror vi är framme.",
+    "ru": "Кажется, мы пришли.",
+    "context": "На улице"
+  },
+  {
+    "sv": "Vi ses vid entrén.",
+    "ru": "Увидимся у входа.",
+    "context": "На улице"
+  },
+  {
+    "sv": "Jag tar en kaffe, tack.",
+    "ru": "Мне кофе, пожалуйста.",
+    "context": "В кафе"
+  },
+  {
+    "sv": "Vill du ha något mer?",
+    "ru": "Хочешь ещё что-нибудь?",
+    "context": "В кафе"
+  },
+  {
+    "sv": "Han tar samma som jag.",
+    "ru": "Ему то же, что и мне.",
+    "context": "В кафе"
+  },
+  {
+    "sv": "Hon sitter redan där inne.",
+    "ru": "Она уже сидит внутри.",
+    "context": "В кафе"
+  },
+  {
+    "sv": "Ska vi sätta oss här?",
+    "ru": "Сядем здесь?",
+    "context": "В кафе"
+  },
+  {
+    "sv": "Har ni ett bord för två?",
+    "ru": "У вас есть столик на двоих?",
+    "context": "В кафе"
+  },
+  {
+    "sv": "De har jättegott kaffe här.",
+    "ru": "У них тут очень вкусный кофе.",
+    "context": "В кафе"
+  },
+  {
+    "sv": "Jag betalar för oss.",
+    "ru": "Я заплачу за нас.",
+    "context": "В кафе"
+  },
+  {
+    "sv": "Du kan ta min plats.",
+    "ru": "Можешь занять моё место.",
+    "context": "В кафе"
+  },
+  {
+    "sv": "Kan vi få notan, tack?",
+    "ru": "Можно нам счёт, пожалуйста?",
+    "context": "В кафе"
+  },
+  {
+    "sv": "Jag kollar bara, tack.",
+    "ru": "Я просто смотрю, спасибо.",
+    "context": "В магазине"
+  },
+  {
+    "sv": "Har du den i en annan storlek?",
+    "ru": "У тебя есть это в другом размере?",
+    "context": "В магазине"
+  },
+  {
+    "sv": "Hon provar den där jackan.",
+    "ru": "Она примеряет вон ту куртку.",
+    "context": "В магазине"
+  },
+  {
+    "sv": "Han jobbar i kassan.",
+    "ru": "Он работает на кассе.",
+    "context": "В магазине"
+  },
+  {
+    "sv": "Vi behöver bara mjölk.",
+    "ru": "Нам нужно только молоко.",
+    "context": "В магазине"
+  },
+  {
+    "sv": "Tar ni kort?",
+    "ru": "Вы принимаете карты?",
+    "context": "В магазине"
+  },
+  {
+    "sv": "De stänger snart.",
+    "ru": "Они скоро закрываются.",
+    "context": "В магазине"
+  },
+  {
+    "sv": "Kan du hjälpa oss?",
+    "ru": "Можешь нам помочь?",
+    "context": "В магазине"
+  },
+  {
+    "sv": "Jag ska av här.",
+    "ru": "Мне выходить здесь.",
+    "context": "В транспорте"
+  },
+  {
+    "sv": "Ska du också till centrum?",
+    "ru": "Ты тоже едешь в центр?",
+    "context": "В транспорте"
+  },
+  {
+    "sv": "Han missade bussen.",
+    "ru": "Он опоздал на автобус.",
+    "context": "В транспорте"
+  },
+  {
+    "sv": "Hon kommer med nästa tåg.",
+    "ru": "Она приедет следующим поездом.",
+    "context": "В транспорте"
+  },
+  {
+    "sv": "Vi hinner nog med tåget.",
+    "ru": "Думаю, мы успеем на поезд.",
+    "context": "В транспорте"
+  },
+  {
+    "sv": "Ska ni av vid nästa?",
+    "ru": "Вы выходите на следующей?",
+    "context": "В транспорте"
+  },
+  {
+    "sv": "De är redan på stationen.",
+    "ru": "Они уже на станции.",
+    "context": "В транспорте"
+  },
+  {
+    "sv": "Jag är lite sen, förlåt.",
+    "ru": "Я немного опаздываю, извини.",
+    "context": "У друзей"
+  },
+  {
+    "sv": "Du måste smaka det här!",
+    "ru": "Ты должен это попробовать!",
+    "context": "У друзей"
+  },
+  {
+    "sv": "Han är alltid så rolig.",
+    "ru": "Он всегда такой смешной.",
+    "context": "У друзей"
+  },
+  {
+    "sv": "Hon känner min syster.",
+    "ru": "Она знает мою сестру.",
+    "context": "У друзей"
+  },
+  {
+    "sv": "Ska vi dra?",
+    "ru": "Ну что, пойдём?",
+    "context": "У друзей"
+  },
+  {
+    "sv": "Ni kan komma förbi senare.",
+    "ru": "Можете заглянуть позже.",
+    "context": "У друзей"
+  },
+  {
+    "sv": "De kommer också ikväll.",
+    "ru": "Они тоже придут сегодня вечером.",
+    "context": "У друзей"
+  },
+  {
+    "sv": "Hör av dig när du är framme.",
+    "ru": "Напиши, когда доберёшься.",
+    "context": "У друзей"
+  },
+  {
+    "sv": "Jag hittar inte mina nycklar.",
+    "ru": "Не могу найти свои ключи.",
+    "context": "Дома"
+  },
+  {
+    "sv": "Kan du öppna fönstret?",
+    "ru": "Можешь открыть окно?",
+    "context": "Дома"
+  },
+  {
+    "sv": "Han sover fortfarande.",
+    "ru": "Он ещё спит.",
+    "context": "Дома"
+  },
+  {
+    "sv": "Hon har redan gått hem.",
+    "ru": "Она уже ушла домой.",
+    "context": "Дома"
+  },
+  {
+    "sv": "Vi lagar något enkelt.",
+    "ru": "Приготовим что-нибудь простое.",
+    "context": "Дома"
+  },
+  {
+    "sv": "Är ni hemma nu?",
+    "ru": "Вы сейчас дома?",
+    "context": "Дома"
+  },
+  {
+    "sv": "De bor en trappa upp.",
+    "ru": "Они живут этажом выше.",
+    "context": "Дома"
   }
 ]

@@ -8,14 +8,13 @@
       "groupTitle": "Строим предложения",
       "emoji": "👥",
       "order": 1,
-      "minutes": 6,
-      "description": "Кто говорит и к кому обращаются. Разбираем местоимения на простых фразах.",
+      "minutes": 15,
+      "description": "50 живых разговорных примеров с местоимениями: улица, кафе, магазин, транспорт, друзья и дом.",
       "outcome": "Строить фразы про себя, собеседника и других людей",
       "path": "topics/pronouns",
       "files": {
         "theory": "theory.json",
         "examples": "examples.json",
-        "cards": "cards.json",
         "quiz": "quiz.json"
       }
     }

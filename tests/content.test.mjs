@@ -52,6 +52,7 @@ test('topics are a separate catalog with pronouns as the only entry',async()=>{
   const topics=await load('topics/index.json');
   assert.equal(topics.topics.length,1);
   assert.equal(topics.topics[0].slug,'pronouns');
+  assert.ok(!topics.topics[0].files.cards);
   assert.ok(!lessons.topics.some(entry=>entry.slug==='pronouns'));
   for(const entry of topics.topics){
     assert.equal(entry.path,'topics/'+entry.slug);
